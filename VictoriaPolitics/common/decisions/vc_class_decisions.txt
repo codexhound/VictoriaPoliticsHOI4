@@ -1,0 +1,87 @@
+class_encouragement = {
+	encourage_middle_class = {
+
+		allowed = {
+			always = yes
+		}
+		available = {
+			check_variable = {ROOT.classprop = 0}
+		}
+
+		cost = 120
+		fire_only_once = no
+		days_re_enable = 165
+		days_remove = 165
+	
+		complete_effect = {
+			set_variable = { ROOT.encouragemiddle = 1 }
+			set_variable = { ROOT.classprop = 1 }
+		}
+		
+		remove_effect = {
+			set_variable = { ROOT.encouragemiddle = 0 }
+			set_variable = { ROOT.classprop = 0 }
+		}
+
+		ai_will_do = {
+			factor = 0.5
+		}
+	}
+
+	encourage_capitalist_class = {
+
+		allowed = {
+			always = yes
+		}
+		available = {
+			check_variable = {ROOT.classprop = 0}
+		}
+
+		cost = 120
+		fire_only_once = no
+		days_re_enable = 165
+		days_remove = 165
+	
+		complete_effect = {
+			set_variable = { ROOT.encouragecapitalist = 1 }
+			set_variable = { ROOT.classprop = 1 }
+		}
+		
+		remove_effect = {
+			set_varible = { ROOT.encouragecapitalist = 0 }
+			set_variable = { ROOT.classprop = 0 }
+		}
+
+		ai_will_do = {
+			factor = 0.5
+		}
+	}
+
+	encourage_academic_class = {
+		allowed = {
+			always = yes
+		}
+		available = {
+			check_variable = {ROOT.classprop = 0}
+		}
+
+		cost = 120
+		fire_only_once = no
+		days_re_enable = 165
+		days_remove = 165
+	
+		complete_effect = {
+			set_variable = { ROOT.encourageacademia = 1 }
+			set_variable = { ROOT.classprop = 1 }
+		}
+		
+		remove_effect = {
+			set_variable = { ROOT.encourageacademia = 0 }
+			set_variable = { ROOT.classprop = 0 }
+		}
+
+		ai_will_do = {
+			factor = 0.5
+		}
+	}
+}

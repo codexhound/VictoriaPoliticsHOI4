@@ -1,0 +1,26 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_idea_idealogy_drift"
+		texturefile = "gfx/interface/ideas/idealogy_drift.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_economic_class_stats"
+		texturefile = "gfx/interface/ideas/economic_class.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_trade_policy_stats"
+		texturefile = "gfx/interface/ideas/trade_policy.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_economicy_policy_stats"
+		texturefile = "gfx/interface/ideas/economic_policy.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_war_policy_stats"
+		texturefile = "gfx/interface/ideas/military_policy.dds"
+	}
+}

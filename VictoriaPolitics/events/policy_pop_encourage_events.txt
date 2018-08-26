@@ -1,0 +1,435 @@
+add_namespace = policy_encourage
+
+country_event = {
+	id = policy_encourage.0 # The unique id. nuke_dropped is the namespace, which can be used for better organization.
+        title = policy_encourage.0.t # The localisable text that appears as a header
+        desc = policy_encourage.0.d # The localisable main text body that appears
+	picture = GFX_report_event_election_vote # Image displayed alongside the text.
+
+	hidden = yes # Optional : if set to "yes" no one will see the event
+	option = { # This is an example of an option that has no function
+		name = policy_encourage.0.a # The localisable text that appears on the button.
+	}
+	immediate = {
+		set_temp_variable = { jingoism_orig = ROOT.jingoism }
+		set_temp_variable = { promilitary_orig = ROOT.promilitary }
+		set_temp_variable = { antimilitary_orig = ROOT.antimilitary }
+		set_temp_variable = { pacifism_orig = ROOT.pacifism }
+	
+		set_temp_variable = { actual_growth_factor = 1 }
+		subtract_from_temp_variable = { actual_growth_factor = ROOT.jingoism }
+		multiply_temp_variable = { actual_growth_factor = 0.1 }
+		set_temp_variable = { drift_growth_factor = actual_growth_factor }
+		divide_temp_variable = { drift_growth_factor = 3 }
+		
+		add_to_variable = { ROOT.jingoism = actual_growth_factor }
+		subtract_from_variable = { ROOT.promilitary = drift_growth_factor } 
+		subtract_from_variable = { ROOT.antimilitary = drift_growth_factor } 
+		subtract_from_variable = { ROOT.pacifism = drift_growth_factor }
+		
+		if = {
+			limit = { check_variable = { ROOT.jingoism > 1 } } 
+			set_variable = { ROOT.jingoism = jingoism_orig } 
+			set_variable = { ROOT.promilitary = promilitary_orig } 
+			set_variable = { ROOT.antimilitary = antimilitary_orig } 
+			set_variable = { ROOT.pacifism = pacifism_orig } 
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	trigger = {
+		check_variable = { ROOT.jingoistpropaganda = 1 }
+	}
+}
+
+country_event = {
+	id = policy_encourage.9 # The unique id. nuke_dropped is the namespace, which can be used for better organization.
+        title = policy_encourage.9.t # The localisable text that appears as a header
+        desc = policy_encourage.9.d # The localisable main text body that appears
+	picture = GFX_report_event_election_vote # Image displayed alongside the text.
+
+	hidden = yes # Optional : if set to "yes" no one will see the event
+	option = { # This is an example of an option that has no function
+		name = policy_encourage.0.a # The localisable text that appears on the button.
+	}
+	immediate = {
+		set_temp_variable = { jingoism_orig = ROOT.jingoism }
+		set_temp_variable = { promilitary_orig = ROOT.promilitary }
+		set_temp_variable = { antimilitary_orig = ROOT.antimilitary }
+		set_temp_variable = { pacifism_orig = ROOT.pacifism }
+		
+		set_temp_variable = { actual_growth_factor = 1 }
+		subtract_from_temp_variable = { actual_growth_factor = ROOT.promilitary }
+		multiply_temp_variable = { actual_growth_factor = 0.1 }
+		set_temp_variable = { drift_growth_factor = actual_growth_factor }
+		divide_temp_variable = { drift_growth_factor = 3 }
+
+		add_to_variable = { ROOT.promilitary = actual_growth_factor }
+		subtract_from_variable = { ROOT.jingoism = drift_growth_factor } 
+		subtract_from_variable = { ROOT.antimilitary = drift_growth_factor } 
+		subtract_from_variable = { ROOT.pacifism = drift_growth_factor }
+		
+		if = {
+			limit = { check_variable = { ROOT.promilitary > 1 } } 
+			set_variable = { ROOT.jingoism = jingoism_orig } 
+			set_variable = { ROOT.promilitary = promilitary_orig } 
+			set_variable = { ROOT.antimilitary = antimilitary_orig } 
+			set_variable = { ROOT.pacifism = pacifism_orig } 
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	trigger = {
+		check_variable = { ROOT.promilitarypropaganda = 1 }
+	}
+}
+
+country_event = {
+	id = policy_encourage.1 # The unique id. nuke_dropped is the namespace, which can be used for better organization.
+        title = policy_encourage.1.t # The localisable text that appears as a header
+        desc = policy_encouragee.1.d # The localisable main text body that appears
+	picture = GFX_report_event_election_vote # Image displayed alongside the text.
+
+	hidden = yes # Optional : if set to "yes" no one will see the event
+	option = { # This is an example of an option that has no function
+		name = policy_encourage.0.a # The localisable text that appears on the button.
+	}
+	immediate = {
+		set_temp_variable = { jingoism_orig = ROOT.jingoism }
+		set_temp_variable = { promilitary_orig = ROOT.promilitary }
+		set_temp_variable = { antimilitary_orig = ROOT.antimilitary }
+		set_temp_variable = { pacifism_orig = ROOT.pacifism }
+		
+		set_temp_variable = { actual_growth_factor = 1 }
+		subtract_from_temp_variable = { actual_growth_factor = ROOT.antimilitary }
+		multiply_temp_variable = { actual_growth_factor = 0.1 }
+		set_temp_variable = { drift_growth_factor = actual_growth_factor }
+		divide_temp_variable = { drift_growth_factor = 3 }
+		
+		add_to_variable = { ROOT.antimilitary = actual_growth_factor }
+		subtract_from_variable = { ROOT.jingoism = drift_growth_factor } 
+		subtract_from_variable = { ROOT.promilitary = drift_growth_factor } 
+		subtract_from_variable = { ROOT.pacifism = drift_growth_factor }
+		
+		if = {
+			limit = { check_variable = { ROOT.antimilitary > 1 } } 
+			set_variable = { ROOT.jingoism = jingoism_orig } 
+			set_variable = { ROOT.promilitary = promilitary_orig } 
+			set_variable = { ROOT.antimilitary = antimilitary_orig } 
+			set_variable = { ROOT.pacifism = pacifism_orig } 
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	trigger = {
+		check_variable = { ROOT.antimilitarypropaganda = 1 }
+	}
+}
+
+country_event = {
+	id = policy_encourage.2 # The unique id. nuke_dropped is the namespace, which can be used for better organization.
+        title = policy_encourage.2.t # The localisable text that appears as a header
+        desc = policy_encourage.2.d # The localisable main text body that appears
+	picture = GFX_report_event_election_vote # Image displayed alongside the text.
+
+	hidden = yes # Optional : if set to "yes" no one will see the event
+	option = { # This is an example of an option that has no function
+		name = policy_encourage.0.a # The localisable text that appears on the button.
+	}
+	immediate = {
+		set_temp_variable = { jingoism_orig = ROOT.jingoism }
+		set_temp_variable = { promilitary_orig = ROOT.promilitary }
+		set_temp_variable = { antimilitary_orig = ROOT.antimilitary }
+		set_temp_variable = { pacifism_orig = ROOT.pacifism }
+		
+		set_temp_variable = { actual_growth_factor = 1 }
+		subtract_from_temp_variable = { actual_growth_factor = ROOT.pacifism }
+		multiply_temp_variable = { actual_growth_factor = 0.1 }
+		set_temp_variable = { drift_growth_factor = actual_growth_factor }
+		divide_temp_variable = { drift_growth_factor = 3 }
+		
+		add_to_variable = { ROOT.pacifism = actual_growth_factor } 
+		subtract_from_variable = { ROOT.jingoism = drift_growth_factor } 
+		subtract_from_variable = { ROOT.promilitary = drift_growth_factor } 
+		subtract_from_variable = { ROOT.antimilitary = drift_growth_factor }
+		
+		if = {
+			limit = { check_variable = { ROOT.pacifism > 1 } } 
+			set_variable = { ROOT.jingoism = jingoism_orig } 
+			set_variable = { ROOT.promilitary = promilitary_orig } 
+			set_variable = { ROOT.antimilitary = antimilitary_orig } 
+			set_variable = { ROOT.pacifism = pacifism_orig } 
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	trigger = {
+		check_variable = { ROOT.pacifistpropaganda = 1 }
+	}
+}
+
+country_event = {
+	id = policy_encourage.3 # The unique id. nuke_dropped is the namespace, which can be used for better organization.
+        title = policy_encourage.3.t # The localisable text that appears as a header
+        desc = policy_encourage.3.d # The localisable main text body that appears
+	picture = GFX_report_event_election_vote # Image displayed alongside the text.
+
+	hidden = yes # Optional : if set to "yes" no one will see the event
+	option = { # This is an example of an option that has no function
+		name = policy_encourage.0.a # The localisable text that appears on the button.
+	}
+	immediate = {
+		set_temp_variable = { freetrade_orig = ROOT.freetrade }
+		set_temp_variable = { protectionist_orig = ROOT.protectionist }
+	
+		set_temp_variable = { actual_growth_factor = 1 }
+		subtract_from_temp_variable = { actual_growth_factor = ROOT.freetrade }
+		multiply_temp_variable = { actual_growth_factor = 0.1 }
+		
+		add_to_variable = { ROOT.freetrade = actual_growth_factor } 
+		subtract_from_variable = { ROOT.protectionist = actual_growth_factor }
+		
+		if = {
+			limit = { check_variable = { ROOT.freetrade > 1 } } 
+			set_variable = { ROOT.freetrade = freetrade_orig } 
+			set_variable = { ROOT.protectionist = protectionist_orig } 
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	trigger = {
+		check_variable = { ROOT.freetradepropaganda = 1 }
+	}
+}
+
+country_event = {
+	id = policy_encourage.4 # The unique id. nuke_dropped is the namespace, which can be used for better organization.
+        title = policy_encourage.4.t # The localisable text that appears as a header
+        desc = policy_encourage.4.d # The localisable main text body that appears
+	picture = GFX_report_event_election_vote # Image displayed alongside the text.
+
+	hidden = yes # Optional : if set to "yes" no one will see the event
+	option = { # This is an example of an option that has no function
+		name = policy_encourage.0.a # The localisable text that appears on the button.
+	}
+	immediate = {
+		set_temp_variable = { freetrade_orig = ROOT.freetrade }
+		set_temp_variable = { protectionist_orig = ROOT.protectionist }
+		
+		set_temp_variable = { actual_growth_factor = 1 }
+		subtract_from_temp_variable = { actual_growth_factor = ROOT.protectionist }
+		multiply_temp_variable = { actual_growth_factor = 0.1 }
+
+		add_to_variable = { ROOT.protectionist = actual_growth_factor } 
+		subtract_from_variable = { ROOT.freetrade = actual_growth_factor }
+		
+		if = {
+			limit = { check_variable = { ROOT.protectionist > 1 } } 
+			set_variable = { ROOT.freetrade = freetrade_orig } 
+			set_variable = { ROOT.protectionist = protectionist_orig } 
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	trigger = {
+		check_variable = { ROOT.protectionistpropaganda = 1 }
+	}
+}
+
+country_event = {
+	id = policy_encourage.5 # The unique id. nuke_dropped is the namespace, which can be used for better organization.
+        title = policy_encourage.5.t # The localisable text that appears as a header
+        desc = policy_encourage.5.d # The localisable main text body that appears
+	picture = GFX_report_event_election_vote # Image displayed alongside the text.
+
+	hidden = yes # Optional : if set to "yes" no one will see the event
+	option = { # This is an example of an option that has no function
+		name = policy_encourage.0.a # The localisable text that appears on the button.
+	}
+	immediate = {
+		set_temp_variable = { plannedeconomy_orig = ROOT.plannedeconomy }
+		set_temp_variable = { statecapitalism_orig = ROOT.statecapitalism }
+		set_temp_variable = { interventionism_orig = ROOT.interventionism }
+		set_temp_variable = { nointerventionism_orig = ROOT.nointerventionism }
+		
+		set_temp_variable = { actual_growth_factor = 1 }
+		subtract_from_temp_variable = { actual_growth_factor = ROOT.plannedeconomy }
+		multiply_temp_variable = { actual_growth_factor = 0.1 }
+		set_temp_variable = { drift_growth_factor = actual_growth_factor }
+		divide_temp_variable = { drift_growth_factor = 3 }
+
+		add_to_variable = { ROOT.plannedeconomy = actual_growth_factor } 
+		subtract_from_variable = { ROOT.statecapitalism = drift_growth_factor } 
+		subtract_from_variable = { ROOT.interventionism = drift_growth_factor } 
+		subtract_from_variable = { ROOT.nointerventionism = drift_growth_factor }
+		
+		if = {
+			limit = { check_variable = { ROOT.plannedeconomy > 1 } } 
+			set_variable = { ROOT.plannedeconomy = plannedeconomy_orig } 
+			set_variable = { ROOT.statecapitalism = statecapitalism_orig } 
+			set_variable = { ROOT.interventionism = interventionism_orig } 
+			set_variable = { ROOT.nointerventionism = nointerventionism_orig } 
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	trigger = {
+		check_variable = { ROOT.pepropaganda = 1 }
+	}
+}
+
+country_event = {
+	id = policy_encourage.6 # The unique id. nuke_dropped is the namespace, which can be used for better organization.
+        title = policy_encourage.6.t # The localisable text that appears as a header
+        desc = policy_encourage.6.d # The localisable main text body that appears
+	picture = GFX_report_event_election_vote # Image displayed alongside the text.
+
+	hidden = yes # Optional : if set to "yes" no one will see the event
+	option = { # This is an example of an option that has no function
+		name = policy_encourage.0.a # The localisable text that appears on the button.
+	}
+	immediate = {
+		set_temp_variable = { plannedeconomy_orig = ROOT.plannedeconomy }
+		set_temp_variable = { statecapitalism_orig = ROOT.statecapitalism }
+		set_temp_variable = { interventionism_orig = ROOT.interventionism }
+		set_temp_variable = { nointerventionism_orig = ROOT.nointerventionism }
+		
+		set_temp_variable = { actual_growth_factor = 1 }
+		subtract_from_temp_variable = { actual_growth_factor = ROOT.statecapitalism }
+		multiply_temp_variable = { actual_growth_factor = 0.1 }
+		set_temp_variable = { drift_growth_factor = actual_growth_factor }
+		divide_temp_variable = { drift_growth_factor = 3 }
+		
+		add_to_variable = { ROOT.statecapitalism = actual_growth_factor } 
+		subtract_from_variable = { ROOT.plannedeconomy = drift_growth_factor } 
+		subtract_from_variable = { ROOT.interventionism = drift_growth_factor } 
+		subtract_from_variable = { ROOT.nointerventionism = drift_growth_factor }
+		
+		if = {
+			limit = { check_variable = { ROOT.statecapitalism > 1 } } 
+			set_variable = { ROOT.plannedeconomy = plannedeconomy_orig } 
+			set_variable = { ROOT.statecapitalism = statecapitalism_orig } 
+			set_variable = { ROOT.interventionism = interventionism_orig } 
+			set_variable = { ROOT.nointerventionism = nointerventionism_orig } 
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	trigger = {
+		check_variable = { ROOT.scpropaganda = 1 }
+	}
+}
+
+country_event = {
+	id = policy_encourage.7 # The unique id. nuke_dropped is the namespace, which can be used for better organization.
+        title = policy_encourage.7.t # The localisable text that appears as a header
+        desc = policy_encourage.7.d # The localisable main text body that appears
+	picture = GFX_report_event_election_vote # Image displayed alongside the text.
+
+	hidden = yes # Optional : if set to "yes" no one will see the event
+	option = { # This is an example of an option that has no function
+		name = policy_encourage.0.a # The localisable text that appears on the button.
+	}
+	immediate = {
+		set_temp_variable = { plannedeconomy_orig = ROOT.plannedeconomy }
+		set_temp_variable = { statecapitalism_orig = ROOT.statecapitalism }
+		set_temp_variable = { interventionism_orig = ROOT.interventionism }
+		set_temp_variable = { nointerventionism_orig = ROOT.nointerventionism }
+		
+		set_temp_variable = { actual_growth_factor = 1 }
+		subtract_from_temp_variable = { actual_growth_factor = ROOT.plannedeconomy }
+		multiply_temp_variable = { actual_growth_factor = 0.1 }
+		set_temp_variable = { drift_growth_factor = actual_growth_factor }
+		divide_temp_variable = { drift_growth_factor = 3 }
+		
+		add_to_variable = { ROOT.interventionism = actual_growth_factor } 
+		subtract_from_variable = { ROOT.plannedeconomy = drift_growth_factor } 
+		subtract_from_variable = { ROOT.statecapitalism = drift_growth_factor } 
+		subtract_from_variable = { ROOT.nointerventionism = drift_growth_factor }
+		
+		if = {
+			limit = { check_variable = { ROOT.interventionism > 1 } } 
+			set_variable = { ROOT.plannedeconomy = plannedeconomy_orig } 
+			set_variable = { ROOT.statecapitalism = statecapitalism_orig } 
+			set_variable = { ROOT.interventionism = interventionism_orig } 
+			set_variable = { ROOT.nointerventionism = nointerventionism_orig } 
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	trigger = {
+		check_variable = { ROOT.interventionpropaganda = 1 }
+	}
+}
+
+country_event = {
+	id = policy_encourage.8 # The unique id. nuke_dropped is the namespace, which can be used for better organization.
+        title = policy_encourage.8.t # The localisable text that appears as a header
+        desc = policy_encourage.8.d # The localisable main text body that appears
+	picture = GFX_report_event_election_vote # Image displayed alongside the text.
+
+	hidden = yes # Optional : if set to "yes" no one will see the event
+	option = { # This is an example of an option that has no function
+		name = policy_encourage.0.a # The localisable text that appears on the button.
+	}
+	immediate = {
+		set_temp_variable = { plannedeconomy_orig = ROOT.plannedeconomy }
+		set_temp_variable = { statecapitalism_orig = ROOT.statecapitalism }
+		set_temp_variable = { interventionism_orig = ROOT.interventionism }
+		set_temp_variable = { nointerventionism_orig = ROOT.nointerventionism }
+		
+		set_temp_variable = { actual_growth_factor = 1 }
+		subtract_from_temp_variable = { actual_growth_factor = ROOT.plannedeconomy }
+		multiply_temp_variable = { actual_growth_factor = 0.1 }
+		set_temp_variable = { drift_growth_factor = actual_growth_factor }
+		divide_temp_variable = { drift_growth_factor = 3 }
+		 
+		add_to_variable = { ROOT.nointerventionism = actual_growth_factor } 
+		subtract_from_variable = { ROOT.plannedeconomy = drift_growth_factor } 
+		subtract_from_variable = { ROOT.statecapitalism = drift_growth_factor } 
+		subtract_from_variable = { ROOT.interventionism = drift_growth_factor } 
+		
+		if = {
+			limit = { check_variable = { ROOT.nointerventionism > 1 } } 
+			set_variable = { ROOT.plannedeconomy = plannedeconomy_orig } 
+			set_variable = { ROOT.statecapitalism = statecapitalism_orig } 
+			set_variable = { ROOT.interventionism = interventionism_orig } 
+			set_variable = { ROOT.nointerventionism = nointerventionism_orig } 
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	trigger = {
+		check_variable = { ROOT.nipropaganda = 1 }
+	}
+}

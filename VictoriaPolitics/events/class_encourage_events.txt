@@ -1,0 +1,130 @@
+add_namespace = vc_class_encourage
+
+country_event = {
+	id = vc_class_encourage.0 # The unique id. nuke_dropped is the namespace, which can be used for better organization.
+        title = vc_class_encourage.0.t # The localisable text that appears as a header
+        desc = vc_class_encourage.0.d # The localisable main text body that appears
+	picture = GFX_report_event_election_vote # Image displayed alongside the text.
+	
+	hidden = yes # Optional : if set to "yes" no one will see the event
+	
+	option = { # This is an example of an option that has no function
+		name = vc_class_encourage.0.a # The localisable text that appears on the button.
+	}
+	
+	immediate = {
+		set_temp_variable = { actual_growth_factor = 1 }
+		subtract_from_temp_variable = { actual_growth_factor = ROOT.academia }
+		multiply_temp_variable = { actual_growth_factor = 0.1 }
+	
+		set_temp_variable = { actual_growth_factor = 1 }
+		subtract_from_temp_variable = { actual_growth_factor = ROOT.middleclass }
+		multiply_temp_variable = { actual_growth_factor = 0.1 }
+		set_temp_variable = { drift_growth_factor = actual_growth_factor }
+		divide_temp_variable = { drift_growth_factor = 2 }
+		
+		add_to_variable = { ROOT.middleclass = actual_growth_factor } 
+		subtract_from_variable = { ROOT.academia = drift_growth_factor } 
+		subtract_from_variable = { ROOT.capitalist = drift_growth_factor } 
+		
+		if = {
+			limit = { check_variable = { ROOT.middleclass > 1 } } 
+			set_variable = { ROOT.middleclass = middle_class_orig } 
+			set_variable = { ROOT.academia = acad_class_orig } 
+			set_variable = { ROOT.capitalist = cap_class_orig } 
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1 
+	}
+	
+	trigger = {
+		check_variable = { ROOT.encouragemiddle = 1 }
+	}
+}
+
+country_event = {
+	id = vc_class_encourage.1 # The unique id. nuke_dropped is the namespace, which can be used for better organization.
+        title = vc_class_encourage.1.t # The localisable text that appears as a header
+        desc = vc_class_encourage.1.d # The localisable main text body that appears
+	picture = GFX_report_event_election_vote # Image displayed alongside the text.
+
+	hidden = yes # Optional : if set to "yes" no one will see the event
+	option = { # This is an example of an option that has no function
+		name = vc_class_encourage.0.a # The localisable text that appears on the button.
+	}
+	immediate = {
+		set_temp_variable = { middle_class_orig = ROOT.middleclass }
+		set_temp_variable = { acad_class_orig = ROOT.academia }
+		set_temp_variable = { cap_class_orig = ROOT.capitalist }
+		
+		set_temp_variable = { actual_growth_factor = 1 }
+		subtract_from_temp_variable = { actual_growth_factor = ROOT.academia }
+		multiply_temp_variable = { actual_growth_factor = 0.1 }
+		set_temp_variable = { drift_growth_factor = actual_growth_factor }
+		divide_temp_variable = { drift_growth_factor = 2 }
+		
+		add_to_variable = { ROOT.academia = actual_growth_factor } 
+		subtract_from_variable = { ROOT.capitalist = drift_growth_factor} 
+		subtract_from_variable = { ROOT.middleclass = drift_growth_factor } 
+		
+		
+		if = {
+			limit = { check_variable = { ROOT.academia > 1 } } 
+			set_variable = { ROOT.middleclass = middle_class_orig } 
+			set_variable = { ROOT.academia = acad_class_orig } 
+			set_variable = { ROOT.capitalist = cap_class_orig } 
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	trigger = {
+		check_variable = { ROOT.encourageacademia = 1 }
+	}
+}
+
+country_event = {
+	id = vc_class_encourage.2 # The unique id. nuke_dropped is the namespace, which can be used for better organization.
+        title = vc_class_encourage.2.t # The localisable text that appears as a header
+        desc = vc_class_encourage.2.d # The localisable main text body that appears
+	picture = GFX_report_event_election_vote # Image displayed alongside the text.
+
+	hidden = yes # Optional : if set to "yes" no one will see the event
+	option = { # This is an example of an option that has no function
+		name = vc_class_encourage.0.a # The localisable text that appears on the button.
+	}
+	immediate = {
+		set_temp_variable = { middle_class_orig = ROOT.middleclass }
+		set_temp_variable = { acad_class_orig = ROOT.academia }
+		set_temp_variable = { cap_class_orig = ROOT.capitalist }
+		
+		set_temp_variable = { actual_growth_factor = 1 }
+		subtract_from_temp_variable = { actual_growth_factor = ROOT.capitalist }
+		multiply_temp_variable = { actual_growth_factor = 0.1 }
+		set_temp_variable = { drift_growth_factor = actual_growth_factor }
+		divide_temp_variable = { drift_growth_factor = 2 }
+		
+		add_to_variable = { ROOT.capitalist = actual_growth_factor } 
+		subtract_from_variable = { ROOT.academia = drift_growth_factor } 
+		subtract_from_variable = { ROOT.middleclass = drift_growth_factor } 
+		
+		if = {
+			limit = { check_variable = { ROOT.capitalist > 1 } } 
+			set_variable = { ROOT.middleclass = middle_class_orig } 
+			set_variable = { ROOT.academia = acad_class_orig } 
+			set_variable = { ROOT.capitalist = cap_class_orig } 
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1 
+	}
+	
+	trigger = {
+		check_variable = { ROOT.encouragecapitalist = 1 }
+	}
+}

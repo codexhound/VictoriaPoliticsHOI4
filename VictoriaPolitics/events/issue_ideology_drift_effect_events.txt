@@ -1,0 +1,637 @@
+add_namespace = vc_policy_idea_drift
+
+country_event = {
+	id = vc_policy_idea_drift.0 # The unique id. nuke_dropped is the namespace, which can be used for better organization.
+        title = vc_policy_idea_drift.0.t # The localisable text that appears as a header
+        desc = vc_policy_idea_driftt.0.d # The localisable main text body that appears
+	picture = GFX_report_event_election_vote # Image displayed alongside the text.
+
+	hidden = yes # Optional : if set to "yes" no one will see the event
+	option = { # This is an example of an option that has no function
+		name = vc_policy_idea_drift.0.a # The localisable text that appears on the button.
+	}
+	immediate = {
+		set_temp_variable = { jingotemp = ROOT.jingoism }
+		multiply_temp_variable = { jingotemp = -0.01 }
+		set_temp_variable = { promiltemp = ROOT.promilitary }
+		multiply_temp_variable = { promiltemp = -0.005 }
+		set_temp_variable = { antimiltemp = ROOT.antimilitary }
+		multiply_temp_variable = { antimiltemp = 0.005 }
+		set_temp_variable = { pacifisttemp = ROOT.pacifist }
+		multiply_temp_variable = { pacifisttemp = 0.01 }
+		
+		add_to_temp_variable = { jingotemp = promiltemp }
+		add_to_temp_variable = { jingotemp = antimiltemp }
+		add_to_temp_variable = { jingotemp = pacifisttemp }
+		
+		
+		set_temp_variable = { nointertemp = ROOT.nointerventionism }
+		multiply_temp_variable = { nointertemp = -0.01 }
+		set_temp_variable = { intertemp = ROOT.interventionism }
+		multiply_temp_variable = { intertemp = -0.005 }
+		set_temp_variable = { statecaptemp = ROOT.statecapitalism }
+		multiply_temp_variable = { statecaptemp = 0.005 }
+		set_temp_variable = { planecontemp = ROOT.plannedeconomy }
+		multiply_temp_variable = { planecontemp = 0.01 }
+		
+		add_to_temp_variable = { nointertemp = intertemp }
+		add_to_temp_variable = { nointertemp = statecaptemp }
+		add_to_temp_variable = { nointertemp = planecontempp }
+		
+		set_temp_variable = { freetradetemp = ROOT.freetrade }
+		multiply_temp_variable = { freetradetemp = 0.01 }
+		set_temp_variable = { prottemp = ROOT.protectionism }
+		multiply_temp_variable = { prottemp = -0.01 }
+		
+		add_to_temp_variable = {freetradetemp = prottemp }
+		
+		add_to_temp_variable = {freetradetemp = nointertemp }
+		add_to_temp_variable = {freetradetemp = jingotemp }
+		
+		if = {
+			limit = {
+				OR = {
+					has_government = fascism
+					has_government = neutrality
+					has_government = communism
+				}
+			}
+			multiply_temp_variable = {freetradetemp = 0.5 }
+		}
+		
+		set_temp_variable = { actual_growth_factor = 1 }
+		subtract_from_temp_variable = { actual_growth_factor = party_popularity@social_democracy }
+		multiply_temp_variable = { actual_growth_factor = freetradetemp }
+		
+		set_variable = { issue_social_drift = actual_growth_factor }
+		add_popularity = {
+			popularity = actual_growth_factor
+			ideology = social_democracy
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	trigger = {
+		always = yes
+	}
+}
+
+country_event = {
+	id = vc_policy_idea_drift.1 # The unique id. nuke_dropped is the namespace, which can be used for better organization.
+        title = vc_policy_idea_drift.1.t # The localisable text that appears as a header
+        desc = vc_policy_idea_drift.1.d # The localisable main text body that appears
+	picture = GFX_report_event_election_vote # Image displayed alongside the text.
+
+	hidden = yes # Optional : if set to "yes" no one will see the event
+	option = { # This is an example of an option that has no function
+		name = vc_policy_idea_drift.0.a # The localisable text that appears on the button.
+	}
+	immediate = {
+		set_temp_variable = { jingotemp = ROOT.jingoism }
+		multiply_temp_variable = { jingotemp = 0.01 }
+		set_temp_variable = { promiltemp = ROOT.promilitary }
+		multiply_temp_variable = { promiltemp = 0.005 }
+		set_temp_variable = { antimiltemp = ROOT.antimilitary }
+		multiply_temp_variable = { antimiltemp = -0.005 }
+		set_temp_variable = { pacifisttemp = ROOT.pacifist }
+		multiply_temp_variable = { pacifisttemp = -0.01 }
+		
+		add_to_temp_variable = { jingotemp = promiltemp }
+		add_to_temp_variable = { jingotemp = antimiltemp }
+		add_to_temp_variable = { jingotemp = pacifisttemp }
+		
+		
+		set_temp_variable = { nointertemp = ROOT.nointerventionism }
+		multiply_temp_variable = { nointertemp = -0.005 }
+		set_temp_variable = { intertemp = ROOT.interventionism }
+		multiply_temp_variable = { intertemp = 0.005 }
+		set_temp_variable = { statecaptemp = ROOT.statecapitalism }
+		multiply_temp_variable = { statecaptemp = 0.01 }
+		set_temp_variable = { planecontemp = ROOT.plannedeconomy }
+		multiply_temp_variable = { planecontemp = 0 }
+		
+		add_to_temp_variable = { nointertemp = intertemp }
+		add_to_temp_variable = { nointertemp = statecaptemp }
+		add_to_temp_variable = { nointertemp = planecontempp }
+		
+		set_temp_variable = { freetradetemp = ROOT.freetrade }
+		multiply_temp_variable = { freetradetemp = -0.01 }
+		set_temp_variable = { prottemp = ROOT.protectionism }
+		multiply_temp_variable = { prottemp = 0.01 }
+		
+		add_to_temp_variable = {freetradetemp = prottemp }
+		
+		add_to_temp_variable = {freetradetemp = nointertemp }
+		add_to_temp_variable = {freetradetemp = jingotemp }
+		
+		if = {
+			limit = {
+				OR = {
+					has_government = fascism
+					has_government = neutrality
+					has_government = communism
+				}
+			}
+			multiply_temp_variable = {freetradetemp = 0.4 }
+		}
+		
+		set_temp_variable = { actual_growth_factor = 1 }
+		subtract_from_temp_variable = { actual_growth_factor = party_popularity@reactionary_democracy }
+		multiply_temp_variable = { actual_growth_factor = freetradetemp }
+		
+		set_variable = { issue_reactionary_drift = actual_growth_factor }
+		add_popularity = {
+			popularity = actual_growth_factor
+			ideology = reactionary_democracy
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	trigger = {
+		always = yes
+	}
+}
+
+country_event = {
+	id = vc_policy_idea_drift.2 # The unique id. nuke_dropped is the namespace, which can be used for better organization.
+        title = vc_policy_idea_drift.2.t # The localisable text that appears as a header
+        desc = vc_policy_idea_drift.2.d # The localisable main text body that appears
+	picture = GFX_report_event_election_vote # Image displayed alongside the text.
+
+	hidden = yes # Optional : if set to "yes" no one will see the event
+	option = { # This is an example of an option that has no function
+		name = vc_policy_idea_drift.0.a # The localisable text that appears on the button.
+	}
+	immediate = {
+		set_temp_variable = { jingotemp = ROOT.jingoism }
+		multiply_temp_variable = { jingotemp = 0.0025 }
+		set_temp_variable = { promiltemp = ROOT.promilitary }
+		multiply_temp_variable = { promiltemp = 0.005 }
+		set_temp_variable = { antimiltemp = ROOT.antimilitary }
+		multiply_temp_variable = { antimiltemp = -0.005 }
+		set_temp_variable = { pacifisttemp = ROOT.pacifist }
+		multiply_temp_variable = { pacifisttemp = -0.01 }
+		
+		add_to_temp_variable = { jingotemp = promiltemp }
+		add_to_temp_variable = { jingotemp = antimiltemp }
+		add_to_temp_variable = { jingotemp = pacifisttemp }
+		
+		
+		set_temp_variable = { nointertemp = ROOT.nointerventionism }
+		multiply_temp_variable = { nointertemp = -0.005 }
+		set_temp_variable = { intertemp = ROOT.interventionism }
+		multiply_temp_variable = { intertemp = 0.01 }
+		set_temp_variable = { statecaptemp = ROOT.statecapitalism }
+		multiply_temp_variable = { statecaptemp = 0.005 }
+		set_temp_variable = { planecontemp = ROOT.plannedeconomy }
+		multiply_temp_variable = { planecontemp = 0.0025 }
+		
+		add_to_temp_variable = { nointertemp = intertemp }
+		add_to_temp_variable = { nointertemp = statecaptemp }
+		add_to_temp_variable = { nointertemp = planecontempp }
+		
+		set_temp_variable = { freetradetemp = ROOT.freetrade }
+		multiply_temp_variable = { freetradetemp = -0.005 }
+		set_temp_variable = { prottemp = ROOT.protectionism }
+		multiply_temp_variable = { prottemp = 0.005 }
+		
+		add_to_temp_variable = {freetradetemp = prottemp }
+		
+		add_to_temp_variable = {freetradetemp = nointertemp }
+		add_to_temp_variable = {freetradetemp = jingotemp }
+		
+		if = {
+			limit = {
+				OR = {
+					has_government = fascism
+					has_government = neutrality
+					has_government = communism
+				}
+			}
+			multiply_temp_variable = {freetradetemp = 0.4 }
+		}
+		
+		set_temp_variable = { actual_growth_factor = 1 }
+		subtract_from_temp_variable = { actual_growth_factor = party_popularity@democratic }
+		multiply_temp_variable = { actual_growth_factor = freetradetemp }
+		set_variable = { issue_democratic_drift = actual_growth_factor }
+		add_popularity = {
+			popularity = actual_growth_factor
+			ideology = democratic
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	trigger = {
+		always = yes
+	}
+}
+
+country_event = {
+	id = vc_policy_idea_drift.3 # The unique id. nuke_dropped is the namespace, which can be used for better organization.
+        title = vc_policy_idea_driftt.3.t # The localisable text that appears as a header
+        desc = vc_policy_idea_drift.3.d # The localisable main text body that appears
+	picture = GFX_report_event_election_vote # Image displayed alongside the text.
+
+	hidden = yes # Optional : if set to "yes" no one will see the event
+	option = { # This is an example of an option that has no function
+		name = vc_policy_idea_drift.0.a # The localisable text that appears on the button.
+	}
+	immediate = {
+		set_temp_variable = { jingotemp = ROOT.jingoism }
+		multiply_temp_variable = { jingotemp = 0.005 }
+		set_temp_variable = { promiltemp = ROOT.promilitary }
+		multiply_temp_variable = { promiltemp = 0.01 }
+		set_temp_variable = { antimiltemp = ROOT.antimilitary }
+		multiply_temp_variable = { antimiltemp = -0.005 }
+		set_temp_variable = { pacifisttemp = ROOT.pacifist }
+		multiply_temp_variable = { pacifisttemp = -0.01 }
+		
+		add_to_temp_variable = { jingotemp = promiltemp }
+		add_to_temp_variable = { jingotemp = antimiltemp }
+		add_to_temp_variable = { jingotemp = pacifisttemp }
+
+		
+		set_temp_variable = { nointertemp = ROOT.nointerventionism }
+		multiply_temp_variable = { nointertemp = 0.01 }
+		set_temp_variable = { intertemp = ROOT.interventionism }
+		multiply_temp_variable = { intertemp = 0.005 }
+		set_temp_variable = { statecaptemp = ROOT.statecapitalism }
+		multiply_temp_variable = { statecaptemp = -0.005 }
+		set_temp_variable = { planecontemp = ROOT.plannedeconomy }
+		multiply_temp_variable = { planecontemp = -0.01 }
+		
+		add_to_temp_variable = { nointertemp = intertemp }
+		add_to_temp_variable = { nointertemp = statecaptemp }
+		add_to_temp_variable = { nointertemp = planecontempp }
+		
+		set_temp_variable = { freetradetemp = ROOT.freetrade }
+		multiply_temp_variable = { freetradetemp = 0.005 }
+		set_temp_variable = { prottemp = ROOT.protectionism }
+		multiply_temp_variable = { prottemp = -0.005 }
+		
+		add_to_temp_variable = {freetradetemp = prottemp }
+		
+		add_to_temp_variable = {freetradetemp = nointertemp }
+		add_to_temp_variable = {freetradetemp = jingotemp }
+		
+		if = {
+			limit = {
+				OR = {
+					has_government = fascism
+					has_government = neutrality
+					has_government = communism
+				}
+			}
+			multiply_temp_variable = {freetradetemp = 0.4 }
+		}
+		
+		set_temp_variable = { actual_growth_factor = 1 }
+		subtract_from_temp_variable = { actual_growth_factor = party_popularity@liberal_democracy }
+		multiply_temp_variable = { actual_growth_factor = freetradetemp }
+		set_variable = { issue_liberal_drift = actual_growth_factor }
+		
+		add_popularity = {
+			popularity = actual_growth_factor
+			ideology = liberal_democracy
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	trigger = {
+		always = yes
+	}
+}
+
+country_event = {
+	id = vc_policy_idea_drift.4 # The unique id. nuke_dropped is the namespace, which can be used for better organization.
+        title = vc_policy_idea_drift.4.t # The localisable text that appears as a header
+        desc = vc_policy_idea_drift.4.d # The localisable main text body that appears
+	picture = GFX_report_event_election_vote # Image displayed alongside the text.
+
+	hidden = yes # Optional : if set to "yes" no one will see the event
+	option = { # This is an example of an option that has no function
+		name = vc_policy_idea_drift.0.a # The localisable text that appears on the button.
+	}
+	immediate = {
+		set_temp_variable = { jingotemp = ROOT.jingoism }
+		multiply_temp_variable = { jingotemp = 0.005 }
+		set_temp_variable = { promiltemp = ROOT.promilitary }
+		multiply_temp_variable = { promiltemp = 0.01 }
+		set_temp_variable = { antimiltemp = ROOT.antimilitary }
+		multiply_temp_variable = { antimiltemp = -0.005 }
+		set_temp_variable = { pacifisttemp = ROOT.pacifist }
+		multiply_temp_variable = { pacifisttemp = -0.01 }
+		
+		add_to_temp_variable = { jingotemp = promiltemp }
+		add_to_temp_variable = { jingotemp = antimiltemp }
+		add_to_temp_variable = { jingotemp = pacifisttemp }
+		
+		set_temp_variable = { nointertemp = ROOT.nointerventionism }
+		multiply_temp_variable = { nointertemp = 0.01 }
+		set_temp_variable = { intertemp = ROOT.interventionism }
+		multiply_temp_variable = { intertemp = 0.005 }
+		set_temp_variable = { statecaptemp = ROOT.statecapitalism }
+		multiply_temp_variable = { statecaptemp = -0.005 }
+		set_temp_variable = { planecontemp = ROOT.plannedeconomy }
+		multiply_temp_variable = { planecontemp = -0.01 }
+		
+		add_to_temp_variable = { nointertemp = intertemp }
+		add_to_temp_variable = { nointertemp = statecaptemp }
+		add_to_temp_variable = { nointertemp = planecontempp }
+		
+		set_temp_variable = { freetradetemp = ROOT.freetrade }
+		multiply_temp_variable = { freetradetemp = 0.011 }
+		set_temp_variable = { prottemp = ROOT.protectionism }
+		multiply_temp_variable = { prottemp = -0.011 }
+		
+		add_to_temp_variable = {freetradetemp = prottemp }
+		
+		add_to_temp_variable = {freetradetemp = nointertemp }
+		add_to_temp_variable = {freetradetemp = jingotemp }
+
+		if = {
+			limit = {
+				OR = {
+					has_government = fascism
+					has_government = neutrality
+					has_government = communism
+				}
+			}
+			multiply_temp_variable = {freetradetemp = 0.4 }
+		}
+		
+		set_temp_variable = { actual_growth_factor = 1 }
+		subtract_from_temp_variable = { actual_growth_factor = party_popularity@anarcho_liberal_democracy }
+		multiply_temp_variable = { actual_growth_factor = freetradetemp }
+		set_variable = { issue_anarcho_drift = actual_growth_factor }
+		
+		add_popularity = {
+			popularity = actual_growth_factor
+			ideology = anarcho_liberal_democracy
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	trigger = {
+		always = yes
+	}
+}
+
+country_event = {
+	id = vc_policy_idea_drift.5 # The unique id. nuke_dropped is the namespace, which can be used for better organization.
+        title = vc_policy_idea_drift.5.t # The localisable text that appears as a header
+        desc = vc_policy_idea_drift.5.d # The localisable main text body that appears
+	picture = GFX_report_event_election_vote # Image displayed alongside the text.
+
+	hidden = yes # Optional : if set to "yes" no one will see the event
+	option = { # This is an example of an option that has no function
+		name = vc_policy_idea_drift.0.a # The localisable text that appears on the button.
+	}
+	immediate = {
+		set_temp_variable = { jingotemp = ROOT.jingoism }
+		multiply_temp_variable = { jingotemp = 0.005 }
+		set_temp_variable = { promiltemp = ROOT.promilitary }
+		multiply_temp_variable = { promiltemp = 0.01 }
+		set_temp_variable = { antimiltemp = ROOT.antimilitary }
+		multiply_temp_variable = { antimiltemp = -0.005 }
+		set_temp_variable = { pacifisttemp = ROOT.pacifist }
+		multiply_temp_variable = { pacifisttemp = -0.01 }
+		
+		add_to_temp_variable = { jingotemp = promiltemp }
+		add_to_temp_variable = { jingotemp = antimiltemp }
+		add_to_temp_variable = { jingotemp = pacifisttemp }
+		
+		
+		set_temp_variable = { nointertemp = ROOT.nointerventionism }
+		multiply_temp_variable = { nointertemp = -0.01 }
+		set_temp_variable = { intertemp = ROOT.interventionism }
+		multiply_temp_variable = { intertemp = -0.005 }
+		set_temp_variable = { statecaptemp = ROOT.statecapitalism }
+		multiply_temp_variable = { statecaptemp = 0.005 }
+		set_temp_variable = { planecontemp = ROOT.plannedeconomy }
+		multiply_temp_variable = { planecontemp = 0.01 }
+		
+		add_to_temp_variable = { nointertemp = intertemp }
+		add_to_temp_variable = { nointertemp = statecaptemp }
+		add_to_temp_variable = { nointertemp = planecontempp }
+		
+		set_temp_variable = { freetradetemp = ROOT.freetrade }
+		multiply_temp_variable = { freetradetemp = -0.01 }
+		set_temp_variable = { prottemp = ROOT.protectionism }
+		multiply_temp_variable = { prottemp = 0.01 }
+		
+		add_to_temp_variable = {freetradetemp = prottemp }
+		
+		add_to_temp_variable = {freetradetemp = nointertemp }
+		add_to_temp_variable = {freetradetemp = jingotemp }
+
+		if = {
+			limit = {
+				NOT = {
+					OR = {
+						has_government = fascism
+						has_government = neutrality
+						has_government = communism
+					}
+				}
+			}
+			multiply_temp_variable = {freetradetemp = 0.4 }
+		}
+		
+		set_temp_variable = { actual_growth_factor = 1 }
+		subtract_from_temp_variable = { actual_growth_factor = party_popularity@communism }
+		multiply_temp_variable = { actual_growth_factor = freetradetemp }
+		set_variable = { issue_communism_drift = actual_growth_factor }
+		
+		add_popularity = {
+			popularity = actual_growth_factor
+			ideology = communism
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	trigger = {
+		always = yes
+	}
+}
+
+country_event = {
+	id = vc_policy_idea_drift.6 # The unique id. nuke_dropped is the namespace, which can be used for better organization.
+        title = vc_policy_idea_drift.6.t # The localisable text that appears as a header
+        desc = vc_policy_idea_drift.6.d # The localisable main text body that appears
+	picture = GFX_report_event_election_vote # Image displayed alongside the text.
+
+	hidden = yes # Optional : if set to "yes" no one will see the event
+	option = { # This is an example of an option that has no function
+		name = vc_policy_idea_drift.0.a # The localisable text that appears on the button.
+	}
+	immediate = {
+		set_temp_variable = { jingotemp = ROOT.jingoism }
+		multiply_temp_variable = { jingotemp = 0.01 }
+		set_temp_variable = { promiltemp = ROOT.promilitary }
+		multiply_temp_variable = { promiltemp = 0.005 }
+		set_temp_variable = { antimiltemp = ROOT.antimilitary }
+		multiply_temp_variable = { antimiltemp = -0.005 }
+		set_temp_variable = { pacifisttemp = ROOT.pacifist }
+		multiply_temp_variable = { pacifisttemp = -0.01 }
+		
+		add_to_temp_variable = { jingotemp = promiltemp }
+		add_to_temp_variable = { jingotemp = antimiltemp }
+		add_to_temp_variable = { jingotemp = pacifisttemp }
+		
+		
+		set_temp_variable = { nointertemp = ROOT.nointerventionism }
+		multiply_temp_variable = { nointertemp = -0.01 }
+		set_temp_variable = { intertemp = ROOT.interventionism }
+		multiply_temp_variable = { intertemp = -0.005 }
+		set_temp_variable = { statecaptemp = ROOT.statecapitalism }
+		multiply_temp_variable = { statecaptemp = 0.005 }
+		set_temp_variable = { planecontemp = ROOT.plannedeconomy }
+		multiply_temp_variable = { planecontemp = 0.01 }
+		
+		add_to_temp_variable = { nointertemp = intertemp }
+		add_to_temp_variable = { nointertemp = statecaptemp }
+		add_to_temp_variable = { nointertemp = planecontempp }
+		
+		set_temp_variable = { freetradetemp = ROOT.freetrade }
+		multiply_temp_variable = { freetradetemp = -0.01 }
+		set_temp_variable = { prottemp = ROOT.protectionism }
+		multiply_temp_variable = { prottemp = 0.01 }
+		
+		add_to_temp_variable = {freetradetemp = prottemp }
+		
+		add_to_temp_variable = {freetradetemp = nointertemp }
+		add_to_temp_variable = {freetradetemp = jingotemp }
+
+		if = {
+			limit = {
+				NOT = {
+					OR = {
+						has_government = fascism
+						has_government = neutrality
+						has_government = communism
+					}
+				}
+			}
+			multiply_temp_variable = {freetradetemp = 0.4 }
+		}
+		
+		set_temp_variable = { actual_growth_factor = 1 }
+		subtract_from_temp_variable = { actual_growth_factor = party_popularity@fascism }
+		multiply_temp_variable = { actual_growth_factor = freetradetemp }
+		set_variable = { issue_fascism_drift = actual_growth_factor }
+		
+		add_popularity = {
+			popularity = actual_growth_factor
+			ideology = fascism
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	trigger = {
+		always = yes
+	}
+}
+
+country_event = {
+	id = vc_policy_idea_drift.7 # The unique id. nuke_dropped is the namespace, which can be used for better organization.
+        title = vc_policy_idea_drift.7.t # The localisable text that appears as a header
+        desc = vc_policy_idea_drift.7.d # The localisable main text body that appears
+	picture = GFX_report_event_election_vote # Image displayed alongside the text.
+
+	hidden = yes # Optional : if set to "yes" no one will see the event
+	option = { # This is an example of an option that has no function
+		name = vc_policy_idea_drift.0.a # The localisable text that appears on the button.
+	}
+	immediate = {
+		set_temp_variable = { jingotemp = ROOT.jingoism }
+		multiply_temp_variable = { jingotemp = 0.005 }
+		set_temp_variable = { promiltemp = ROOT.promilitary }
+		multiply_temp_variable = { promiltemp = 0.01 }
+		set_temp_variable = { antimiltemp = ROOT.antimilitary }
+		multiply_temp_variable = { antimiltemp = -0.005 }
+		set_temp_variable = { pacifisttemp = ROOT.pacifist }
+		multiply_temp_variable = { pacifisttemp = -0.01 }
+		
+		add_to_temp_variable = { jingotemp = promiltemp }
+		add_to_temp_variable = { jingotemp = antimiltemp }
+		add_to_temp_variable = { jingotemp = pacifisttemp }
+		
+		
+		set_temp_variable = { nointertemp = ROOT.nointerventionism }
+		multiply_temp_variable = { nointertemp = 0 }
+		set_temp_variable = { intertemp = ROOT.interventionism }
+		multiply_temp_variable = { intertemp = 0.005 }
+		set_temp_variable = { statecaptemp = ROOT.statecapitalism }
+		multiply_temp_variable = { statecaptemp = 0.01 }
+		set_temp_variable = { planecontemp = ROOT.plannedeconomy }
+		multiply_temp_variable = { planecontemp = 0.005 }
+		
+		add_to_temp_variable = { nointertemp = intertemp }
+		add_to_temp_variable = { nointertemp = statecaptemp }
+		add_to_temp_variable = { nointertemp = planecontempp }
+		
+		set_temp_variable = { freetradetemp = ROOT.freetrade }
+		multiply_temp_variable = { freetradetemp = 0.0 }
+		set_temp_variable = { prottemp = ROOT.protectionism }
+		multiply_temp_variable = { prottemp = -0.005 }
+		
+		add_to_temp_variable = {freetradetemp = prottemp }
+		
+		add_to_temp_variable = {freetradetemp = nointertemp }
+		add_to_temp_variable = {freetradetemp = jingotemp }
+
+		if = {
+			limit = {
+				NOT = {
+					OR = {
+						has_government = fascism
+						has_government = neutrality
+						has_government = communism
+					}
+				}
+			}
+			multiply_temp_variable = {freetradetemp = 0.6 }
+		}
+		
+		set_temp_variable = { actual_growth_factor = 1 }
+		subtract_from_temp_variable = { actual_growth_factor = party_popularity@neutrality }
+		multiply_temp_variable = { actual_growth_factor = freetradetemp }
+		set_variable = { issue_neutrality_drift = actual_growth_factor }
+		
+		add_popularity = {
+			popularity = actual_growth_factor
+			ideology = neutrality
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1 
+	}
+	
+	trigger = {
+		always = yes
+	}
+}

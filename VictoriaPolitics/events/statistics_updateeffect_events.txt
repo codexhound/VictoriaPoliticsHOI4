@@ -1,0 +1,2760 @@
+add_namespace = vc_update
+
+country_event = {
+	id = vc_updates.0 # The unique id. nuke_dropped is the namespace, which can be used for better organization.
+        title = vc_update.0.t # The localisable text that appears as a header
+        desc = vc_update.0.d # The localisable main text body that appears
+	picture = GFX_report_event_election_vote # Image displayed alongside the text.
+
+	hidden = yes # Optional : if set to "yes" no one will see the event
+	option = { # This is an example of an option that has no function
+		name = vc_update.0.a # The localisable text that appears on the button.
+	}
+	immediate = {
+		set_temp_variable = { researchtemp = ROOT.middleclass }
+		set_temp_variable = { researchacadtemp = ROOT.academia }
+		set_temp_variable = { researchcaptemp = ROOT.capitalist }
+		
+		set_temp_variable = { productiontemp = ROOT.middleclass }
+		set_temp_variable = { productionacadtemp = ROOT.academia }
+		set_temp_variable = { productioncaptemp = ROOT.capitalist }
+		
+		set_temp_variable = { resourcetemp = ROOT.middleclass }
+		set_temp_variable = { resourceacadtemp = ROOT.academia }
+		set_temp_variable = { resourcecaptemp = ROOT.capitalist }
+		
+		set_temp_variable = { constructiontemp = ROOT.middleclass }
+		set_temp_variable = { constructionacadtemp = ROOT.academia }
+		set_temp_variable = { constructioncaptemp = ROOT.capitalist }
+		
+		multiply_temp_variable = { researchtemp = 0.075 }
+		multiply_temp_variable = { researchacadtemp = -0.50 }
+		multiply_temp_variable = { researchcaptemp = 0.075 }
+		
+		multiply_temp_variable = { productiontemp = 0.15 }
+		multiply_temp_variable = { productionacadtemp = -0.15 }
+		multiply_temp_variable = { productioncaptemp = 0.05 }
+		
+		multiply_temp_variable = { resourcetemp = 0.15 }
+		multiply_temp_variable = { resourceacadtemp = -0.15 }
+		
+		multiply_temp_variable = { constructiontemp = 0 }
+		multiply_temp_variable = { constructionacadtemp = -0.10 }
+		multiply_temp_variable = { constructioncaptemp = 0.30 }
+		
+		add_to_temp_variable = { researchtemp = researchacadtemp }
+		add_to_temp_variable = { researchtemp = researchcaptemp }
+		
+		add_to_temp_variable = { productiontemp = productionacadtemp }
+		add_to_temp_variable = { productiontemp = productioncaptemp }
+		
+		add_to_temp_variable = { resourcetemp = resourceacadtemp }
+		
+		add_to_temp_variable = { constructiontemp = constructionacadtemp }
+		add_to_temp_variable = { constructiontemp = constructioncaptemp }
+		
+		set_variable = { job_construction_speed_modifier = constructiontemp }
+		set_variable = { job_research_speed_modifier = researchtemp }
+		set_variable = { job_production_eff_gain_modifier = productiontemp }
+		set_variable = { job_resource_efficiency_modifer = resourcetemp }
+
+		
+		
+		set_temp_variable = { researchtemp = ROOT.freetrade }
+		set_temp_variable = { productiontemp = ROOT.protectionism }
+		multiply_temp_variable = { productiontemp = 0.05 }
+		multiply_temp_variable = { researchtemp = 0.05 }
+		
+		set_variable = { trade_production_speed_modifier = productiontemp }
+		set_variable = { trade_research_speed_modifier = researchtemp }
+		
+		
+		
+		set_temp_variable = { resourcegaintemp = ROOT.nointerventionism }
+		set_temp_variable = { constructiontemp = ROOT.nointerventionism }
+		set_temp_variable = { resourcegainlimitedtemp = ROOT.interventionism }
+		set_temp_variable = { constructionlimitedtemp = ROOT.interventionism }
+		set_temp_variable = { resourcegainstatecaptemp = ROOT.statecapitalism }
+		set_temp_variable = { constructionstatecaptemp = ROOT.statecapitalism }
+		set_temp_variable = { resourcegainplannedecontemp = ROOT.plannedeconomy }
+		set_temp_variable = { constructionplannedecontemp = ROOT.plannedeconomy }
+		multiply_temp_variable = { resourcegaintemp = 0.10 }
+		multiply_temp_variable = { constructiontemp = -0.05 }
+		multiply_temp_variable = { resourcegainlimitedtemp = 0.05 }
+		multiply_temp_variable = { constructionlimitedtemp = 0 }
+		multiply_temp_variable = { resourcegainstatecaptemp = -0.05 }
+		multiply_temp_variable = { constructionstatecaptempp = 0 }
+		multiply_temp_variable = { resourcegainplannedecontemp = -0.05 }
+		multiply_temp_variable = { constructionplannedecontemp = 0.10 }
+		
+		add_to_temp_variable = { resourcegaintemp = resourcegainlimitedtemp }
+		add_to_temp_variable = { resourcegaintemp = resourcegainstatecaptemp }
+		add_to_temp_variable = { resourcegaintemp = resourcegainplannedecontemp }
+		
+		add_to_temp_variable = { constructiontemp = resourcegainlimitedtemp }
+		add_to_temp_variable = { constructiontemp = constructionlimitedtemp }
+		add_to_temp_variable = { constructiontemp = constructionplannedecontemp }
+		
+		set_variable = { economic_construction_speed_modifier = constructiontemp }
+		set_variable = { economic_resource_efficiency_modifer = resourcegaintemp }
+		
+		
+		
+		set_temp_variable = { warsupporttemp = ROOT.jingoism }
+		set_temp_variable = { orgregentemp = ROOT.jingoism }
+		set_temp_variable = { reinforcetemp = ROOT.jingoism }
+		set_temp_variable = { supplyconsumptiontemp = ROOT.jingoism 
+		
+		set_temp_variable = { warsupportprotemp = ROOT.promilitary }
+		set_temp_variable = { orgregenprotemp = ROOT.promilitary }
+		set_temp_variable = { reinforceprotemp = ROOT.promilitary }
+		set_temp_variable = { supplyconsumptionprotemp = ROOT.promilitary 
+		
+		set_temp_variable = { warsupportantitemp = ROOT.antimilitary }
+		set_temp_variable = { orgregenantitemp = ROOT.antimilitary }
+		set_temp_variable = { reinforceantitemp = ROOT.antimilitary }
+		set_temp_variable = { supplyconsumptionantitemp = ROOT.antimilitary 
+		
+		set_temp_variable = { warsupportpactemp = ROOT.pacifism }
+		set_temp_variable = { orgregenpactemp = ROOT.pacifism }
+		set_temp_variable = { reinforcepactemp = ROOT.pacifism }
+		set_temp_variable = { supplyconsumptionpactemp = ROOT.pacifism } 
+		
+		if = 
+		{
+			limit = { NOT = { has_war = yes } }
+				
+			multiply_temp_variable = {  warsupporttemp = 0.1 }
+			multiply_temp_variable = {  warsupportprotemp = 0.05 }
+			multiply_temp_variable = {  warsupportantitemp = -0.05 }
+			multiply_temp_variable = {  warsupportpactemp = -0.1 }
+			add_to_temp_variable = { warsupporttemp = warsupportprotemp }
+				
+			set_temp_variable = { orgregentemp = 0 }
+			set_temp_variable = { reinforcetemp = 0 }
+			set_temp_variable = { supplyconsumptiontemp = 0 }
+		}
+		else_if = 
+		{
+			limit = { has_offensive_war = yes }
+				
+			multiply_temp_variable = {  warsupporttemp = 0.05 }
+			multiply_temp_variable = {  orgregentemp = 0.1 }
+			multiply_temp_variable = {  reinforcetemp = 0.1 }
+			multiply_temp_variable = {  supplyconsumptiontemp = 0.1 }
+				
+			multiply_temp_variable = {  warsupportprotemp = 0.025 }
+			multiply_temp_variable = {  orgregenprotemp = 0.05 }
+			multiply_temp_variable = {  reinforceprotemp = 0.05 }
+			multiply_temp_variable = {  supplyconsumptionprotemp = 0.05 }
+				
+			multiply_temp_variable = {  warsupportantitemp = -0.025 }
+			multiply_temp_variable = {  orgregenantitemp = -0.05 }
+			multiply_temp_variable = {  reinforceantitemp = -0.05 }
+			multiply_temp_variable = {  supplyconsumptionantitemp = 0.05 }
+				
+			multiply_temp_variable = {  warsupportpactemp = -0.05 }
+			multiply_temp_variable = {  orgregenpactemp = -0.1 }
+			multiply_temp_variable = {  reinforcepactemp = -0.1 }
+			multiply_temp_variable = {  supplyconsumptionpactemp = 0.1 }
+				
+			add_to_temp_variable = { warsupporttemp = warsupportprotemp }
+			add_to_temp_variable = { warsupporttemp = warsupportantitem }
+			add_to_temp_variable = { warsupporttemp = warsupportpactem }
+				
+			add_to_temp_variable = { orgregentemp = orgregenprotemp }
+			add_to_temp_variable = { orgregentemp = orgregenantitemp }
+			add_to_temp_variable = { orgregentemp = orgregenpactemp }
+				
+			add_to_temp_variable = { reinforcetemp = reinforceprotemp }
+			add_to_temp_variable = { reinforcetemp = reinforceantitemp }
+			add_to_temp_variable = { reinforcetemp = reinforcepactemp }
+				
+			add_to_temp_variable = { supplyconsumptiontemp = supplyconsumptionprotemp }
+			add_to_temp_variable = { supplyconsumptiontemp = supplyconsumptionantitemp }
+			add_to_temp_variable = { supplyconsumptiontemp = supplyconsumptionpactemp }
+		}
+		else_if = 
+		{
+			limit = { has_war = yes }
+				
+			multiply_temp_variable = {  warsupporttemp = 0.2 }
+			multiply_temp_variable = {  orgregentemp = 0.2 }
+			multiply_temp_variable = {  reinforcetemp = 0.2 }
+			multiply_temp_variable = {  supplyconsumptiontemp = 0.05 }
+				
+			multiply_temp_variable = {  warsupportprotemp = 0.1 }
+			multiply_temp_variable = {  orgregenprotemp = 0.1 }
+			multiply_temp_variable = {  reinforceprotemp = 0.1 }
+			multiply_temp_variable = {  supplyconsumptionprotemp = 0.025 }
+				
+			multiply_temp_variable = {  warsupportantitemp = 0.05 }
+				
+			multiply_temp_variable = {  warsupportpactemp = 0.025 }
+				
+			add_to_temp_variable = { warsupporttemp = warsupportprotemp }
+			add_to_temp_variable = { warsupporttemp = warsupportantitemp }
+			add_to_temp_variable = { warsupporttemp = warsupportpactemp }
+				
+			add_to_temp_variable = { orgregentemp = orgregenprotemp }
+				
+			add_to_temp_variable = { reinforcetemp = reinforceprotemp }
+				
+			add_to_temp_variable = { supplyconsumptiontemp = supplyconsumptionprotemp }
+				
+		}
+			
+		set_variable = { mil_war_support_weekly = warsupporttemp }
+		set_variable = { mil_army_morale_factor = orgregentemp }
+		set_variable = { mil_land_reinforce_rate = reinforcetemp }
+		set_variable = { mil_supply_consumption_factor = supplyconsumptiontemp }
+		
+		set_temp_variable = { production_eff_gain_full = job_production_eff_gain_modifier }
+		add_to_temp_variable = { production_eff_gain_full = trade_production_speed_modifier }
+		set_variable = { job_production_eff_gain_modifier = production_eff_gain_full }
+		
+		set_temp_variable = { construction_speed_full = job_construction_speed_modifier }
+		add_to_temp_variable = { construction_speed_full = economic_construction_speed_modifier }
+		set_variable = { job_construction_speed_modifier = construction_speed_full }
+		
+		set_temp_variable = { research_speed_full = job_research_speed_modifier }
+		add_to_temp_variable = { research_speed_full = trade_research_speed_modifier }
+		set_variable = { job_research_speed_modifier = research_speed_full }
+		
+		set_temp_variable = { resource_efficiency_full = job_resource_efficiency_modifer }
+		add_to_temp_variable = { resource_efficiency_full = economic_resource_efficiency_modifer }
+		set_variable = { job_resource_efficiency_modifer = resource_efficiency_full }
+		
+		remove_ideas = stat_production_speed_modifier1
+		remove_ideas = stat_production_speed_modifier2
+		remove_ideas = stat_production_speed_modifier3
+		remove_ideas = stat_production_speed_modifier4
+		remove_ideas = stat_production_speed_modifier5
+		remove_ideas = stat_production_speed_modifier6
+		remove_ideas = stat_production_speed_modifier7
+		remove_ideas = stat_production_speed_modifier8
+		remove_ideas = stat_production_speed_modifier9
+		remove_ideas = stat_production_speed_modifier10
+		remove_ideas = stat_production_speed_modifier11
+		remove_ideas = stat_production_speed_modifier12
+		remove_ideas = stat_production_speed_modifier13
+		remove_ideas = stat_production_speed_modifier14
+		remove_ideas = stat_production_speed_modifier15
+		remove_ideas = stat_production_speed_modifier16
+		remove_ideas = stat_production_speed_modifier17
+		remove_ideas = stat_production_speed_modifier18
+		remove_ideas = stat_production_speed_modifier19
+		remove_ideas = stat_production_speed_modifier20
+		remove_ideas = stat_production_speed_modifier21
+		remove_ideas = stat_production_speed_modifier22
+		remove_ideas = stat_production_speed_modifier23
+		remove_ideas = stat_production_speed_modifier24
+
+		remove_ideas = stat_production_gain_efficiency_gain_modifier1
+		remove_ideas = stat_production_gain_efficiency_gain_modifier2
+		remove_ideas = stat_production_gain_efficiency_gain_modifier3
+		remove_ideas = stat_production_gain_efficiency_gain_modifier4
+		remove_ideas = stat_production_gain_efficiency_gain_modifier5
+		remove_ideas = stat_production_gain_efficiency_gain_modifier6
+		remove_ideas = stat_production_gain_efficiency_gain_modifier7
+		remove_ideas = stat_production_gain_efficiency_gain_modifier8
+		remove_ideas = stat_production_gain_efficiency_gain_modifier9
+		remove_ideas = stat_production_gain_efficiency_gain_modifier10
+		remove_ideas = stat_production_gain_efficiency_gain_modifier11
+		remove_ideas = stat_production_gain_efficiency_gain_modifier12
+		remove_ideas = stat_production_gain_efficiency_gain_modifier13
+		remove_ideas = stat_production_gain_efficiency_gain_modifier14
+		remove_ideas = stat_production_gain_efficiency_gain_modifier15
+		remove_ideas = stat_production_gain_efficiency_gain_modifier16
+		remove_ideas = stat_production_gain_efficiency_gain_modifier17
+		remove_ideas = stat_production_gain_efficiency_gain_modifier18
+		remove_ideas = stat_production_gain_efficiency_gain_modifier19
+		remove_ideas = stat_production_gain_efficiency_gain_modifier20
+		remove_ideas = stat_production_gain_efficiency_gain_modifier21
+		remove_ideas = stat_production_gain_efficiency_gain_modifier22
+		remove_ideas = stat_production_gain_efficiency_gain_modifier23
+		remove_ideas = stat_production_gain_efficiency_gain_modifier24
+
+		remove_ideas = stat_research_modifier1
+		remove_ideas = stat_research_modifier2
+		remove_ideas = stat_research_modifier3
+		remove_ideas = stat_research_modifier4
+		remove_ideas = stat_research_modifier5
+		remove_ideas = stat_research_modifier6
+		remove_ideas = stat_research_modifier7
+		remove_ideas = stat_research_modifier8
+		remove_ideas = stat_research_modifier9
+		remove_ideas = stat_research_modifier10
+		remove_ideas = stat_research_modifier11
+		remove_ideas = stat_research_modifier12
+		remove_ideas = stat_research_modifier13
+		remove_ideas = stat_research_modifier14
+		remove_ideas = stat_research_modifier15
+		remove_ideas = stat_research_modifier16
+		remove_ideas = stat_research_modifier17
+		remove_ideas = stat_research_modifier18
+		remove_ideas = stat_research_modifier19
+		remove_ideas = stat_research_modifier20
+		remove_ideas = stat_research_modifier21
+		remove_ideas = stat_research_modifier22
+		remove_ideas = stat_research_modifier23
+		remove_ideas = stat_research_modifier24
+
+		remove_ideas = stat_resource_eff_modifier1
+		remove_ideas = stat_resource_eff_modifier2
+		remove_ideas = stat_resource_eff_modifier3
+		remove_ideas = stat_resource_eff_modifier4
+		remove_ideas = stat_resource_eff_modifier5
+		remove_ideas = stat_resource_eff_modifier6
+		remove_ideas = stat_resource_eff_modifier7
+		remove_ideas = stat_resource_eff_modifier8
+		remove_ideas = stat_resource_eff_modifier9
+		remove_ideas = stat_resource_eff_modifier10
+		remove_ideas = stat_resource_eff_modifier11
+		remove_ideas = stat_resource_eff_modifier12
+		remove_ideas = stat_resource_eff_modifier13
+		remove_ideas = stat_resource_eff_modifier14
+		remove_ideas = stat_resource_eff_modifier15
+		remove_ideas = stat_resource_eff_modifier16
+		remove_ideas = stat_resource_eff_modifier17
+		remove_ideas = stat_resource_eff_modifier18
+		remove_ideas = stat_resource_eff_modifier19
+		remove_ideas = stat_resource_eff_modifier20
+		remove_ideas = stat_resource_eff_modifier21
+		remove_ideas = stat_resource_eff_modifier22
+		remove_ideas = stat_resource_eff_modifier23
+		remove_ideas = stat_resource_eff_modifier24
+
+		remove_ideas = stat_war_support_modifier1
+		remove_ideas = stat_war_support_modifier2
+		remove_ideas = stat_war_support_modifier3
+		remove_ideas = stat_war_support_modifier4
+		remove_ideas = stat_war_support_modifier5
+		remove_ideas = stat_war_support_modifier6
+		remove_ideas = stat_war_support_modifier7
+		remove_ideas = stat_war_support_modifier8
+		remove_ideas = stat_war_support_modifier9
+		remove_ideas = stat_war_support_modifier10
+		remove_ideas = stat_war_support_modifier11
+		remove_ideas = stat_war_support_modifier12
+		remove_ideas = stat_war_support_modifier13
+		remove_ideas = stat_war_support_modifier14
+		remove_ideas = stat_war_support_modifier15
+		remove_ideas = stat_war_support_modifier16
+		remove_ideas = stat_war_support_modifier17
+		remove_ideas = stat_war_support_modifier18
+		remove_ideas = stat_war_support_modifier19
+		remove_ideas = stat_war_support_modifier20
+		remove_ideas = stat_war_support_modifier21
+		remove_ideas = stat_war_support_modifier22
+		remove_ideas = stat_war_support_modifier23
+		remove_ideas = stat_war_support_modifier24
+
+		remove_ideas = stat_army_morale_modifier1
+		remove_ideas = stat_army_morale_modifier2
+		remove_ideas = stat_army_morale_modifier3
+		remove_ideas = stat_army_morale_modifier4
+		remove_ideas = stat_army_morale_modifier5
+		remove_ideas = stat_army_morale_modifier6
+		remove_ideas = stat_army_morale_modifier7
+		remove_ideas = stat_army_morale_modifier8
+		remove_ideas = stat_army_morale_modifier9
+		remove_ideas = stat_army_morale_modifier10
+		remove_ideas = stat_army_morale_modifier11
+		remove_ideas = stat_army_morale_modifier12
+		remove_ideas = stat_army_morale_modifier13
+		remove_ideas = stat_army_morale_modifier14
+		remove_ideas = stat_army_morale_modifier15
+		remove_ideas = stat_army_morale_modifier16
+		remove_ideas = stat_army_morale_modifier17
+		remove_ideas = stat_army_morale_modifier18
+		remove_ideas = stat_army_morale_modifier19
+		remove_ideas = stat_army_morale_modifier20
+		remove_ideas = stat_army_morale_modifier21
+		remove_ideas = stat_army_morale_modifier22
+		remove_ideas = stat_army_morale_modifier23
+		remove_ideas = stat_army_morale_modifier24
+
+		remove_ideas = stat_reinforce_rate_modifier1
+		remove_ideas = stat_reinforce_rate_modifier2
+		remove_ideas = stat_reinforce_rate_modifier3
+		remove_ideas = stat_reinforce_rate_modifier4
+		remove_ideas = stat_reinforce_rate_modifier5
+		remove_ideas = stat_reinforce_rate_modifier6
+		remove_ideas = stat_reinforce_rate_modifier7
+		remove_ideas = stat_reinforce_rate_modifier8
+		remove_ideas = stat_reinforce_rate_modifier9
+		remove_ideas = stat_reinforce_rate_modifier10
+		remove_ideas = stat_reinforce_rate_modifier11
+		remove_ideas = stat_reinforce_rate_modifier12
+		remove_ideas = stat_reinforce_rate_modifier13
+		remove_ideas = stat_reinforce_rate_modifier14
+		remove_ideas = stat_reinforce_rate_modifier15
+		remove_ideas = stat_reinforce_rate_modifier16
+		remove_ideas = stat_reinforce_rate_modifier17
+		remove_ideas = stat_reinforce_rate_modifier18
+		remove_ideas = stat_reinforce_rate_modifier19
+		remove_ideas = stat_reinforce_rate_modifier20
+		remove_ideas = stat_reinforce_rate_modifier21
+		remove_ideas = stat_reinforce_rate_modifier22
+		remove_ideas = stat_reinforce_rate_modifier23
+		remove_ideas = stat_reinforce_rate_modifier24
+
+		remove_ideas = stat_supply_consumption_factor1
+		remove_ideas = stat_supply_consumption_factor2
+		remove_ideas = stat_supply_consumption_factor3
+		remove_ideas = stat_supply_consumption_factor4
+		remove_ideas = stat_supply_consumption_factor5
+		remove_ideas = stat_supply_consumption_factor6
+		remove_ideas = stat_supply_consumption_factor7
+		remove_ideas = stat_supply_consumption_factor8
+		remove_ideas = stat_supply_consumption_factor9
+		remove_ideas = stat_supply_consumption_factor10
+		remove_ideas = stat_supply_consumption_factor11
+		remove_ideas = stat_supply_consumption_factor12
+		remove_ideas = stat_supply_consumption_factor13
+		remove_ideas = stat_supply_consumption_factor14
+		remove_ideas = stat_supply_consumption_factor15
+		remove_ideas = stat_supply_consumption_factor16
+		remove_ideas = stat_supply_consumption_factor17
+		remove_ideas = stat_supply_consumption_factor18
+		remove_ideas = stat_supply_consumption_factor19
+		remove_ideas = stat_supply_consumption_factor20
+		remove_ideas = stat_supply_consumption_factor21
+		remove_ideas = stat_supply_consumption_factor22
+		remove_ideas = stat_supply_consumption_factor23
+		remove_ideas = stat_supply_consumption_factor24
+
+		if = {
+			limit = {
+				OR = {
+					check_variable = { mil_war_support_weekly = -0.5 }
+					AND = {
+						check_variable = { mil_war_support_weekly > -0.5 }
+						check_variable = { mil_war_support_weekly < -0.45 }
+					}
+				}
+			}
+			add_ideas = stat_war_support_modifier2
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { mil_war_support_weekly = -0.45 }
+					AND = {
+						check_variable = { mil_war_support_weekly > -0.45 }
+						check_variable = { mil_war_support_weekly < -0.4 }
+					}
+				}
+			}
+			add_ideas = stat_war_support_modifier3
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { mil_war_support_weekly = -0.4 }
+					AND = {
+						check_variable = { mil_war_support_weekly > -0.4 }
+						check_variable = { mil_war_support_weekly < -0.35 }
+					}
+				}
+			}
+			add_ideas = stat_war_support_modifier4
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { mil_war_support_weekly = -0.35 }
+					AND = {
+						check_variable = { mil_war_support_weekly > -0.35 }
+						check_variable = { mil_war_support_weekly < -0.3 }
+					}
+				}
+			}
+			add_ideas = stat_war_support_modifier5
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { mil_war_support_weekly = -0.3 }
+					AND = {
+						check_variable = { mil_war_support_weekly > -0.3 }
+						check_variable = { mil_war_support_weekly < -0.25 }
+					}
+				}
+			}
+			add_ideas = stat_war_support_modifier6
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { mil_war_support_weekly = -0.25 }
+					AND = {
+						check_variable = { mil_war_support_weekly > -0.25 }
+						check_variable = { mil_war_support_weekly < -0.2 }
+					}
+				}
+			}
+			add_ideas = stat_war_support_modifier7
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { mil_war_support_weekly = -0.2 }
+					AND = {
+						check_variable = { mil_war_support_weekly > -0.2 }
+						check_variable = { mil_war_support_weekly < -0.15 }
+					}
+				}
+			}
+			add_ideas = stat_war_support_modifier8
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { mil_war_support_weekly = -0.15 }
+					AND = {
+						check_variable = { mil_war_support_weekly > -0.15 }
+						check_variable = { mil_war_support_weekly < -0.1 }
+					}
+				}
+			}
+			add_ideas = stat_war_support_modifier9
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { mil_war_support_weekly = -0.1 }
+					AND = {
+						check_variable = { mil_war_support_weekly > -0.1 }
+						check_variable = { mil_war_support_weekly < -0.05 }
+					}
+				}
+			}
+			add_ideas = stat_war_support_modifier10
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { mil_war_support_weekly = -0.05 }
+					AND = {
+						check_variable = { mil_war_support_weekly > -0.05 }
+						check_variable = { mil_war_support_weekly < -0.025 }
+					}
+				}
+			}
+			add_ideas = stat_war_support_modifier21
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { mil_war_support_weekly = -0.025 }
+					AND = {
+						check_variable = { mil_war_support_weekly > -0.025 }
+						check_variable = { mil_war_support_weekly < -0.0125 }
+					}
+				}
+			}
+			add_ideas = stat_war_support_modifier22
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { mil_war_support_weekly = 0.0125 }
+					AND = {
+						check_variable = { mil_war_support_weekly < 0.025 }
+						check_variable = { mil_war_support_weekly > 0.0125 }
+					}
+				}
+			}
+			add_ideas = stat_war_support_modifier23
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { mil_war_support_weekly = 0.025 }
+					AND = {
+						check_variable = { mil_war_support_weekly > 0.025 }
+						check_variable = { mil_war_support_weekly < 0.05 }
+					}
+				}
+			}
+			add_ideas = stat_war_support_modifier24
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { mil_war_support_weekly = 0.05 }
+					AND = {
+						check_variable = { mil_war_support_weekly > 0.05 }
+						check_variable = { mil_war_support_weekly < 0.1 }
+					}
+				}
+			}
+			add_ideas = stat_war_support_modifier11
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { mil_war_support_weekly = 0.1 }
+					AND = {
+						check_variable = { mil_war_support_weekly > 0.1 }
+						check_variable = { mil_war_support_weekly < 0.15 }
+					}
+				}
+			}
+			add_ideas = stat_war_support_modifier12
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { mil_war_support_weekly = 0.15 }
+					AND = {
+						check_variable = { mil_war_support_weekly > 0.15 }
+						check_variable = { mil_war_support_weekly < 0.20 }
+					}
+				}
+			}
+			add_ideas = stat_war_support_modifier13
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { mil_war_support_weekly = 0.20 }
+					AND = {
+						check_variable = { mil_war_support_weekly > 0.20 }
+						check_variable = { mil_war_support_weekly < 0.25 }
+					}
+				}
+			}
+			add_ideas = stat_war_support_modifier14
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { mil_war_support_weekly = 0.25 }
+					AND = {
+						check_variable = { mil_war_support_weekly > 0.25 }
+						check_variable = { mil_war_support_weekly < 0.3 }
+					}
+				}
+			}
+			add_ideas = stat_war_support_modifier15
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { mil_war_support_weekly = 0.3 }
+					AND = {
+						check_variable = { mil_war_support_weekly > 0.3 }
+						check_variable = { mil_war_support_weekly < 0.35 }
+					}
+				}
+			}
+			add_ideas = stat_war_support_modifier16
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { mil_war_support_weekly = 0.35 }
+					AND = {
+						check_variable = { mil_war_support_weekly > 0.35 }
+						check_variable = { mil_war_support_weekly < 0.4 }
+					}
+				}
+			}
+			add_ideas = stat_war_support_modifier17
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { mil_war_support_weekly = 0.4 }
+					AND = {
+						check_variable = { mil_war_support_weekly > 0.4 }
+						check_variable = { mil_war_support_weekly < 0.45 }
+					}
+				}
+			}
+			add_ideas = stat_war_support_modifier18
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { mil_war_support_weekly = 0.45 }
+					AND = {
+						check_variable = { mil_war_support_weekly > 0.45 }
+						check_variable = { mil_war_support_weekly < 0.5 }
+					}
+				}
+			}
+			add_ideas = stat_war_support_modifier19
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { mil_war_support_weekly = 0.5 }
+					AND = {
+						check_variable = { mil_war_support_weekly > 0.5 }
+						check_variable = { mil_war_support_weekly < 1.0 }
+					}
+				}
+			}
+			add_ideas = stat_war_support_modifier20
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { mil_war_support_weekly = -0.5 }
+					AND = {
+						check_variable = { mil_war_support_weekly > -0.5 }
+						check_variable = { mil_war_support_weekly < -1.00 }
+					}
+				}
+			}
+			add_ideas = stat_war_support_modifier1
+		}
+
+		if = {
+			limit = {
+				OR = {
+					check_variable = { mil_army_morale_factor = -0.5 }
+					AND = {
+						check_variable = { mil_army_morale_factor > -0.5 }
+						check_variable = { mil_army_morale_factor < -0.45 }
+					}
+				}
+			}
+			add_ideas = stat_army_morale_modifier2
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { mil_army_morale_factor = -0.45 }
+					AND = {
+						check_variable = { mil_army_morale_factor > -0.45 }
+						check_variable = { mil_army_morale_factor < -0.4 }
+					}
+				}
+			}
+			add_ideas = stat_army_morale_modifier3
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { mil_army_morale_factor = -0.4 }
+					AND = {
+						check_variable = { mil_army_morale_factor > -0.4 }
+						check_variable = { mil_army_morale_factor < -0.35 }
+					}
+				}
+			}
+			add_ideas = stat_army_morale_modifier4
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { mil_army_morale_factor = -0.35 }
+					AND = {
+						check_variable = { mil_army_morale_factor > -0.35 }
+						check_variable = { mil_army_morale_factor < -0.3 }
+					}
+				}
+			}
+			add_ideas = stat_army_morale_modifier5
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { mil_army_morale_factor = -0.3 }
+					AND = {
+						check_variable = { mil_army_morale_factor > -0.3 }
+						check_variable = { mil_army_morale_factor < -0.25 }
+					}
+				}
+			}
+			add_ideas = stat_army_morale_modifier6
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { mil_army_morale_factor = -0.25 }
+					AND = {
+						check_variable = { mil_army_morale_factor > -0.25 }
+						check_variable = { mil_army_morale_factor < -0.2 }
+					}
+				}
+			}
+			add_ideas = stat_army_morale_modifier7
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { mil_army_morale_factor = -0.2 }
+					AND = {
+						check_variable = { mil_army_morale_factor > -0.2 }
+						check_variable = { mil_army_morale_factor < -0.15 }
+					}
+				}
+			}
+			add_ideas = stat_army_morale_modifier8
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { mil_army_morale_factor = -0.15 }
+					AND = {
+						check_variable = { mil_army_morale_factor > -0.15 }
+						check_variable = { mil_army_morale_factor < -0.1 }
+					}
+				}
+			}
+			add_ideas = stat_army_morale_modifier9
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { mil_army_morale_factor = -0.1 }
+					AND = {
+						check_variable = { mil_army_morale_factor > -0.1 }
+						check_variable = { mil_army_morale_factor < -0.05 }
+					}
+				}
+			}
+			add_ideas = stat_army_morale_modifier10
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { mil_army_morale_factor = -0.05 }
+					AND = {
+						check_variable = { mil_army_morale_factor > -0.05 }
+						check_variable = { mil_army_morale_factor < -0.025 }
+					}
+				}
+			}
+			add_ideas = stat_army_morale_modifier21
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { mil_army_morale_factor = -0.025 }
+					AND = {
+						check_variable = { mil_army_morale_factor > -0.025 }
+						check_variable = { mil_army_morale_factor < -0.0125 }
+					}
+				}
+			}
+			add_ideas = stat_army_morale_modifier22
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { mil_army_morale_factor = 0.0125 }
+					AND = {
+						check_variable = { mil_army_morale_factor < 0.025 }
+						check_variable = { mil_army_morale_factor > 0.0125 }
+					}
+				}
+			}
+			add_ideas = stat_army_morale_modifier23
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { mil_army_morale_factor = 0.025 }
+					AND = {
+						check_variable = { mil_army_morale_factor > 0.025 }
+						check_variable = { mil_army_morale_factor < 0.05 }
+					}
+				}
+			}
+			add_ideas = stat_army_morale_modifier24
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { mil_army_morale_factor = 0.05 }
+					AND = {
+						check_variable = { mil_army_morale_factor > 0.05 }
+						check_variable = { mil_army_morale_factor < 0.1 }
+					}
+				}
+			}
+			add_ideas = stat_army_morale_modifier11
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { mil_army_morale_factor = 0.1 }
+					AND = {
+						check_variable = { mil_army_morale_factor > 0.1 }
+						check_variable = { mil_army_morale_factor < 0.15 }
+					}
+				}
+			}
+			add_ideas = stat_army_morale_modifier12
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { mil_army_morale_factor = 0.15 }
+					AND = {
+						check_variable = { mil_army_morale_factor > 0.15 }
+						check_variable = { mil_army_morale_factor < 0.20 }
+					}
+				}
+			}
+			add_ideas = stat_army_morale_modifier13
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { mil_army_morale_factor = 0.20 }
+					AND = {
+						check_variable = { mil_army_morale_factor > 0.20 }
+						check_variable = { mil_army_morale_factor < 0.25 }
+					}
+				}
+			}
+			add_ideas = stat_army_morale_modifier14
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { mil_army_morale_factor = 0.25 }
+					AND = {
+						check_variable = { mil_army_morale_factor > 0.25 }
+						check_variable = { mil_army_morale_factor < 0.3 }
+					}
+				}
+			}
+			add_ideas = stat_army_morale_modifier15
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { mil_army_morale_factor = 0.3 }
+					AND = {
+						check_variable = { mil_army_morale_factor > 0.3 }
+						check_variable = { mil_army_morale_factor < 0.35 }
+					}
+				}
+			}
+			add_ideas = stat_army_morale_modifier16
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { mil_army_morale_factor = 0.35 }
+					AND = {
+						check_variable = { mil_army_morale_factor > 0.35 }
+						check_variable = { mil_army_morale_factor < 0.4 }
+					}
+				}
+			}
+			add_ideas = stat_army_morale_modifier17
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { mil_army_morale_factor = 0.4 }
+					AND = {
+						check_variable = { mil_army_morale_factor > 0.4 }
+						check_variable = { mil_army_morale_factor < 0.45 }
+					}
+				}
+			}
+			add_ideas = stat_army_morale_modifier18
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { mil_army_morale_factor = 0.45 }
+					AND = {
+						check_variable = { mil_army_morale_factor > 0.45 }
+						check_variable = { mil_army_morale_factor < 0.5 }
+					}
+				}
+			}
+			add_ideas = stat_army_morale_modifier19
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { mil_army_morale_factor = 0.5 }
+					AND = {
+						check_variable = { mil_army_morale_factor > 0.5 }
+						check_variable = { mil_army_morale_factor < 1.0 }
+					}
+				}
+			}
+			add_ideas = stat_army_morale_modifier20
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { mil_army_morale_factor = -0.5 }
+					AND = {
+						check_variable = { mil_army_morale_factor > -0.5 }
+						check_variable = { mil_army_morale_factor < -1.00 }
+					}
+				}
+			}
+			add_ideas = stat_army_morale_modifier1
+		}
+
+		if = {
+			limit = {
+				OR = {
+					check_variable = { mil_land_reinforce_rate = -0.5 }
+					AND = {
+						check_variable = { mil_land_reinforce_rate > -0.5 }
+						check_variable = { mil_land_reinforce_rate < -0.45 }
+					}
+				}
+			}
+			add_ideas = stat_reinforce_rate_modifier2
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { mil_land_reinforce_rate = -0.45 }
+					AND = {
+						check_variable = { mil_land_reinforce_rate > -0.45 }
+						check_variable = { mil_land_reinforce_rate < -0.4 }
+					}
+				}
+			}
+			add_ideas = stat_reinforce_rate_modifier3
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { mil_land_reinforce_rate = -0.4 }
+					AND = {
+						check_variable = { mil_land_reinforce_rate > -0.4 }
+						check_variable = { mil_land_reinforce_rate < -0.35 }
+					}
+				}
+			}
+			add_ideas = stat_reinforce_rate_modifier4
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { mil_land_reinforce_rate = -0.35 }
+					AND = {
+						check_variable = { mil_land_reinforce_rate > -0.35 }
+						check_variable = { mil_land_reinforce_rate < -0.3 }
+					}
+				}
+			}
+			add_ideas = stat_reinforce_rate_modifier5
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { mil_land_reinforce_rate = -0.3 }
+					AND = {
+						check_variable = { mil_land_reinforce_rate > -0.3 }
+						check_variable = { mil_land_reinforce_rate < -0.25 }
+					}
+				}
+			}
+			add_ideas = stat_reinforce_rate_modifier6
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { mil_land_reinforce_rate = -0.25 }
+					AND = {
+						check_variable = { mil_land_reinforce_rate > -0.25 }
+						check_variable = { mil_land_reinforce_rate < -0.2 }
+					}
+				}
+			}
+			add_ideas = stat_reinforce_rate_modifier7
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { mil_land_reinforce_rate = -0.2 }
+					AND = {
+						check_variable = { mil_land_reinforce_rate > -0.2 }
+						check_variable = { mil_land_reinforce_rate < -0.15 }
+					}
+				}
+			}
+			add_ideas = stat_reinforce_rate_modifier8
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { mil_land_reinforce_rate = -0.15 }
+					AND = {
+						check_variable = { mil_land_reinforce_rate > -0.15 }
+						check_variable = { mil_land_reinforce_rate < -0.1 }
+					}
+				}
+			}
+			add_ideas = stat_reinforce_rate_modifier9
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { mil_land_reinforce_rate = -0.1 }
+					AND = {
+						check_variable = { mil_land_reinforce_rate > -0.1 }
+						check_variable = { mil_land_reinforce_rate < -0.05 }
+					}
+				}
+			}
+			add_ideas = stat_reinforce_rate_modifier10
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { mil_land_reinforce_rate = -0.05 }
+					AND = {
+						check_variable = { mil_land_reinforce_rate > -0.05 }
+						check_variable = { mil_land_reinforce_rate < -0.025 }
+					}
+				}
+			}
+			add_ideas = stat_reinforce_rate_modifier21
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { mil_land_reinforce_rate = -0.025 }
+					AND = {
+						check_variable = { mil_land_reinforce_rate > -0.025 }
+						check_variable = { mil_land_reinforce_rate < -0.0125 }
+					}
+				}
+			}
+			add_ideas = stat_reinforce_rate_modifier22
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { mil_land_reinforce_rate = 0.0125 }
+					AND = {
+						check_variable = { mil_land_reinforce_rate < 0.025 }
+						check_variable = { mil_land_reinforce_rate > 0.0125 }
+					}
+				}
+			}
+			add_ideas = stat_reinforce_rate_modifier23
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { mil_land_reinforce_rate = 0.025 }
+					AND = {
+						check_variable = { mil_land_reinforce_rate > 0.025 }
+						check_variable = { mil_land_reinforce_rate < 0.05 }
+					}
+				}
+			}
+			add_ideas = stat_reinforce_rate_modifier24
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { mil_land_reinforce_rate = 0.05 }
+					AND = {
+						check_variable = { mil_land_reinforce_rate > 0.05 }
+						check_variable = { mil_land_reinforce_rate < 0.1 }
+					}
+				}
+			}
+			add_ideas = stat_reinforce_rate_modifier11
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { mil_land_reinforce_rate = 0.1 }
+					AND = {
+						check_variable = { mil_land_reinforce_rate > 0.1 }
+						check_variable = { mil_land_reinforce_rate < 0.15 }
+					}
+				}
+			}
+			add_ideas = stat_reinforce_rate_modifier12
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { mil_land_reinforce_rate = 0.15 }
+					AND = {
+						check_variable = { mil_land_reinforce_rate > 0.15 }
+						check_variable = { mil_land_reinforce_rate < 0.20 }
+					}
+				}
+			}
+			add_ideas = stat_reinforce_rate_modifier13
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { mil_land_reinforce_rate = 0.20 }
+					AND = {
+						check_variable = { mil_land_reinforce_rate > 0.20 }
+						check_variable = { mil_land_reinforce_rate < 0.25 }
+					}
+				}
+			}
+			add_ideas = stat_reinforce_rate_modifier14
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { mil_land_reinforce_rate = 0.25 }
+					AND = {
+						check_variable = { mil_land_reinforce_rate > 0.25 }
+						check_variable = { mil_land_reinforce_rate < 0.3 }
+					}
+				}
+			}
+			add_ideas = stat_reinforce_rate_modifier15
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { mil_land_reinforce_rate = 0.3 }
+					AND = {
+						check_variable = { mil_land_reinforce_rate > 0.3 }
+						check_variable = { mil_land_reinforce_rate < 0.35 }
+					}
+				}
+			}
+			add_ideas = stat_reinforce_rate_modifier16
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { mil_land_reinforce_rate = 0.35 }
+					AND = {
+						check_variable = { mil_land_reinforce_rate > 0.35 }
+						check_variable = { mil_land_reinforce_rate < 0.4 }
+					}
+				}
+			}
+			add_ideas = stat_reinforce_rate_modifier17
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { mil_land_reinforce_rate = 0.4 }
+					AND = {
+						check_variable = { mil_land_reinforce_rate > 0.4 }
+						check_variable = { mil_land_reinforce_rate < 0.45 }
+					}
+				}
+			}
+			add_ideas = stat_reinforce_rate_modifier18
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { mil_land_reinforce_rate = 0.45 }
+					AND = {
+						check_variable = { mil_land_reinforce_rate > 0.45 }
+						check_variable = { mil_land_reinforce_rate < 0.5 }
+					}
+				}
+			}
+			add_ideas = stat_reinforce_rate_modifier19
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { mil_land_reinforce_rate = 0.5 }
+					AND = {
+						check_variable = { mil_land_reinforce_rate > 0.5 }
+						check_variable = { mil_land_reinforce_rate < 1.0 }
+					}
+				}
+			}
+			add_ideas = stat_reinforce_rate_modifier20
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { mil_land_reinforce_rate = -0.5 }
+					AND = {
+						check_variable = { mil_land_reinforce_rate > -0.5 }
+						check_variable = { mil_land_reinforce_rate < -1.00 }
+					}
+				}
+			}
+			add_ideas = stat_reinforce_rate_modifier1
+		}
+
+		if = {
+			limit = {
+				OR = {
+					check_variable = { mil_supply_consumption_factor = -0.5 }
+					AND = {
+						check_variable = { mil_supply_consumption_factor > -0.5 }
+						check_variable = { mil_supply_consumption_factor < -0.45 }
+					}
+				}
+			}
+			add_ideas = stat_supply_consumption_factor_modifier2
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { mil_supply_consumption_factor = -0.45 }
+					AND = {
+						check_variable = { mil_supply_consumption_factor > -0.45 }
+						check_variable = { mil_supply_consumption_factor < -0.4 }
+					}
+				}
+			}
+			add_ideas = stat_supply_consumption_factor_modifier3
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { mil_supply_consumption_factor = -0.4 }
+					AND = {
+						check_variable = { mil_supply_consumption_factor > -0.4 }
+						check_variable = { mil_supply_consumption_factor < -0.35 }
+					}
+				}
+			}
+			add_ideas = stat_supply_consumption_factor_modifier4
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { mil_supply_consumption_factor = -0.35 }
+					AND = {
+						check_variable = { mil_supply_consumption_factor > -0.35 }
+						check_variable = { mil_supply_consumption_factor < -0.3 }
+					}
+				}
+			}
+			add_ideas = stat_supply_consumption_factor_modifier5
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { mil_supply_consumption_factor = -0.3 }
+					AND = {
+						check_variable = { mil_supply_consumption_factor > -0.3 }
+						check_variable = { mil_supply_consumption_factor < -0.25 }
+					}
+				}
+			}
+			add_ideas = stat_supply_consumption_factor_modifier6
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { mil_supply_consumption_factor = -0.25 }
+					AND = {
+						check_variable = { mil_supply_consumption_factor > -0.25 }
+						check_variable = { mil_supply_consumption_factor < -0.2 }
+					}
+				}
+			}
+			add_ideas = stat_supply_consumption_factor_modifier7
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { mil_supply_consumption_factor = -0.2 }
+					AND = {
+						check_variable = { mil_supply_consumption_factor > -0.2 }
+						check_variable = { mil_supply_consumption_factor < -0.15 }
+					}
+				}
+			}
+			add_ideas = stat_supply_consumption_factor_modifier8
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { mil_supply_consumption_factor = -0.15 }
+					AND = {
+						check_variable = { mil_supply_consumption_factor > -0.15 }
+						check_variable = { mil_supply_consumption_factor < -0.1 }
+					}
+				}
+			}
+			add_ideas = stat_supply_consumption_factor_modifier9
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { mil_supply_consumption_factor = -0.1 }
+					AND = {
+						check_variable = { mil_supply_consumption_factor > -0.1 }
+						check_variable = { mil_supply_consumption_factor < -0.05 }
+					}
+				}
+			}
+			add_ideas = stat_supply_consumption_factor_modifier10
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { mil_supply_consumption_factor = -0.05 }
+					AND = {
+						check_variable = { mil_supply_consumption_factor > -0.05 }
+						check_variable = { mil_supply_consumption_factor < -0.025 }
+					}
+				}
+			}
+			add_ideas = stat_supply_consumption_factor_modifier21
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { mil_supply_consumption_factor = -0.025 }
+					AND = {
+						check_variable = { mil_supply_consumption_factor > -0.025 }
+						check_variable = { mil_supply_consumption_factor < -0.0125 }
+					}
+				}
+			}
+			add_ideas = stat_supply_consumption_factor_modifier22
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { mil_supply_consumption_factor = 0.0125 }
+					AND = {
+						check_variable = { mil_supply_consumption_factor < 0.025 }
+						check_variable = { mil_supply_consumption_factor > 0.0125 }
+					}
+				}
+			}
+			add_ideas = stat_supply_consumption_factor_modifier23
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { mil_supply_consumption_factor = 0.025 }
+					AND = {
+						check_variable = { mil_supply_consumption_factor > 0.025 }
+						check_variable = { mil_supply_consumption_factor < 0.05 }
+					}
+				}
+			}
+			add_ideas = stat_supply_consumption_factor_modifier24
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { mil_supply_consumption_factor = 0.05 }
+					AND = {
+						check_variable = { mil_supply_consumption_factor > 0.05 }
+						check_variable = { mil_supply_consumption_factor < 0.1 }
+					}
+				}
+			}
+			add_ideas = stat_supply_consumption_factor_modifier11
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { mil_supply_consumption_factor = 0.1 }
+					AND = {
+						check_variable = { mil_supply_consumption_factor > 0.1 }
+						check_variable = { mil_supply_consumption_factor < 0.15 }
+					}
+				}
+			}
+			add_ideas = stat_supply_consumption_factor_modifier12
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { mil_supply_consumption_factor = 0.15 }
+					AND = {
+						check_variable = { mil_supply_consumption_factor > 0.15 }
+						check_variable = { mil_supply_consumption_factor < 0.20 }
+					}
+				}
+			}
+			add_ideas = stat_supply_consumption_factor_modifier13
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { mil_supply_consumption_factor = 0.20 }
+					AND = {
+						check_variable = { mil_supply_consumption_factor > 0.20 }
+						check_variable = { mil_supply_consumption_factor < 0.25 }
+					}
+				}
+			}
+			add_ideas = stat_supply_consumption_factor_modifier14
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { mil_supply_consumption_factor = 0.25 }
+					AND = {
+						check_variable = { mil_supply_consumption_factor > 0.25 }
+						check_variable = { mil_supply_consumption_factor < 0.3 }
+					}
+				}
+			}
+			add_ideas = stat_supply_consumption_factor_modifier15
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { mil_supply_consumption_factor = 0.3 }
+					AND = {
+						check_variable = { mil_supply_consumption_factor > 0.3 }
+						check_variable = { mil_supply_consumption_factor < 0.35 }
+					}
+				}
+			}
+			add_ideas = stat_supply_consumption_factor_modifier16
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { mil_supply_consumption_factor = 0.35 }
+					AND = {
+						check_variable = { mil_supply_consumption_factor > 0.35 }
+						check_variable = { mil_supply_consumption_factor < 0.4 }
+					}
+				}
+			}
+			add_ideas = stat_supply_consumption_factor_modifier17
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { mil_supply_consumption_factor = 0.4 }
+					AND = {
+						check_variable = { mil_supply_consumption_factor > 0.4 }
+						check_variable = { mil_supply_consumption_factor < 0.45 }
+					}
+				}
+			}
+			add_ideas = stat_supply_consumption_factor_modifier18
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { mil_supply_consumption_factor = 0.45 }
+					AND = {
+						check_variable = { mil_supply_consumption_factor > 0.45 }
+						check_variable = { mil_supply_consumption_factor < 0.5 }
+					}
+				}
+			}
+			add_ideas = stat_supply_consumption_factor_modifier19
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { mil_supply_consumption_factor = 0.5 }
+					AND = {
+						check_variable = { mil_supply_consumption_factor > 0.5 }
+						check_variable = { mil_supply_consumption_factor < 1.0 }
+					}
+				}
+			}
+			add_ideas = stat_supply_consumption_factor_modifier20
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { mil_supply_consumption_factor = -0.5 }
+					AND = {
+						check_variable = { mil_supply_consumption_factor > -0.5 }
+						check_variable = { mil_supply_consumption_factor < -1.00 }
+					}
+				}
+			}
+			add_ideas = stat_supply_consumption_factor_modifier1
+		}
+
+		if = {
+			limit = {
+				OR = {
+					check_variable = { resource_efficiency_full = -0.5 }
+					AND = {
+						check_variable = { resource_efficiency_full > -0.5 }
+						check_variable = { resource_efficiency_full < -0.45 }
+					}
+				}
+			}
+			add_ideas = stat_resource_eff_modifier2
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { resource_efficiency_full = -0.45 }
+					AND = {
+						check_variable = { resource_efficiency_full > -0.45 }
+						check_variable = { resource_efficiency_full < -0.4 }
+					}
+				}
+			}
+			add_ideas = stat_resource_eff_modifier3
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { resource_efficiency_full = -0.4 }
+					AND = {
+						check_variable = { resource_efficiency_full > -0.4 }
+						check_variable = { resource_efficiency_full < -0.35 }
+					}
+				}
+			}
+			add_ideas = stat_resource_eff_modifier4
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { resource_efficiency_full = -0.35 }
+					AND = {
+						check_variable = { resource_efficiency_full > -0.35 }
+						check_variable = { resource_efficiency_full < -0.3 }
+					}
+				}
+			}
+			add_ideas = stat_resource_eff_modifier5
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { resource_efficiency_full = -0.3 }
+					AND = {
+						check_variable = { resource_efficiency_full > -0.3 }
+						check_variable = { resource_efficiency_full < -0.25 }
+					}
+				}
+			}
+			add_ideas = stat_resource_eff_modifier6
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { resource_efficiency_full = -0.25 }
+					AND = {
+						check_variable = { resource_efficiency_full > -0.25 }
+						check_variable = { resource_efficiency_full < -0.2 }
+					}
+				}
+			}
+			add_ideas = stat_resource_eff_modifier7
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { resource_efficiency_full = -0.2 }
+					AND = {
+						check_variable = { resource_efficiency_full > -0.2 }
+						check_variable = { resource_efficiency_full < -0.15 }
+					}
+				}
+			}
+			add_ideas = stat_resource_eff_modifier8
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { resource_efficiency_full = -0.15 }
+					AND = {
+						check_variable = { resource_efficiency_full > -0.15 }
+						check_variable = { resource_efficiency_full < -0.1 }
+					}
+				}
+			}
+			add_ideas = stat_resource_eff_modifier9
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { resource_efficiency_full = -0.1 }
+					AND = {
+						check_variable = { resource_efficiency_full > -0.1 }
+						check_variable = { resource_efficiency_full < -0.05 }
+					}
+				}
+			}
+			add_ideas = stat_resource_eff_modifier10
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { resource_efficiency_full = -0.05 }
+					AND = {
+						check_variable = { resource_efficiency_full > -0.05 }
+						check_variable = { resource_efficiency_full < -0.025 }
+					}
+				}
+			}
+			add_ideas = stat_resource_eff_modifier21
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { resource_efficiency_full = -0.025 }
+					AND = {
+						check_variable = { resource_efficiency_full > -0.025 }
+						check_variable = { resource_efficiency_full < -0.0125 }
+					}
+				}
+			}
+			add_ideas = stat_resource_eff_modifier22
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { resource_efficiency_full = 0.0125 }
+					AND = {
+						check_variable = { resource_efficiency_full < 0.025 }
+						check_variable = { resource_efficiency_full > 0.0125 }
+					}
+				}
+			}
+			add_ideas = stat_resource_eff_modifier23
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { resource_efficiency_full = 0.025 }
+					AND = {
+						check_variable = { resource_efficiency_full > 0.025 }
+						check_variable = { resource_efficiency_full < 0.05 }
+					}
+				}
+			}
+			add_ideas = stat_resource_eff_modifier24
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { resource_efficiency_full = 0.05 }
+					AND = {
+						check_variable = { resource_efficiency_full > 0.05 }
+						check_variable = { resource_efficiency_full < 0.1 }
+					}
+				}
+			}
+			add_ideas = stat_resource_eff_modifier11
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { resource_efficiency_full = 0.1 }
+					AND = {
+						check_variable = { resource_efficiency_full > 0.1 }
+						check_variable = { resource_efficiency_full < 0.15 }
+					}
+				}
+			}
+			add_ideas = stat_resource_eff_modifier12
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { resource_efficiency_full = 0.15 }
+					AND = {
+						check_variable = { resource_efficiency_full > 0.15 }
+						check_variable = { resource_efficiency_full < 0.20 }
+					}
+				}
+			}
+			add_ideas = stat_resource_eff_modifier13
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { resource_efficiency_full = 0.20 }
+					AND = {
+						check_variable = { resource_efficiency_full > 0.20 }
+						check_variable = { resource_efficiency_full < 0.25 }
+					}
+				}
+			}
+			add_ideas = stat_resource_eff_modifier14
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { resource_efficiency_full = 0.25 }
+					AND = {
+						check_variable = { resource_efficiency_full > 0.25 }
+						check_variable = { resource_efficiency_full < 0.3 }
+					}
+				}
+			}
+			add_ideas = stat_resource_eff_modifier15
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { resource_efficiency_full = 0.3 }
+					AND = {
+						check_variable = { resource_efficiency_full > 0.3 }
+						check_variable = { resource_efficiency_full < 0.35 }
+					}
+				}
+			}
+			add_ideas = stat_resource_eff_modifier16
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { resource_efficiency_full = 0.35 }
+					AND = {
+						check_variable = { resource_efficiency_full > 0.35 }
+						check_variable = { resource_efficiency_full < 0.4 }
+					}
+				}
+			}
+			add_ideas = stat_resource_eff_modifier17
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { resource_efficiency_full = 0.4 }
+					AND = {
+						check_variable = { resource_efficiency_full > 0.4 }
+						check_variable = { resource_efficiency_full < 0.45 }
+					}
+				}
+			}
+			add_ideas = stat_resource_eff_modifier18
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { resource_efficiency_full = 0.45 }
+					AND = {
+						check_variable = { resource_efficiency_full > 0.45 }
+						check_variable = { resource_efficiency_full < 0.5 }
+					}
+				}
+			}
+			add_ideas = stat_resource_eff_modifier19
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { resource_efficiency_full = 0.5 }
+					AND = {
+						check_variable = { resource_efficiency_full > 0.5 }
+						check_variable = { resource_efficiency_full < 1.0 }
+					}
+				}
+			}
+			add_ideas = stat_resource_eff_modifier20
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { resource_efficiency_full = -0.5 }
+					AND = {
+						check_variable = { resource_efficiency_full > -0.5 }
+						check_variable = { resource_efficiency_full < -1.00 }
+					}
+				}
+			}
+			add_ideas = stat_resource_eff_modifier1
+		}
+
+		if = {
+			limit = {
+				OR = {
+					check_variable = { resource_efficiency_full = -0.5 }
+					AND = {
+						check_variable = { resource_efficiency_full > -0.5 }
+						check_variable = { resource_efficiency_full < -0.45 }
+					}
+				}
+			}
+			add_ideas = stat_research_modifier2
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { research_speed_full = -0.45 }
+					AND = {
+						check_variable = { research_speed_full > -0.45 }
+						check_variable = { research_speed_full < -0.4 }
+					}
+				}
+			}
+			add_ideas = stat_research_modifier3
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { research_speed_full = -0.4 }
+					AND = {
+						check_variable = { research_speed_full > -0.4 }
+						check_variable = { research_speed_full < -0.35 }
+					}
+				}
+			}
+			add_ideas = stat_research_modifier4
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { research_speed_full = -0.35 }
+					AND = {
+						check_variable = { research_speed_full > -0.35 }
+						check_variable = { research_speed_full < -0.3 }
+					}
+				}
+			}
+			add_ideas = stat_research_modifier5
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { research_speed_full = -0.3 }
+					AND = {
+						check_variable = { research_speed_full > -0.3 }
+						check_variable = { research_speed_full < -0.25 }
+					}
+				}
+			}
+			add_ideas = stat_research_modifier6
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { research_speed_full = -0.25 }
+					AND = {
+						check_variable = { research_speed_full > -0.25 }
+						check_variable = { research_speed_full < -0.2 }
+					}
+				}
+			}
+			add_ideas = stat_research_modifier7
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { research_speed_full = -0.2 }
+					AND = {
+						check_variable = { research_speed_full > -0.2 }
+						check_variable = { research_speed_full < -0.15 }
+					}
+				}
+			}
+			add_ideas = stat_research_modifier8
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { research_speed_full = -0.15 }
+					AND = {
+						check_variable = { research_speed_full > -0.15 }
+						check_variable = { research_speed_full < -0.1 }
+					}
+				}
+			}
+			add_ideas = stat_research_modifier9
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { research_speed_full = -0.1 }
+					AND = {
+						check_variable = { research_speed_full > -0.1 }
+						check_variable = { research_speed_full < -0.05 }
+					}
+				}
+			}
+			add_ideas = stat_research_modifier10
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { research_speed_full = -0.05 }
+					AND = {
+						check_variable = { research_speed_full > -0.05 }
+						check_variable = { research_speed_full < -0.025 }
+					}
+				}
+			}
+			add_ideas = stat_research_modifier21
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { research_speed_full = -0.025 }
+					AND = {
+						check_variable = { research_speed_full > -0.025 }
+						check_variable = { research_speed_full < -0.0125 }
+					}
+				}
+			}
+			add_ideas = stat_research_modifier22
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { research_speed_full = 0.0125 }
+					AND = {
+						check_variable = { research_speed_full < 0.025 }
+						check_variable = { research_speed_full > 0.0125 }
+					}
+				}
+			}
+			add_ideas = stat_research_modifier23
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { research_speed_full = 0.025 }
+					AND = {
+						check_variable = { research_speed_full > 0.025 }
+						check_variable = { research_speed_full < 0.05 }
+					}
+				}
+			}
+			add_ideas = stat_research_modifier24
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { research_speed_full = 0.05 }
+					AND = {
+						check_variable = { research_speed_full > 0.05 }
+						check_variable = { research_speed_full < 0.1 }
+					}
+				}
+			}
+			add_ideas = stat_research_modifier11
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { research_speed_full = 0.1 }
+					AND = {
+						check_variable = { research_speed_full > 0.1 }
+						check_variable = { research_speed_full < 0.15 }
+					}
+				}
+			}
+			add_ideas = stat_research_modifier12
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { research_speed_full = 0.15 }
+					AND = {
+						check_variable = { research_speed_full > 0.15 }
+						check_variable = { research_speed_full < 0.20 }
+					}
+				}
+			}
+			add_ideas = stat_research_modifier13
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { research_speed_full = 0.20 }
+					AND = {
+						check_variable = { research_speed_full > 0.20 }
+						check_variable = { research_speed_full < 0.25 }
+					}
+				}
+			}
+			add_ideas = stat_research_modifier14
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { research_speed_full = 0.25 }
+					AND = {
+						check_variable = { research_speed_full > 0.25 }
+						check_variable = { research_speed_full < 0.3 }
+					}
+				}
+			}
+			add_ideas = stat_research_modifier15
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { research_speed_full = 0.3 }
+					AND = {
+						check_variable = { research_speed_full > 0.3 }
+						check_variable = { research_speed_full < 0.35 }
+					}
+				}
+			}
+			add_ideas = stat_research_modifier16
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { research_speed_full = 0.35 }
+					AND = {
+						check_variable = { research_speed_full > 0.35 }
+						check_variable = { research_speed_full < 0.4 }
+					}
+				}
+			}
+			add_ideas = stat_research_modifier17
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { research_speed_full = 0.4 }
+					AND = {
+						check_variable = { research_speed_full > 0.4 }
+						check_variable = { research_speed_full < 0.45 }
+					}
+				}
+			}
+			add_ideas = stat_research_modifier18
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { research_speed_full = 0.45 }
+					AND = {
+						check_variable = { research_speed_full > 0.45 }
+						check_variable = { research_speed_full < 0.5 }
+					}
+				}
+			}
+			add_ideas = stat_research_modifier19
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { research_speed_full = 0.5 }
+					AND = {
+						check_variable = { research_speed_full > 0.5 }
+						check_variable = { research_speed_full < 1.0 }
+					}
+				}
+			}
+			add_ideas = stat_research_modifier20
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { research_speed_full = -0.5 }
+					AND = {
+						check_variable = { research_speed_full > -0.5 }
+						check_variable = { research_speed_full < -1.00 }
+					}
+				}
+			}
+			add_ideas = stat_research_modifier1
+		}
+		
+		if = {
+			limit = {
+				OR = {
+					check_variable = { construction_speed_full = -0.5 }
+					AND = {
+						check_variable = { construction_speed_full > -0.5 }
+						check_variable = { construction_speed_full < -0.45 }
+					}
+				}
+			}
+			add_ideas = stat_production_speed_modifier2
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { construction_speed_full = -0.45 }
+					AND = {
+						check_variable = { construction_speed_full > -0.45 }
+						check_variable = { construction_speed_full < -0.4 }
+					}
+				}
+			}
+			add_ideas = stat_production_speed_modifier3
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { construction_speed_full = -0.4 }
+					AND = {
+						check_variable = { construction_speed_full > -0.4 }
+						check_variable = { construction_speed_full < -0.35 }
+					}
+				}
+			}
+			add_ideas = stat_production_speed_modifier4
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { construction_speed_full = -0.35 }
+					AND = {
+						check_variable = { construction_speed_full > -0.35 }
+						check_variable = { construction_speed_full < -0.3 }
+					}
+				}
+			}
+			add_ideas = stat_production_speed_modifier5
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { construction_speed_full = -0.3 }
+					AND = {
+						check_variable = { construction_speed_full > -0.3 }
+						check_variable = { construction_speed_full < -0.25 }
+					}
+				}
+			}
+			add_ideas = stat_production_speed_modifier6
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { construction_speed_full = -0.25 }
+					AND = {
+						check_variable = { construction_speed_full > -0.25 }
+						check_variable = { construction_speed_full < -0.2 }
+					}
+				}
+			}
+			add_ideas = stat_production_speed_modifier7
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { construction_speed_full = -0.2 }
+					AND = {
+						check_variable = { construction_speed_full > -0.2 }
+						check_variable = { construction_speed_full < -0.15 }
+					}
+				}
+			}
+			add_ideas = stat_production_speed_modifier8
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { construction_speed_full = -0.15 }
+					AND = {
+						check_variable = { construction_speed_full > -0.15 }
+						check_variable = { construction_speed_full < -0.1 }
+					}
+				}
+			}
+			add_ideas = stat_production_speed_modifier9
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { construction_speed_full = -0.1 }
+					AND = {
+						check_variable = { construction_speed_full > -0.1 }
+						check_variable = { construction_speed_full < -0.05 }
+					}
+				}
+			}
+			add_ideas = stat_production_speed_modifier10
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { construction_speed_full = -0.05 }
+					AND = {
+						check_variable = { construction_speed_full > -0.05 }
+						check_variable = { construction_speed_full < -0.025 }
+					}
+				}
+			}
+			add_ideas = stat_production_speed_modifier21
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { construction_speed_full = -0.025 }
+					AND = {
+						check_variable = { construction_speed_full > -0.025 }
+						check_variable = { construction_speed_full < -0.0125 }
+					}
+				}
+			}
+			add_ideas = stat_production_speed_modifier22
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { construction_speed_full = 0.0125 }
+					AND = {
+						check_variable = { construction_speed_full < 0.025 }
+						check_variable = { construction_speed_full > 0.0125 }
+					}
+				}
+			}
+			add_ideas = stat_production_speed_modifier23
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { construction_speed_full = 0.025 }
+					AND = {
+						check_variable = { construction_speed_full > 0.025 }
+						check_variable = { construction_speed_full < 0.05 }
+					}
+				}
+			}
+			add_ideas = stat_production_speed_modifier24
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { construction_speed_full = 0.05 }
+					AND = {
+						check_variable = { construction_speed_full > 0.05 }
+						check_variable = { construction_speed_full < 0.1 }
+					}
+				}
+			}
+			add_ideas = stat_production_speed_modifier11
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { construction_speed_full = 0.1 }
+					AND = {
+						check_variable = { construction_speed_full > 0.1 }
+						check_variable = { construction_speed_full < 0.15 }
+					}
+				}
+			}
+			add_ideas = stat_production_speed_modifier12
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { construction_speed_full = 0.15 }
+					AND = {
+						check_variable = { construction_speed_full > 0.15 }
+						check_variable = { construction_speed_full < 0.20 }
+					}
+				}
+			}
+			add_ideas = stat_production_speed_modifier13
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { construction_speed_full = 0.20 }
+					AND = {
+						check_variable = { construction_speed_full > 0.20 }
+						check_variable = { construction_speed_full < 0.25 }
+					}
+				}
+			}
+			add_ideas = stat_production_speed_modifier14
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { construction_speed_full = 0.25 }
+					AND = {
+						check_variable = { construction_speed_full > 0.25 }
+						check_variable = { construction_speed_full < 0.3 }
+					}
+				}
+			}
+			add_ideas = stat_production_speed_modifier15
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { construction_speed_full = 0.3 }
+					AND = {
+						check_variable = { construction_speed_full > 0.3 }
+						check_variable = { construction_speed_full < 0.35 }
+					}
+				}
+			}
+			add_ideas = stat_production_speed_modifier16
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { construction_speed_full = 0.35 }
+					AND = {
+						check_variable = { construction_speed_full > 0.35 }
+						check_variable = { construction_speed_full < 0.4 }
+					}
+				}
+			}
+			add_ideas = stat_production_speed_modifier17
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { construction_speed_full = 0.4 }
+					AND = {
+						check_variable = { construction_speed_full > 0.4 }
+						check_variable = { construction_speed_full < 0.45 }
+					}
+				}
+			}
+			add_ideas = stat_production_speed_modifier18
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { construction_speed_full = 0.45 }
+					AND = {
+						check_variable = { construction_speed_full > 0.45 }
+						check_variable = { construction_speed_full < 0.5 }
+					}
+				}
+			}
+			add_ideas = stat_production_speed_modifier19
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { construction_speed_full = 0.5 }
+					AND = {
+						check_variable = { construction_speed_full > 0.5 }
+						check_variable = { construction_speed_full < 1.0 }
+					}
+				}
+			}
+			add_ideas = stat_production_speed_modifier20
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { construction_speed_full = -0.5 }
+					AND = {
+						check_variable = { construction_speed_full > -0.5 }
+						check_variable = { construction_speed_full < -1.00 }
+					}
+				}
+			}
+			add_ideas = stat_production_speed_modifier1
+		}
+
+		if = {
+			limit = {
+				OR = {
+					check_variable = { production_eff_gain_full = -0.5 }
+					AND = {
+						check_variable = { production_eff_gain_full > -0.5 }
+						check_variable = { production_eff_gain_full < -0.45 }
+					}
+				}
+			}
+			add_ideas = stat_production_gain_efficiency_gain_modifier2
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { production_eff_gain_full = -0.45 }
+					AND = {
+						check_variable = { production_eff_gain_full > -0.45 }
+						check_variable = { production_eff_gain_full < -0.4 }
+					}
+				}
+			}
+			add_ideas = stat_production_gain_efficiency_gain_modifier3
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { production_eff_gain_full = -0.4 }
+					AND = {
+						check_variable = { production_eff_gain_full > -0.4 }
+						check_variable = { production_eff_gain_full < -0.35 }
+					}
+				}
+			}
+			add_ideas = stat_production_gain_efficiency_gain_modifier4
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { production_eff_gain_full = -0.35 }
+					AND = {
+						check_variable = { production_eff_gain_full > -0.35 }
+						check_variable = { production_eff_gain_full < -0.3 }
+					}
+				}
+			}
+			add_ideas = stat_production_gain_efficiency_gain_modifier5
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { production_eff_gain_full = -0.3 }
+					AND = {
+						check_variable = { production_eff_gain_full > -0.3 }
+						check_variable = { production_eff_gain_full < -0.25 }
+					}
+				}
+			}
+			add_ideas = stat_production_gain_efficiency_gain_modifier6
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { production_eff_gain_full = -0.25 }
+					AND = {
+						check_variable = { production_eff_gain_full > -0.25 }
+						check_variable = { production_eff_gain_full < -0.2 }
+					}
+				}
+			}
+			add_ideas = stat_production_gain_efficiency_gain_modifier7
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { production_eff_gain_full = -0.2 }
+					AND = {
+						check_variable = { production_eff_gain_full > -0.2 }
+						check_variable = { production_eff_gain_full < -0.15 }
+					}
+				}
+			}
+			add_ideas = stat_production_gain_efficiency_gain_modifier8
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { production_eff_gain_full = -0.15 }
+					AND = {
+						check_variable = { production_eff_gain_full > -0.15 }
+						check_variable = { production_eff_gain_full < -0.1 }
+					}
+				}
+			}
+			add_ideas = stat_production_gain_efficiency_gain_modifier9
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { production_eff_gain_full = -0.1 }
+					AND = {
+						check_variable = { production_eff_gain_full > -0.1 }
+						check_variable = { production_eff_gain_full < -0.05 }
+					}
+				}
+			}
+			add_ideas = stat_production_gain_efficiency_gain_modifier10
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { production_eff_gain_full = -0.05 }
+					AND = {
+						check_variable = { production_eff_gain_full > -0.05 }
+						check_variable = { production_eff_gain_full < -0.025 }
+					}
+				}
+			}
+			add_ideas = stat_production_gain_efficiency_gain_modifier21
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { production_eff_gain_full = -0.025 }
+					AND = {
+						check_variable = { production_eff_gain_full > -0.025 }
+						check_variable = { production_eff_gain_full < -0.0125 }
+					}
+				}
+			}
+			add_ideas = stat_production_gain_efficiency_gain_modifier22
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { production_eff_gain_full = 0.0125 }
+					AND = {
+						check_variable = { production_eff_gain_full < 0.025 }
+						check_variable = { production_eff_gain_full > 0.0125 }
+					}
+				}
+			}
+			add_ideas = stat_production_gain_efficiency_gain_modifier23
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { production_eff_gain_full = 0.025 }
+					AND = {
+						check_variable = { production_eff_gain_full > 0.025 }
+						check_variable = { production_eff_gain_full < 0.05 }
+					}
+				}
+			}
+			add_ideas = stat_production_gain_efficiency_gain_modifier24
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { production_eff_gain_full = 0.05 }
+					AND = {
+						check_variable = { production_eff_gain_full > 0.05 }
+						check_variable = { production_eff_gain_full < 0.1 }
+					}
+				}
+			}
+			add_ideas = stat_production_gain_efficiency_gain_modifier11
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { production_eff_gain_full = 0.1 }
+					AND = {
+						check_variable = { production_eff_gain_full > 0.1 }
+						check_variable = { production_eff_gain_full < 0.15 }
+					}
+				}
+			}
+			add_ideas = stat_production_gain_efficiency_gain_modifier12
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { production_eff_gain_full = 0.15 }
+					AND = {
+						check_variable = { production_eff_gain_full > 0.15 }
+						check_variable = { production_eff_gain_full < 0.20 }
+					}
+				}
+			}
+			add_ideas = stat_production_gain_efficiency_gain_modifier13
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { production_eff_gain_full = 0.20 }
+					AND = {
+						check_variable = { production_eff_gain_full > 0.20 }
+						check_variable = { production_eff_gain_full < 0.25 }
+					}
+				}
+			}
+			add_ideas = stat_production_gain_efficiency_gain_modifier14
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { production_eff_gain_full = 0.25 }
+					AND = {
+						check_variable = { production_eff_gain_full > 0.25 }
+						check_variable = { production_eff_gain_full < 0.3 }
+					}
+				}
+			}
+			add_ideas = stat_production_gain_efficiency_gain_modifier15
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { production_eff_gain_full = 0.3 }
+					AND = {
+						check_variable = { production_eff_gain_full > 0.3 }
+						check_variable = { production_eff_gain_full < 0.35 }
+					}
+				}
+			}
+			add_ideas = stat_production_gain_efficiency_gain_modifier16
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { production_eff_gain_full = 0.35 }
+					AND = {
+						check_variable = { production_eff_gain_full > 0.35 }
+						check_variable = { production_eff_gain_full < 0.4 }
+					}
+				}
+			}
+			add_ideas = stat_production_gain_efficiency_gain_modifier17
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { production_eff_gain_full = 0.4 }
+					AND = {
+						check_variable = { production_eff_gain_full > 0.4 }
+						check_variable = { production_eff_gain_full < 0.45 }
+					}
+				}
+			}
+			add_ideas = stat_production_gain_efficiency_gain_modifier18
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { production_eff_gain_full = 0.45 }
+					AND = {
+						check_variable = { production_eff_gain_full > 0.45 }
+						check_variable = { production_eff_gain_full < 0.5 }
+					}
+				}
+			}
+			add_ideas = stat_production_gain_efficiency_gain_modifier19
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { production_eff_gain_full = 0.5 }
+					AND = {
+						check_variable = { production_eff_gain_full > 0.5 }
+						check_variable = { production_eff_gain_full < 1.0 }
+					}
+				}
+			}
+			add_ideas = stat_production_gain_efficiency_gain_modifier20
+		}
+		else_if = {
+			limit = {
+				OR = {
+					check_variable = { production_eff_gain_full = -0.5 }
+					AND = {
+						check_variable = { production_eff_gain_full > -0.5 }
+						check_variable = { production_eff_gain_full < -1.00 }
+					}
+				}
+			}
+			add_ideas = stat_production_gain_efficiency_gain_modifier1
+		}
+		
+	
+		remove_ideas = job_stats
+		remove_ideas = trade_pop
+		remove_ideas = economic_pop
+		remove_ideas = war_pop
+		remove_ideas = issue_ideology_drift_effects
+		add_ideas = job_stats
+		add_ideas = trade_pop
+		add_ideas = economic_pop
+		add_ideas = war_pop
+		add_ideas = issue_ideology_drift_effects
+	}
+	
+	mean_time_to_happen = {
+		days = 1 
+	}
+	
+	trigger = {
+		always = yes
+	}
+}

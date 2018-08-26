@@ -1,0 +1,407 @@
+ideologies = {
+	democratic = {
+		
+		types = {
+			conservatism = {
+			}
+		
+			liberalism = {
+			}
+		
+			socialism = {
+			}
+		}
+		
+		color = { 0 51 204 }
+		
+		rules = {
+			can_declare_war_on_same_ideology = yes
+			can_force_government = yes
+			can_send_volunteers = yes
+			can_puppet = no
+			can_lower_tension = yes
+			can_only_justify_war_on_threat_country = no
+			can_guarantee_other_ideologies = yes
+		}
+		
+		dynamic_faction_names = {
+			"FACTION_NAME_DEMOCRATIC_1"
+			"FACTION_NAME_DEMOCRATIC_2"
+			"FACTION_NAME_DEMOCRATIC_3"
+			"FACTION_NAME_DEMOCRATIC_4"
+			"FACTION_NAME_DEMOCRATIC_5"
+			"FACTION_NAME_DEMOCRATIC_6"
+		}
+		
+		modifiers = {
+			justify_war_goal_time = 0.75
+			generate_wargoal_tension = 0.10
+			join_faction_tension = 0.30
+			lend_lease_tension = 0.30
+			send_volunteers_tension = 0.30
+			guarantee_tension = 0.2
+			take_states_cost_factor = 0.25
+			annex_cost_factor = 0.5
+			research_time_factor = -0.05
+			production_speed_buildings_factor = 0.05
+		}
+		
+		faction_modifiers = {
+			faction_trade_opinion_factor = 0.50 #plus 50% trade opinion
+		}
+		
+		ai_democratic = yes # uses the democratic AI behaviour
+		
+	}
+		
+		
+	
+		
+	liberal_democracy = {
+		color = { 0 204 153 }
+		types = {
+			liberal_congress = {
+			}
+		}
+		rules = {
+			can_declare_war_on_same_ideology = no
+			can_force_government = yes
+			can_send_volunteers = no
+			can_puppet = no
+			can_lower_tension = yes
+			can_only_justify_war_on_threat_country = yes
+			can_guarantee_other_ideologies = yes
+		}
+		
+		dynamic_faction_names = {
+			"FACTION_NAME_DEMOCRATIC_1"
+			"FACTION_NAME_DEMOCRATIC_2"
+			"FACTION_NAME_DEMOCRATIC_3"
+			"FACTION_NAME_DEMOCRATIC_4"
+			"FACTION_NAME_DEMOCRATIC_5"
+			"FACTION_NAME_DEMOCRATIC_6"
+		}
+		
+		modifiers = {
+			justify_war_goal_time = 1.00
+			generate_wargoal_tension = 0.1
+			join_faction_tension = 0.30
+			lend_lease_tension = 0.30
+			send_volunteers_tension = 0.30
+			guarantee_tension = 0.2
+			take_states_cost_factor = 0.40
+			annex_cost_factor = 0.5
+			research_time_factor = -0.075
+		}
+		
+		faction_modifiers = {
+			faction_trade_opinion_factor = 0.50 #plus 50% trade opinion
+		}
+		
+		ai_democratic = yes # uses the democratic AI behaviour
+	}
+			
+	anarcho_liberal_democracy = {
+		color = { 255 102 255 }
+		rules = {
+			can_declare_war_on_same_ideology = no
+			can_force_government = yes
+			can_send_volunteers = no
+			can_puppet = no
+			can_lower_tension = yes
+			can_only_justify_war_on_threat_country = yes
+			can_guarantee_other_ideologies = yes
+		}
+		
+		types = {
+			anarcho_liberal_congress = {
+			}
+		}
+		
+		dynamic_faction_names = {
+			"FACTION_NAME_DEMOCRATIC_1"
+			"FACTION_NAME_DEMOCRATIC_2"
+			"FACTION_NAME_DEMOCRATIC_3"
+			"FACTION_NAME_DEMOCRATIC_4"
+			"FACTION_NAME_DEMOCRATIC_5"
+			"FACTION_NAME_DEMOCRATIC_6"
+		}
+		
+		modifiers = {
+			justify_war_goal_time = 1.00
+			generate_wargoal_tension = 1.00
+			join_faction_tension = 0.50
+			lend_lease_tension = 0.50
+			send_volunteers_tension = 0.50
+			guarantee_tension = 0.2
+			take_states_cost_factor = 0.40
+			annex_cost_factor = 0.5
+			research_time_factor = -0.075
+			local_resources_factor = 0.025
+			production_speed_buildings_factor = -0.025
+		}
+		
+		faction_modifiers = {
+			faction_trade_opinion_factor = 0.50 #plus 50% trade opinion
+		}
+		
+		ai_democratic = yes # uses the democratic AI behaviour
+	}
+			
+	reactionary_democracy = {
+		color = { 255 0 0 }
+		types = {
+			reactionary_congress = {
+			}
+		}
+		rules = {
+					can_declare_war_on_same_ideology = yes
+					can_force_government = yes
+					can_send_volunteers = yes
+					can_puppet = yes
+					can_lower_tension = yes
+					can_only_justify_war_on_threat_country = no
+					can_guarantee_other_ideologies = yes
+		}
+		
+		dynamic_faction_names = {
+			"FACTION_NAME_DEMOCRATIC_1"
+			"FACTION_NAME_DEMOCRATIC_2"
+			"FACTION_NAME_DEMOCRATIC_3"
+			"FACTION_NAME_DEMOCRATIC_4"
+			"FACTION_NAME_DEMOCRATIC_5"
+			"FACTION_NAME_DEMOCRATIC_6"
+		}
+		
+		modifiers = {
+			justify_war_goal_time = 0.50
+			generate_wargoal_tension = 0.0
+			join_faction_tension = 0.20
+			lend_lease_tension = 0.20
+			send_volunteers_tension = 0.10
+			guarantee_tension = 0.05
+			take_states_cost_factor = 0.25
+			annex_cost_factor = 0.5
+			production_speed_buildings_factor = 0.05
+			land_reinforce_rate = 0.05
+			supply_consumption_factor = -0.05
+			research_time_factor = 0.025
+		}
+		
+		faction_modifiers = {
+			faction_trade_opinion_factor = 0.50 #plus 50% trade opinion
+		}
+		
+		ai_democratic = yes # uses the democratic AI behaviour
+	}
+		
+	social_democracy = {
+		color = { 255 255 102 }
+		types = {
+			social_democrat = {
+			}
+		}
+		rules = {
+					can_declare_war_on_same_ideology = no
+					can_force_government = yes
+					can_send_volunteers = no
+					can_puppet = no
+					can_lower_tension = yes
+					can_only_justify_war_on_threat_country = yes
+					can_guarantee_other_ideologies = yes
+		}
+		
+		dynamic_faction_names = {
+			"FACTION_NAME_DEMOCRATIC_1"
+			"FACTION_NAME_DEMOCRATIC_2"
+			"FACTION_NAME_DEMOCRATIC_3"
+			"FACTION_NAME_DEMOCRATIC_4"
+			"FACTION_NAME_DEMOCRATIC_5"
+			"FACTION_NAME_DEMOCRATIC_6"
+		}
+		
+		modifiers = {
+			justify_war_goal_time = 1.25
+			generate_wargoal_tension = 1.00
+			join_faction_tension = 0.80
+			lend_lease_tension = 0.50
+			send_volunteers_tension = 0.50
+			guarantee_tension = 0.25
+			take_states_cost_factor = 0.25
+			annex_cost_factor = 0.5
+			research_time_factor = -0.08
+			land_reinforce_rate = -0.05
+			supply_consumption_factor = 0.05
+			production_speed_buildings_factor = 0.025
+		}
+		
+		faction_modifiers = {
+			faction_trade_opinion_factor = 0.50 #plus 50% trade opinion
+		}
+		
+		ai_democratic = yes # uses the democratic AI behaviour
+	}
+
+
+	communism = {
+		
+		types = {
+		
+			marxism = {
+			}
+			
+			leninism = {
+			}
+			
+			stalinism = {
+			}
+			
+			anti_revisionism = {
+			}
+			
+			anarchist_communism = {
+			}
+		}
+		
+		dynamic_faction_names = {
+			"FACTION_NAME_COMMUNIST_1"
+			"FACTION_NAME_COMMUNIST_2"
+			"FACTION_NAME_COMMUNIST_3"
+			"FACTION_NAME_COMMUNIST_4"
+			"FACTION_NAME_COMMUNIST_5"
+		}
+		
+		color = { 0 51 0 }
+		
+		war_impact_on_world_tension = 0.75		#Commie less threatening
+		faction_impact_on_world_tension = 0.5
+		
+		ai_communist = yes # uses the commie AI behaviour
+		
+		rules = {
+			can_force_government = no
+			can_send_volunteers = yes
+			can_puppet = yes
+		}
+		
+		modifiers = {
+			puppet_cost_factor = -0.3
+			drift_defence_factor = 0.10
+			political_power_factor = 0.05
+			enemy_partisan_effect = -0.05
+			production_speed_buildings_factor = 0.05
+		}
+		
+		faction_modifiers = {
+			
+		}
+
+	}
+
+	fascism = {
+	
+		types = {
+		
+			nazism = {
+			}
+			
+			fascism_ideology = {
+			}
+			
+			falangism = {
+			}
+			
+			rexism = {
+			}
+		}
+		
+		dynamic_faction_names = {
+			"FACTION_NAME_FASCIST_1"
+			"FACTION_NAME_FASCIST_2"
+			"FACTION_NAME_FASCIST_3"
+			"FACTION_NAME_FASCIST_4"
+			"FACTION_NAME_FASCIST_5"
+		}
+		
+		color = { 150 75 0 }
+		
+		war_impact_on_world_tension = 1.0			#evil!
+		faction_impact_on_world_tension = 1.0
+		
+		rules = {
+			can_force_government = no
+			can_send_volunteers = yes
+			can_puppet = yes
+		}
+		
+		modifiers = {
+			justify_war_goal_when_in_major_war_time = -0.80
+			production_factory_max_efficiency_factor = 0.10
+			army_attack_factor = 0.25
+			army_defense_factor = 0.25
+			experience_gain_army = 0.25
+		}
+
+		ai_fascist = yes # uses the fascist AI behaviour
+	}
+	
+	neutrality = {
+		
+		types = {
+		
+			despotism  = {
+			}
+			
+			oligarchism  = {
+			}
+			
+			moderatism = {
+			}
+			
+			centrism = {
+			}
+		}
+
+		dynamic_faction_names = {
+			"FACTION_NAME_NONALIGNED_1"
+			"FACTION_NAME_NONALIGNED_2"
+			"FACTION_NAME_NONALIGNED_3"
+			"FACTION_NAME_NONALIGNED_4"
+			"FACTION_NAME_NONALIGNED_5"
+		}
+		
+		color = { 153 102 51 }
+		
+		
+		war_impact_on_world_tension = 0.25		#no major danger
+		faction_impact_on_world_tension = 0.1
+		
+		rules = {
+			can_force_government = no
+			can_puppet = yes
+			can_send_volunteers = no
+		}
+		
+		modifiers = {
+			#increased_influence_factor = 0.3 #30% easier to influence
+			justify_war_goal_time = 0.4
+			generate_wargoal_tension = 0.1
+			join_faction_tension = 0.4
+			lend_lease_tension = 0.4
+			send_volunteers_tension = 0.4
+			guarantee_tension = 0.4
+			drift_defence_factor = -0.3	
+			stability_factor = 0.10
+			army_core_attack_factor = 0.25
+			army_core_defence_factor = 0.25
+		}
+		
+		faction_modifiers = {
+		}
+
+		can_be_boosted = no
+		can_collaborate = yes
+
+		ai_neutral = yes # 
+	}
+}

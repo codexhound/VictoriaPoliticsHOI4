@@ -1,0 +1,2893 @@
+ideas = {
+	country = 
+	{
+		stat_production_speed_modifier21 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				production_speed_buildings_factor = -0.025
+			}
+		}
+		stat_production_speed_modifier22 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				production_speed_buildings_factor = -0.0125
+			}
+		}
+		stat_production_speed_modifier23 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				production_speed_buildings_factor = 0.0125
+			}
+		}
+		stat_production_speed_modifier24 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				production_speed_buildings_factor = 0.025
+			}
+		}
+		stat_production_speed_modifier1 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				production_speed_buildings_factor = -0.5
+			}
+		}
+		stat_production_speed_modifier2 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				production_speed_buildings_factor = -0.45
+			}
+		}
+		stat_production_speed_modifier3 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				production_speed_buildings_factor = -0.4
+			}
+		}
+		stat_production_speed_modifier4 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				production_speed_buildings_factor = -0.35
+			}
+		}
+		stat_production_speed_modifier5 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				production_speed_buildings_factor = -0.3
+			}
+		}
+		stat_production_speed_modifier6 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				production_speed_buildings_factor = -0.25
+			}
+		}
+		stat_production_speed_modifier7 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				production_speed_buildings_factor = -0.2
+			}
+		}
+		stat_production_speed_modifier8 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				production_speed_buildings_factor = -0.15
+			}
+		}
+		stat_production_speed_modifier9 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				production_speed_buildings_factor = -0.1
+			}
+		}
+		stat_production_speed_modifier10 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				production_speed_buildings_factor = -0.05
+			}
+		}
+		stat_production_speed_modifier11 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		stat_production_speed_modifier12 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		stat_production_speed_modifier13 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				production_speed_buildings_factor = 0.15
+			}
+		}
+		stat_production_speed_modifier14 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				production_speed_buildings_factor = 0.20
+			}
+		}
+		stat_production_speed_modifier15 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				production_speed_buildings_factor = 0.25
+			}
+		}
+		stat_production_speed_modifier16 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				production_speed_buildings_factor = 0.30
+			}
+		}
+		stat_production_speed_modifier17 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				production_speed_buildings_factor = 0.35
+			}
+		}
+		stat_production_speed_modifier18 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				production_speed_buildings_factor = 0.40
+			}
+		}
+		stat_production_speed_modifier19 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				production_speed_buildings_factor = 0.45
+			}
+		}
+		stat_production_speed_modifier20 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				production_speed_buildings_factor = 0.5
+			}
+		}
+
+		stat_production_gain_efficiency_gain_modifier21 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				production_factory_efficiency_gain_factor = -0.025
+			}
+		}
+		stat_production_gain_efficiency_gain_modifier22 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				production_factory_efficiency_gain_factor = -0.0125
+			}
+		}
+		stat_production_gain_efficiency_gain_modifier23 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.0125
+			}
+		}
+		stat_production_gain_efficiency_gain_modifier24 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.025
+			}
+		}
+		stat_production_gain_efficiency_gain_modifier1 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				production_factory_efficiency_gain_factor = -0.5
+			}
+		}
+		stat_production_gain_efficiency_gain_modifier2 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				production_factory_efficiency_gain_factor = -0.45
+			}
+		}
+		stat_production_gain_efficiency_gain_modifier3 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				production_factory_efficiency_gain_factor = -0.4
+			}
+		}
+		stat_production_gain_efficiency_gain_modifier4 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				production_factory_efficiency_gain_factor = -0.35
+			}
+		}
+		stat_production_gain_efficiency_gain_modifier5 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				production_factory_efficiency_gain_factor = -0.3
+			}
+		}
+		stat_production_gain_efficiency_gain_modifier6 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				production_factory_efficiency_gain_factor = -0.25
+			}
+		}
+		stat_production_gain_efficiency_gain_modifier7 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				production_factory_efficiency_gain_factor = -0.2
+			}
+		}
+		stat_production_gain_efficiency_gain_modifier8 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				production_factory_efficiency_gain_factor = -0.15
+			}
+		}
+		stat_production_gain_efficiency_gain_modifier9 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				production_factory_efficiency_gain_factor = -0.1
+			}
+		}
+		stat_production_gain_efficiency_gain_modifier10 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				production_factory_efficiency_gain_factor = -0.05
+			}
+		}
+		stat_production_gain_efficiency_gain_modifier11 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+		stat_production_gain_efficiency_gain_modifier12 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.1
+			}
+		}
+		stat_production_gain_efficiency_gain_modifier13 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.15
+			}
+		}
+		stat_production_gain_efficiency_gain_modifier14 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.20
+			}
+		}
+		stat_production_gain_efficiency_gain_modifier15 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.25
+			}
+		}
+		stat_production_gain_efficiency_gain_modifier16 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.30
+			}
+		}
+		stat_production_gain_efficiency_gain_modifier17 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.35
+			}
+		}
+		stat_production_gain_efficiency_gain_modifier18 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.40
+			}
+		}
+		stat_production_gain_efficiency_gain_modifier19 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.45
+			}
+		}
+		stat_production_gain_efficiency_gain_modifier20 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.5
+			}
+		}
+
+		stat_research_modifier21 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				research_time_factor = -0.025
+			}
+		}
+		stat_research_modifier22 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				research_time_factor = -0.0125
+			}
+		}
+		stat_research_modifier23 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				research_time_factor = 0.0125
+			}
+		}
+		stat_research_modifier24 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				research_time_factor = 0.025
+			}
+		}
+		stat_research_modifier1 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				research_time_factor = -0.5
+			}
+		}
+		stat_research_modifier2 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				research_time_factor = -0.45
+			}
+		}
+		stat_research_modifier3 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				research_time_factor = -0.4
+			}
+		}
+		stat_research_modifier4 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				research_time_factor = -0.35
+			}
+		}
+		stat_research_modifier5 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				research_time_factor = -0.3
+			}
+		}
+		stat_research_modifier6 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				research_time_factor = -0.25
+			}
+		}
+		stat_research_modifier7 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				research_time_factor = -0.2
+			}
+		}
+		stat_research_modifier8 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				research_time_factor = -0.15
+			}
+		}
+		stat_research_modifier9 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				research_time_factor = -0.1
+			}
+		}
+		stat_research_modifier10 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				research_time_factor = -0.05
+			}
+		}
+		stat_research_modifier11 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				research_time_factor = 0.05
+			}
+		}
+		stat_research_modifier12 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				research_time_factor = 0.1
+			}
+		}
+		stat_research_modifier13 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				research_time_factor = 0.15
+			}
+		}
+		stat_research_modifier14 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				research_time_factor = 0.20
+			}
+		}
+		stat_research_modifier15 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				research_time_factor = 0.25
+			}
+		}
+		stat_research_modifier16 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				research_time_factor = 0.30
+			}
+		}
+		stat_research_modifier17 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				research_time_factor = 0.35
+			}
+		}
+		stat_research_modifier18 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				research_time_factor = 0.40
+			}
+		}
+		stat_research_modifier19 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				research_time_factor = 0.45
+			}
+		}
+		stat_research_modifier20 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				research_time_factor = 0.5
+			}
+		}
+
+		stat_resource_eff_modifier21 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				local_resources_factor = -0.025
+			}
+		}
+		stat_resource_eff_modifier22 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				local_resources_factor = -0.0125
+			}
+		}
+		stat_resource_eff_modifier23 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				local_resources_factor = 0.0125
+			}
+		}
+		stat_resource_eff_modifier24 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				local_resources_factor = 0.025
+			}
+		}
+		stat_resource_eff_modifier1 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				local_resources_factor = -0.5
+			}
+		}
+		stat_resource_eff_modifier2 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				local_resources_factor = -0.45
+			}
+		}
+		stat_resource_eff_modifier3 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				local_resources_factor = -0.4
+			}
+		}
+		stat_resource_eff_modifier4 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				local_resources_factor = -0.35
+			}
+		}
+		stat_resource_eff_modifier5 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				local_resources_factor = -0.3
+			}
+		}
+		stat_resource_eff_modifier6 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				local_resources_factor = -0.25
+			}
+		}
+		stat_resource_eff_modifier7 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				local_resources_factor = -0.2
+			}
+		}
+		stat_resource_eff_modifier8 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				local_resources_factor = -0.15
+			}
+		}
+		stat_resource_eff_modifier9 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				local_resources_factor = -0.1
+			}
+		}
+		stat_resource_eff_modifier10 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				local_resources_factor = -0.05
+			}
+		}
+		stat_resource_eff_modifier11 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				local_resources_factor = 0.05
+			}
+		}
+		stat_resource_eff_modifier12 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				local_resources_factor = 0.1
+			}
+		}
+		stat_resource_eff_modifier13 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				local_resources_factor = 0.15
+			}
+		}
+		stat_resource_eff_modifier14 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				local_resources_factor = 0.20
+			}
+		}
+		stat_resource_eff_modifier15 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				local_resources_factor = 0.25
+			}
+		}
+		stat_resource_eff_modifier16 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				local_resources_factor = 0.30
+			}
+		}
+		stat_resource_eff_modifier17 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				local_resources_factor = 0.35
+			}
+		}
+		stat_resource_eff_modifier18 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				local_resources_factor = 0.40
+			}
+		}
+		stat_resource_eff_modifier19 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				local_resources_factor = 0.45
+			}
+		}
+		stat_resource_eff_modifier20 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				local_resources_factor = 0.5
+			}
+		}
+
+		stat_war_support_modifier21 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				war_support_weekly = -0.025
+			}
+		}
+		stat_war_support_modifier22 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				war_support_weekly = -0.0125
+			}
+		}
+		stat_war_support_modifier23 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				war_support_weekly = 0.0125
+			}
+		}
+		stat_war_support_modifier24 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				war_support_weekly = 0.025
+			}
+		}
+		stat_war_support_modifier1 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				war_support_weekly = -0.5
+			}
+		}
+		stat_war_support_modifier2 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				war_support_weekly = -0.45
+			}
+		}
+		stat_war_support_modifier3 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				war_support_weekly = -0.4
+			}
+		}
+		stat_war_support_modifier4 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				war_support_weekly = -0.35
+			}
+		}
+		stat_war_support_modifier5 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				war_support_weekly = -0.3
+			}
+		}
+		stat_war_support_modifier6 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				war_support_weekly = -0.25
+			}
+		}
+		stat_war_support_modifier7 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				war_support_weekly = -0.2
+			}
+		}
+		stat_war_support_modifier8 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				war_support_weekly = -0.15
+			}
+		}
+		stat_war_support_modifier9 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				war_support_weekly = -0.1
+			}
+		}
+		stat_war_support_modifier10 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				war_support_weekly = -0.05
+			}
+		}
+		stat_war_support_modifier11 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				war_support_weekly = 0.05
+			}
+		}
+		stat_war_support_modifier12 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				war_support_weekly = 0.1
+			}
+		}
+		stat_war_support_modifier13 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				war_support_weekly = 0.15
+			}
+		}
+		stat_war_support_modifier14 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				war_support_weekly = 0.20
+			}
+		}
+		stat_war_support_modifier15 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				war_support_weekly = 0.25
+			}
+		}
+		stat_war_support_modifier16 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				war_support_weekly = 0.30
+			}
+		}
+		stat_war_support_modifier17 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				war_support_weekly = 0.35
+			}
+		}
+		stat_war_support_modifier18 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				war_support_weekly = 0.40
+			}
+		}
+		stat_war_support_modifier19 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				war_support_weekly = 0.45
+			}
+		}
+		stat_war_support_modifier20 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				war_support_weekly = 0.5
+			}
+		}
+
+		stat_army_morale_modifier21 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				army_morale_factor = -0.025
+			}
+		}
+		stat_army_morale_modifier22 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				army_morale_factor = -0.0125
+			}
+		}
+		stat_army_morale_modifier23 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				army_morale_factor = 0.0125
+			}
+		}
+		stat_army_morale_modifier24 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				army_morale_factor = 0.025
+			}
+		}
+		stat_army_morale_modifier1 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				army_morale_factor = -0.5
+			}
+		}
+		stat_army_morale_modifier2 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				army_morale_factor = -0.45
+			}
+		}
+		stat_army_morale_modifier3 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				army_morale_factor = -0.4
+			}
+		}
+		stat_army_morale_modifier4 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				army_morale_factor = -0.35
+			}
+		}
+		stat_army_morale_modifier5 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				army_morale_factor = -0.3
+			}
+		}
+		stat_army_morale_modifier6 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				army_morale_factor = -0.25
+			}
+		}
+		stat_army_morale_modifier7 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				army_morale_factor = -0.2
+			}
+		}
+		stat_army_morale_modifier8 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				army_morale_factor = -0.15
+			}
+		}
+		stat_army_morale_modifier9 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				army_morale_factor = -0.1
+			}
+		}
+		stat_army_morale_modifier10 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				army_morale_factor = -0.05
+			}
+		}
+		stat_army_morale_modifier11 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				army_morale_factor = 0.05
+			}
+		}
+		stat_army_morale_modifier12 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				army_morale_factor = 0.1
+			}
+		}
+		stat_army_morale_modifier13 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				army_morale_factor = 0.15
+			}
+		}
+		stat_army_morale_modifier14 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				army_morale_factor = 0.20
+			}
+		}
+		stat_army_morale_modifier15 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				army_morale_factor = 0.25
+			}
+		}
+		stat_army_morale_modifier16 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				army_morale_factor = 0.30
+			}
+		}
+		stat_army_morale_modifier17 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				army_morale_factor = 0.35
+			}
+		}
+		stat_army_morale_modifier18 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				army_morale_factor = 0.40
+			}
+		}
+		stat_army_morale_modifier19 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				army_morale_factor = 0.45
+			}
+		}
+		stat_army_morale_modifier20 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				army_morale_factor = 0.5
+			}
+		}
+
+
+		stat_reinforce_rate_modifier21 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				land_reinforce_rate = -0.025
+			}
+		}
+		stat_reinforce_rate_modifier22 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				land_reinforce_rate = -0.0125
+			}
+		}
+		stat_reinforce_rate_modifier23 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				land_reinforce_rate = 0.0125
+			}
+		}
+		stat_reinforce_rate_modifier24 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				land_reinforce_rate = 0.025
+			}
+		}
+		stat_reinforce_rate_modifier1 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				land_reinforce_rate = -0.5
+			}
+		}
+		stat_reinforce_rate_modifier2 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				land_reinforce_rate = -0.45
+			}
+		}
+		stat_reinforce_rate_modifier3 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				land_reinforce_rate = -0.4
+			}
+		}
+		stat_reinforce_rate_modifier4 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				land_reinforce_rate = -0.35
+			}
+		}
+		stat_reinforce_rate_modifier5 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				land_reinforce_rate = -0.3
+			}
+		}
+		stat_reinforce_rate_modifier6 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				land_reinforce_rate = -0.25
+			}
+		}
+		stat_reinforce_rate_modifier7 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				land_reinforce_rate = -0.2
+			}
+		}
+		stat_reinforce_rate_modifier8 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				land_reinforce_rate = -0.15
+			}
+		}
+		stat_reinforce_rate_modifier9 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				land_reinforce_rate = -0.1
+			}
+		}
+		stat_reinforce_rate_modifier10 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				land_reinforce_rate = -0.05
+			}
+		}
+		stat_reinforce_rate_modifier11 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				land_reinforce_rate = 0.05
+			}
+		}
+		stat_reinforce_rate_modifier12 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				land_reinforce_rate = 0.1
+			}
+		}
+		stat_reinforce_rate_modifier13 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				land_reinforce_rate = 0.15
+			}
+		}
+		stat_reinforce_rate_modifier14 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				land_reinforce_rate = 0.20
+			}
+		}
+		stat_reinforce_rate_modifier15 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				land_reinforce_rate = 0.25
+			}
+		}
+		stat_reinforce_rate_modifier16 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				land_reinforce_rate = 0.30
+			}
+		}
+		stat_reinforce_rate_modifier17 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				land_reinforce_rate = 0.35
+			}
+		}
+		stat_reinforce_rate_modifier18 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				land_reinforce_rate = 0.40
+			}
+		}
+		stat_reinforce_rate_modifier19 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				land_reinforce_rate = 0.45
+			}
+		}
+		stat_reinforce_rate_modifier20 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				land_reinforce_rate = 0.5
+			}
+		}
+
+		stat_supply_consumption_factor_modifier21 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				supply_consumption_factor = -0.025
+			}
+		}
+		stat_supply_consumption_factor_modifier22 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				supply_consumption_factor = -0.0125
+			}
+		}
+		stat_supply_consumption_factor_modifier23 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				supply_consumption_factor = 0.0125
+			}
+		}
+		stat_supply_consumption_factor_modifier24 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				supply_consumption_factor = 0.025
+			}
+		}
+		stat_supply_consumption_factor_modifier1 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				supply_consumption_factor = -0.5
+			}
+		}
+		stat_supply_consumption_factor_modifier2 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				supply_consumption_factor = -0.45
+			}
+		}
+		stat_supply_consumption_factor_modifier3 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				supply_consumption_factor = -0.4
+			}
+		}
+		stat_supply_consumption_factor_modifier4 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				supply_consumption_factor = -0.35
+			}
+		}
+		stat_supply_consumption_factor_modifier5 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				supply_consumption_factor = -0.3
+			}
+		}
+		stat_supply_consumption_factor_modifier6 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				supply_consumption_factor = -0.25
+			}
+		}
+		stat_supply_consumption_factor_modifier7 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				supply_consumption_factor = -0.2
+			}
+		}
+		stat_supply_consumption_factor_modifier8 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				supply_consumption_factor = -0.15
+			}
+		}
+		stat_supply_consumption_factor_modifier9 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				supply_consumption_factor = -0.1
+			}
+		}
+		stat_supply_consumption_factor_modifier10 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				supply_consumption_factor = -0.05
+			}
+		}
+		stat_supply_consumption_factor_modifier11 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				supply_consumption_factor = 0.05
+			}
+		}
+		stat_supply_consumption_factor_modifier12 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				supply_consumption_factor = 0.1
+			}
+		}
+		stat_supply_consumption_factor_modifier13 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				supply_consumption_factor = 0.15
+			}
+		}
+		stat_supply_consumption_factor_modifier14 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				supply_consumption_factor = 0.20
+			}
+		}
+		stat_supply_consumption_factor_modifier15 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				supply_consumption_factor = 0.25
+			}
+		}
+		stat_supply_consumption_factor_modifier16 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				supply_consumption_factor = 0.30
+			}
+		}
+		stat_supply_consumption_factor_modifier17 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				supply_consumption_factor = 0.35
+			}
+		}
+		stat_supply_consumption_factor_modifier18 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				supply_consumption_factor = 0.40
+			}
+		}
+		stat_supply_consumption_factor_modifier19 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				supply_consumption_factor = 0.45
+			}
+		}
+		stat_supply_consumption_factor_modifier20 = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = generic_production_bonus
+		
+			ai_will_do = {
+				factor = 0
+			}
+			modifier = {
+				supply_consumption_factor = 0.5
+			}
+		}
+	}
+}

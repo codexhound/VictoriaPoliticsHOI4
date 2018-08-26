@@ -1,0 +1,93 @@
+ideas = {
+	country = 
+	{
+		issue_ideology_drift_effects = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = idealogy_drift
+		
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	
+		job_stats = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = economic_class_stats
+			
+			modifier = {
+				production_speed_buildings_factor = 0.0
+				research_speed_factor = 0.0
+				production_factory_efficiency_gain_factor = 0.0
+				local_resources_factor = 0.0
+			}
+		
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	
+		trade_pop = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = trade_policy_stats
+					
+			modifier = {
+				production_speed_buildings_factor = 0.0
+				research_speed_factor = 0.0
+			}
+		
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		
+		economic_pop = 
+		{
+			allowed = {
+				always = yes
+			}
+			
+			picture = economicy_policy_stats
+					
+			modifier = {
+				local_resources_factor = 0.0
+				production_speed_buildings_factor = 0.0
+			}
+		
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		
+		war_pop = 
+		{
+			allowed = {
+				always = yes
+			}
+	
+			picture = war_policy_stats
+					
+			modifier = {
+				war_support_weekly = 0.0
+				army_morale_factor = 0.0
+				land_reinforce_rate = 0.0
+				supply_consumption_factor = 0.0
+			}
+		
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+}

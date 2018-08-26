@@ -1,0 +1,932 @@
+economic_law_referendums = {
+	civilian_economy_decision_nocostreferendum = 
+	{
+		fire_only_once = no
+		days_re_enable = 50
+		days_remove = 50
+		cost = 0
+		visible = {
+			NOT = { has_idea = civilian_economy }
+			OR = {
+				has_government = democratic
+				has_government = reactionary_democracy
+				has_government = liberal_democracy
+				has_government = anarcho_liberal_democracy
+				has_government = social_democracy
+			}
+			if = {
+				limit = { has_idea = undisturbed_isolation }
+				OR = 
+				{
+					has_war_support > 0.5
+					has_war = yes
+				}
+			}
+			if = {
+				limit = { has_idea = isolation }
+				OR = 
+				{
+					has_war_support > 0.75
+					has_war = yes
+				}
+			}
+		}
+		available = {
+			check_variable = { ROOT.changed_economy_law = 0 }
+			has_war_support < 0.20
+			NOT = { has_idea = civilian_economy }
+			OR = {
+				has_government = democratic
+				has_government = reactionary_democracy
+				has_government = liberal_democracy
+				has_government = anarcho_liberal_democracy
+				has_government = social_democracy
+			}
+			if = {
+				limit = { has_idea = undisturbed_isolation }
+				OR = 
+				{
+					has_war_support > 0.5
+					has_war = yes
+				}
+			}
+			if = {
+				limit = { has_idea = isolation }
+				OR = 
+				{
+					has_war_support > 0.75
+					has_war = yes
+				}
+			}
+		}
+		allowed = {
+			
+		}
+		
+		complete_effect = {
+			add_ideas = civilian_economy
+			set_variable = { ROOT.changed_economy_law = 1 }
+		}
+		remove_effect = {
+			set_variable = { ROOT.changed_economy_law = 0 }
+		}
+	}
+
+	civilian_economy_decision_referendum = 
+	{
+		fire_only_once = no
+		days_re_enable = 50
+		days_remove = 50
+		cost = 50
+		visible = {
+			NOT = { has_idea = civilian_economy }
+			OR = {
+				has_government = fascism
+				has_government = communism
+				has_government = neutrality
+			}
+			if = {
+				limit = { has_idea = undisturbed_isolation }
+				OR = 
+				{
+					has_war_support > 0.5
+					has_war = yes
+				}
+			}
+			if = {
+				limit = { has_idea = isolation }
+				OR = 
+				{
+					has_war_support > 0.75
+					has_war = yes
+				}
+			}
+		}
+		available = {
+			has_war_support < 0.20
+			check_variable = { ROOT.changed_economy_law = 0 }
+			NOT = { has_idea = civilian_economy }
+			OR = {
+				has_government = fascism
+				has_government = communism
+				has_government = neutrality
+			}
+			if = {
+				limit = { has_idea = undisturbed_isolation }
+				OR = 
+				{
+					has_war_support > 0.5
+					has_war = yes
+				}
+			}
+			if = {
+				limit = { has_idea = isolation }
+				OR = 
+				{
+					has_war_support > 0.75
+					has_war = yes
+				}
+			}
+		}
+		allowed = {
+			
+		}
+		
+		complete_effect = {
+			add_ideas = civilian_economy
+			set_variable = { ROOT.changed_economy_law = 1 }
+		}
+		remove_effect = {
+			set_variable = { ROOT.changed_economy_law = 0 }
+		}
+	}
+
+	limited_mobilisation_decision_referendum = {
+		fire_only_once = no
+		days_re_enable = 50
+		days_remove = 50
+		cost = 0
+		visible = {
+			NOT = { has_idea = low_economic_mobilisation }
+			if = {
+					limit = {
+						original_tag = HUN
+						has_dlc = "Death or Dishonor"
+					}
+					NOT = { has_idea = HUN_treaty_of_triannon }
+				}	
+			if = {
+				limit = { has_idea = undisturbed_isolation }
+				OR = 
+				{
+					has_war_support > 0.5
+					has_war = yes
+				}
+			}
+			if = {
+				limit = { has_idea = isolation }
+				OR = 
+				{
+					has_war_support > 0.75
+					has_war = yes
+				}
+			}
+		}
+		available = {
+			check_variable = { ROOT.changed_economy_law = 0 }
+			OR = {
+				has_defensive_war = yes
+				threat > 0.20
+				AND = {
+					OR = {
+						has_government = fascism
+						has_government = communism
+						has_government = neutrality
+					}
+					has_war_support > 0.20
+					has_offensive_war = yes
+				}
+				AND = {
+					OR = {
+						has_war = yes
+						has_government = democratic
+						has_government = reactionary_democracy
+						has_government = liberal_democracy
+						has_government = anarcho_liberal_democracy
+					}
+					OR = {
+						has_war_support > 0.30
+						AND = {
+							has_war_support > 0.20
+							has_offensive_war = yes
+						}
+					}
+				}
+			}
+			NOT = { has_idea = low_economic_mobilisation }
+			if = {
+					limit = {
+						original_tag = HUN
+						has_dlc = "Death or Dishonor"
+					}
+					NOT = { has_idea = HUN_treaty_of_triannon }
+				}	
+			if = {
+				limit = { has_idea = undisturbed_isolation }
+				OR = 
+				{
+					has_war_support > 0.5
+					has_war = yes
+				}
+			}
+			if = {
+				limit = { has_idea = isolation }
+				OR = 
+				{
+					has_war_support > 0.75
+					has_war = yes
+				}
+			}
+		}
+		allowed = {
+			
+		}
+		
+		complete_effect = {
+			add_ideas = low_economic_mobilisation
+			set_variable = { ROOT.changed_economy_law = 1 }
+		}
+		remove_effect = {
+			set_variable = { ROOT.changed_economy_law = 0 }
+		}
+	}
+	limited_mobilisation_decision_costreferendum = {
+		fire_only_once = no
+		days_re_enable = 50
+		days_remove = 50
+		cost = 50
+		visible = {
+			NOT = { has_idea = low_economic_mobilisation }
+			OR = {
+				has_government = fascism
+				has_government = communism
+				has_government = neutrality
+			}
+			if = {
+					limit = {
+						original_tag = HUN
+						has_dlc = "Death or Dishonor"
+					}
+					NOT = { has_idea = HUN_treaty_of_triannon }
+				}	
+			if = {
+				limit = { has_idea = undisturbed_isolation }
+				OR = 
+				{
+					has_war_support > 0.5
+					has_war = yes
+				}
+			}
+			if = {
+				limit = { has_idea = isolation }
+				OR = 
+				{
+					has_war_support > 0.75
+					has_war = yes
+				}
+			}
+		}
+		available = {
+			check_variable = { ROOT.changed_economy_law = 0 }
+			OR = {
+				has_defensive_war = yes
+				threat > 0.20
+				has_war_support > 0.30
+			}
+			NOT = { has_idea = low_economic_mobilisation }
+			OR = {
+				has_government = fascism
+				has_government = communism
+				has_government = neutrality
+			}
+			if = {
+					limit = {
+						original_tag = HUN
+						has_dlc = "Death or Dishonor"
+					}
+					NOT = { has_idea = HUN_treaty_of_triannon }
+				}	
+			if = {
+				limit = { has_idea = undisturbed_isolation }
+				OR = 
+				{
+					has_war_support > 0.5
+					has_war = yes
+				}
+			}
+			if = {
+				limit = { has_idea = isolation }
+				OR = 
+				{
+					has_war_support > 0.75
+					has_war = yes
+				}
+			}
+		}
+		allowed = {
+			
+		}
+		
+		complete_effect = {
+			add_ideas = low_economic_mobilisation
+			set_variable = { ROOT.changed_economy_law = 1 }
+		}
+		remove_effect = {
+			set_variable = { ROOT.changed_economy_law = 0 }
+		}
+	}
+	partial_mobilisation_decision_referendum = {
+		fire_only_once = no
+		days_re_enable = 50
+		days_remove = 50
+		cost = 0
+		visible = {
+			NOT = { has_idea = partial_economic_mobilisation }
+			if = {
+					limit = {
+						original_tag = HUN
+						has_dlc = "Death or Dishonor"
+					}
+					OR = {
+						has_completed_focus = HUN_secret_rearmament
+						NOT = { has_idea = HUN_treaty_of_triannon }
+					}
+				}
+			OR = {
+				has_idea = low_economic_mobilisation
+				has_idea = war_economy
+				has_idea = tot_economic_mobilisation
+			}
+			if = {
+				limit = { has_idea = undisturbed_isolation }
+				OR = 
+				{
+					has_war_support > 0.5
+					has_war = yes
+				}
+			}
+			if = {
+				limit = { has_idea = isolation }
+				OR = 
+				{
+					has_war_support > 0.75
+					has_war = yes
+				}
+			}
+		}
+		available = {
+			check_variable = { ROOT.changed_economy_law = 0 }
+			OR = {
+				threat > 0.40
+				has_defensive_war = yes
+				AND = {
+					OR = {
+						has_government = fascism
+						has_government = communism
+						has_government = neutrality
+					}
+					has_war_support > 0.40
+					has_offensive_war = yes
+				}
+				AND = {
+					OR = {
+						has_war = yes
+						has_government = democratic
+						has_government = reactionary_democracy
+					}
+					OR = {
+						has_war_support > 0.45
+						AND = {
+							has_war_support > 0.35
+							has_offensive_war = yes
+						}
+					}
+				}
+			}
+			NOT = { has_idea = partial_economic_mobilisation }
+			if = {
+					limit = {
+						original_tag = HUN
+						has_dlc = "Death or Dishonor"
+					}
+					OR = {
+						has_completed_focus = HUN_secret_rearmament
+						NOT = { has_idea = HUN_treaty_of_triannon }
+					}
+				}
+			OR = {
+				has_idea = low_economic_mobilisation
+				has_idea = war_economy
+				has_idea = tot_economic_mobilisation
+			}
+			if = {
+				limit = { has_idea = undisturbed_isolation }
+				OR = 
+				{
+					has_war_support > 0.5
+					has_war = yes
+				}
+			}
+			if = {
+				limit = { has_idea = isolation }
+				OR = 
+				{
+					has_war_support > 0.75
+					has_war = yes
+				}
+			}
+		}
+		allowed = {
+			
+		}
+		
+		complete_effect = {
+			add_ideas = partial_economic_mobilisation 
+			set_variable = { ROOT.changed_economy_law = 1 }
+		}
+		remove_effect = {
+			set_variable = { ROOT.changed_economy_law = 0 }
+		}
+	}
+	partial_mobilisation_decision_costreferendum = {
+		fire_only_once = no
+		days_re_enable = 50
+		days_remove = 50
+		cost = 50
+		visible = {
+			NOT = { has_idea = partial_economic_mobilisation }
+			if = {
+					limit = {
+						original_tag = HUN
+						has_dlc = "Death or Dishonor"
+					}
+					OR = {
+						has_completed_focus = HUN_secret_rearmament
+						NOT = { has_idea = HUN_treaty_of_triannon }
+					}
+				}
+			OR = {
+				has_government = fascism
+				has_government = communism
+				has_government = neutrality
+			}
+			OR = {
+				has_idea = low_economic_mobilisation
+				has_idea = war_economy
+				has_idea = tot_economic_mobilisation
+			}
+			if = {
+				limit = { has_idea = undisturbed_isolation }
+				OR = 
+				{
+					has_war_support > 0.5
+					has_war = yes
+				}
+			}
+			if = {
+				limit = { has_idea = isolation }
+				OR = 
+				{
+					has_war_support > 0.75
+					has_war = yes
+				}
+			}
+		}
+		available = {
+			check_variable = { ROOT.changed_economy_law = 0 }
+			OR = {
+				threat > 0.40
+				has_war_support > 0.45
+				has_defensive_war = yes
+			}
+			NOT = { has_idea = partial_economic_mobilisation }
+			if = {
+					limit = {
+						original_tag = HUN
+						has_dlc = "Death or Dishonor"
+					}
+					OR = {
+						has_completed_focus = HUN_secret_rearmament
+						NOT = { has_idea = HUN_treaty_of_triannon }
+					}
+				}
+			OR = {
+				has_government = fascism
+				has_government = communism
+				has_government = neutrality
+			}
+			OR = {
+				has_idea = low_economic_mobilisation
+				has_idea = war_economy
+				has_idea = tot_economic_mobilisation
+			}
+			if = {
+				limit = { has_idea = undisturbed_isolation }
+				OR = 
+				{
+					has_war_support > 0.5
+					has_war = yes
+				}
+			}
+			if = {
+				limit = { has_idea = isolation }
+				OR = 
+				{
+					has_war_support > 0.75
+					has_war = yes
+				}
+			}
+		}
+		allowed = {
+			
+		}
+		
+		complete_effect = {
+			add_ideas = partial_economic_mobilisation 
+			set_variable = { ROOT.changed_economy_law = 1 }
+		}
+		remove_effect = {
+			set_variable = { ROOT.changed_economy_law = 0 }
+		}
+	}
+	war_economy_decision_referendum = {
+		fire_only_once = no
+		days_re_enable = 50
+		days_remove = 50
+		cost = 0
+		visible = {
+			NOT = { has_idea = war_economy }
+			OR = {
+				has_idea = partial_economic_mobilisation
+				has_idea = tot_economic_mobilisation
+			}
+			if = {
+					limit = {
+						original_tag = HUN
+						has_dlc = "Death or Dishonor"
+					}
+					NOT = { has_idea = HUN_treaty_of_triannon }
+				}
+			if = {
+				limit = { has_idea = undisturbed_isolation }
+				OR = 
+				{
+					has_war_support > 0.5
+					has_war = yes
+				}
+			}
+			if = {
+				limit = { has_idea = isolation }
+				OR = 
+				{
+					has_war_support > 0.75
+					has_war = yes
+				}
+			}
+		}
+		available = {
+			check_variable = { ROOT.changed_economy_law = 0 }
+			OR = {
+				threat > 0.75
+				has_defensive_war = yes
+				AND = {
+					OR = {
+						has_government = fascism
+						has_government = communism
+						has_government = neutrality
+					}
+					has_war_support > 0.60
+					has_offensive_war = yes
+				}
+				AND = {
+					OR = {
+						has_war = yes
+						has_government = reactionary_democracy
+					}
+					OR = {
+						has_war_support > 0.65
+						AND = {
+							has_war_support > 0.55
+							has_offensive_war = yes
+						}
+					}
+				}
+			}
+			NOT = { has_idea = war_economy }
+			OR = {
+				has_idea = partial_economic_mobilisation
+				has_idea = tot_economic_mobilisation
+			}
+			if = {
+					limit = {
+						original_tag = HUN
+						has_dlc = "Death or Dishonor"
+					}
+					NOT = { has_idea = HUN_treaty_of_triannon }
+				}
+			if = {
+				limit = { has_idea = undisturbed_isolation }
+				OR = 
+				{
+					has_war_support > 0.5
+					has_war = yes
+				}
+			}
+			if = {
+				limit = { has_idea = isolation }
+				OR = 
+				{
+					has_war_support > 0.75
+					has_war = yes
+				}
+			}
+		}
+		allowed = {
+			
+		}
+		
+		complete_effect = {
+			add_ideas = war_economy
+			set_variable = { ROOT.changed_economy_law = 1 }
+		}
+		remove_effect = {
+			set_variable = { ROOT.changed_economy_law = 0 }
+		}
+	}
+	war_economy_decision_costreferendum = {
+		fire_only_once = no
+		days_re_enable = 50
+		days_remove = 50
+		cost = 50
+		visible = {
+			NOT = { has_idea = war_economy }
+			OR = {
+				has_idea = partial_economic_mobilisation
+				has_idea = tot_economic_mobilisation
+			}
+			OR = {
+				has_government = fascism
+				has_government = communism
+				has_government = neutrality
+			}
+			if = {
+					limit = {
+						original_tag = HUN
+						has_dlc = "Death or Dishonor"
+					}
+					NOT = { has_idea = HUN_treaty_of_triannon }
+				}	
+			if = {
+				limit = { has_idea = undisturbed_isolation }
+				OR = 
+				{
+					has_war_support > 0.5
+					has_war = yes
+				}
+			}
+			if = {
+				limit = { has_idea = isolation }
+				OR = 
+				{
+					has_war_support > 0.75
+					has_war = yes
+				}
+			}
+		}
+		available = {
+			check_variable = { ROOT.changed_economy_law = 0 }
+			OR = {
+				threat > 0.75
+				has_war_support > 0.60
+				has_defensive_war = yes
+			}
+			NOT = { has_idea = war_economy }
+			OR = {
+				has_idea = partial_economic_mobilisation
+				has_idea = tot_economic_mobilisation
+			}
+			OR = {
+				has_government = fascism
+				has_government = communism
+				has_government = neutrality
+			}
+			if = {
+					limit = {
+						original_tag = HUN
+						has_dlc = "Death or Dishonor"
+					}
+					NOT = { has_idea = HUN_treaty_of_triannon }
+				}	
+			if = {
+				limit = { has_idea = undisturbed_isolation }
+				OR = 
+				{
+					has_war_support > 0.5
+					has_war = yes
+				}
+			}
+			if = {
+				limit = { has_idea = isolation }
+				OR = 
+				{
+					has_war_support > 0.75
+					has_war = yes
+				}
+			}
+		}
+		allowed = {
+			
+		}
+		
+		complete_effect = {
+			add_ideas = war_economy
+			set_variable = { ROOT.changed_economy_law = 1 }
+		}
+		remove_effect = {
+			set_variable = { ROOT.changed_economy_law = 0 }
+		}
+	}
+	total_mobil_decision_referendum = {
+		fire_only_once = no
+		days_re_enable = 50
+		days_remove = 50
+		cost = 0
+		visible = {
+			NOT = { has_idea = tot_economic_mobilisation }
+			has_idea = war_economy
+			if = {
+					limit = {
+						original_tag = HUN
+						has_dlc = "Death or Dishonor"
+					}
+					NOT = { has_idea = HUN_treaty_of_triannon }
+				}
+			if = {
+				limit = { has_idea = undisturbed_isolation }
+				OR = 
+				{
+					has_war_support > 0.5
+					has_war = yes
+				}
+			}
+			if = {
+				limit = { has_idea = isolation }
+				OR = 
+				{
+					has_war_support > 0.75
+					has_war = yes
+				}
+			}
+		}
+		available = {
+			check_variable = { ROOT.changed_economy_law = 0 }
+			OR = {
+				threat > 1.0
+				has_defensive_war = yes
+				AND = {
+					OR = {
+						has_government = fascism
+						has_government = communism
+						has_government = neutrality
+					}
+					has_war_support > 0.80
+					has_offensive_war = yes
+				}
+				AND = {
+					OR = {
+						AND = {
+							has_war = yes
+							has_government = reactionary_democracy
+						}
+						any_enemy_country = {
+							ic_ratio = { 
+								tag = ROOT 
+								ratio > 0.5
+							}
+						}
+					}
+					OR = {
+						has_war_support > 0.80
+						AND = {
+							has_war_support > 0.70
+							has_offensive_war = yes
+						}
+					}
+				}
+			}
+			NOT = { has_idea = tot_economic_mobilisation }
+			has_idea = war_economy
+			if = {
+					limit = {
+						original_tag = HUN
+						has_dlc = "Death or Dishonor"
+					}
+					NOT = { has_idea = HUN_treaty_of_triannon }
+				}
+			if = {
+				limit = { has_idea = undisturbed_isolation }
+				OR = 
+				{
+					has_war_support > 0.5
+					has_war = yes
+				}
+			}
+			if = {
+				limit = { has_idea = isolation }
+				OR = 
+				{
+					has_war_support > 0.75
+					has_war = yes
+				}
+			}
+		}
+		allowed = {
+			
+		}
+		
+		complete_effect = {
+			add_ideas = tot_economic_mobilisation
+			set_variable = { ROOT.changed_economy_law = 1 }
+		}
+		remove_effect = {
+			set_variable = { ROOT.changed_economy_law = 0 }
+		}
+	}
+	total_mobil_decision_costreferendum = {
+		fire_only_once = no
+		days_re_enable = 50
+		days_remove = 50
+		cost = 50
+		visible = {
+			NOT = { has_idea = tot_economic_mobilisation }
+			has_idea = war_economy
+			OR = {
+				has_government = fascism
+				has_government = communism
+				has_government = neutrality
+			}
+			if = {
+					limit = {
+						original_tag = HUN
+						has_dlc = "Death or Dishonor"
+					}
+					NOT = { has_idea = HUN_treaty_of_triannon }
+				}
+			if = {
+				limit = { has_idea = undisturbed_isolation }
+				OR = 
+				{
+					has_war_support > 0.5
+					has_war = yes
+				}
+			}
+			if = {
+				limit = { has_idea = isolation }
+				OR = 
+				{
+					has_war_support > 0.75
+					has_war = yes
+				}
+			}
+		}
+		available = {
+			check_variable = { ROOT.changed_economy_law = 0 }
+			OR = {
+				has_war_support > 0.80
+				threat > 1.0
+				has_defensive_war = yes
+			}
+			NOT = { has_idea = tot_economic_mobilisation }
+			has_idea = war_economy
+			OR = {
+				has_government = fascism
+				has_government = communism
+				has_government = neutrality
+			}
+			if = {
+					limit = {
+						original_tag = HUN
+						has_dlc = "Death or Dishonor"
+					}
+					NOT = { has_idea = HUN_treaty_of_triannon }
+				}
+			if = {
+				limit = { has_idea = undisturbed_isolation }
+				OR = 
+				{
+					has_war_support > 0.5
+					has_war = yes
+				}
+			}
+			if = {
+				limit = { has_idea = isolation }
+				OR = 
+				{
+					has_war_support > 0.75
+					has_war = yes
+				}
+			}
+		}
+		allowed = {
+			
+		}
+		
+		complete_effect = {
+			add_ideas = tot_economic_mobilisation
+			set_variable = { ROOT.changed_economy_law = 1 }
+		}
+		remove_effect = {
+			set_variable = { ROOT.changed_economy_law = 0 }
+		}
+	}
+}
