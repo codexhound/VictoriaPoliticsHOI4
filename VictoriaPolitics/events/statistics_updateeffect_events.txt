@@ -99,23 +99,20 @@ country_event = {
 		set_variable = { economic_resource_efficiency_modifer = resourcegaintemp }
 		
 		
-		
-		set_temp_variable = { warsupporttemp = ROOT.jingoism }
+
 		set_temp_variable = { orgregentemp = ROOT.jingoism }
 		set_temp_variable = { reinforcetemp = ROOT.jingoism }
 		set_temp_variable = { supplyconsumptiontemp = ROOT.jingoism 
 		
-		set_temp_variable = { warsupportprotemp = ROOT.promilitary }
+
 		set_temp_variable = { orgregenprotemp = ROOT.promilitary }
 		set_temp_variable = { reinforceprotemp = ROOT.promilitary }
 		set_temp_variable = { supplyconsumptionprotemp = ROOT.promilitary 
 		
-		set_temp_variable = { warsupportantitemp = ROOT.antimilitary }
 		set_temp_variable = { orgregenantitemp = ROOT.antimilitary }
 		set_temp_variable = { reinforceantitemp = ROOT.antimilitary }
 		set_temp_variable = { supplyconsumptionantitemp = ROOT.antimilitary 
 		
-		set_temp_variable = { warsupportpactemp = ROOT.pacifism }
 		set_temp_variable = { orgregenpactemp = ROOT.pacifism }
 		set_temp_variable = { reinforcepactemp = ROOT.pacifism }
 		set_temp_variable = { supplyconsumptionpactemp = ROOT.pacifism } 
@@ -123,12 +120,6 @@ country_event = {
 		if = 
 		{
 			limit = { NOT = { has_war = yes } }
-				
-			multiply_temp_variable = {  warsupporttemp = 0.1 }
-			multiply_temp_variable = {  warsupportprotemp = 0.05 }
-			multiply_temp_variable = {  warsupportantitemp = -0.05 }
-			multiply_temp_variable = {  warsupportpactemp = -0.1 }
-			add_to_temp_variable = { warsupporttemp = warsupportprotemp }
 				
 			set_temp_variable = { orgregentemp = 0 }
 			set_temp_variable = { reinforcetemp = 0 }
@@ -138,29 +129,22 @@ country_event = {
 		{
 			limit = { has_offensive_war = yes }
 				
-			multiply_temp_variable = {  warsupporttemp = 0.05 }
+
 			multiply_temp_variable = {  orgregentemp = 0.1 }
 			multiply_temp_variable = {  reinforcetemp = 0.1 }
-			multiply_temp_variable = {  supplyconsumptiontemp = 0.1 }
-				
-			multiply_temp_variable = {  warsupportprotemp = 0.025 }
+			multiply_temp_variable = {  supplyconsumptiontemp = 0.1 }			
+
 			multiply_temp_variable = {  orgregenprotemp = 0.05 }
 			multiply_temp_variable = {  reinforceprotemp = 0.05 }
-			multiply_temp_variable = {  supplyconsumptionprotemp = 0.05 }
-				
-			multiply_temp_variable = {  warsupportantitemp = -0.025 }
+			multiply_temp_variable = {  supplyconsumptionprotemp = 0.05 }			
+
 			multiply_temp_variable = {  orgregenantitemp = -0.05 }
 			multiply_temp_variable = {  reinforceantitemp = -0.05 }
-			multiply_temp_variable = {  supplyconsumptionantitemp = 0.05 }
-				
-			multiply_temp_variable = {  warsupportpactemp = -0.05 }
+			multiply_temp_variable = {  supplyconsumptionantitemp = 0.05 }	
+
 			multiply_temp_variable = {  orgregenpactemp = -0.1 }
 			multiply_temp_variable = {  reinforcepactemp = -0.1 }
 			multiply_temp_variable = {  supplyconsumptionpactemp = 0.1 }
-				
-			add_to_temp_variable = { warsupporttemp = warsupportprotemp }
-			add_to_temp_variable = { warsupporttemp = warsupportantitem }
-			add_to_temp_variable = { warsupporttemp = warsupportpactem }
 				
 			add_to_temp_variable = { orgregentemp = orgregenprotemp }
 			add_to_temp_variable = { orgregentemp = orgregenantitemp }
@@ -178,33 +162,21 @@ country_event = {
 		{
 			limit = { has_war = yes }
 				
-			multiply_temp_variable = {  warsupporttemp = 0.2 }
 			multiply_temp_variable = {  orgregentemp = 0.2 }
 			multiply_temp_variable = {  reinforcetemp = 0.2 }
 			multiply_temp_variable = {  supplyconsumptiontemp = 0.05 }
 				
-			multiply_temp_variable = {  warsupportprotemp = 0.1 }
 			multiply_temp_variable = {  orgregenprotemp = 0.1 }
 			multiply_temp_variable = {  reinforceprotemp = 0.1 }
 			multiply_temp_variable = {  supplyconsumptionprotemp = 0.025 }
-				
-			multiply_temp_variable = {  warsupportantitemp = 0.05 }
-				
-			multiply_temp_variable = {  warsupportpactemp = 0.025 }
-				
-			add_to_temp_variable = { warsupporttemp = warsupportprotemp }
-			add_to_temp_variable = { warsupporttemp = warsupportantitemp }
-			add_to_temp_variable = { warsupporttemp = warsupportpactemp }
 				
 			add_to_temp_variable = { orgregentemp = orgregenprotemp }
 				
 			add_to_temp_variable = { reinforcetemp = reinforceprotemp }
 				
 			add_to_temp_variable = { supplyconsumptiontemp = supplyconsumptionprotemp }
-				
 		}
-			
-		set_variable = { mil_war_support_weekly = warsupporttemp }
+
 		set_variable = { mil_army_morale_factor = orgregentemp }
 		set_variable = { mil_land_reinforce_rate = reinforcetemp }
 		set_variable = { mil_supply_consumption_factor = supplyconsumptiontemp }
@@ -325,31 +297,6 @@ country_event = {
 		remove_ideas = stat_resource_eff_modifier23
 		remove_ideas = stat_resource_eff_modifier24
 
-		remove_ideas = stat_war_support_modifier1
-		remove_ideas = stat_war_support_modifier2
-		remove_ideas = stat_war_support_modifier3
-		remove_ideas = stat_war_support_modifier4
-		remove_ideas = stat_war_support_modifier5
-		remove_ideas = stat_war_support_modifier6
-		remove_ideas = stat_war_support_modifier7
-		remove_ideas = stat_war_support_modifier8
-		remove_ideas = stat_war_support_modifier9
-		remove_ideas = stat_war_support_modifier10
-		remove_ideas = stat_war_support_modifier11
-		remove_ideas = stat_war_support_modifier12
-		remove_ideas = stat_war_support_modifier13
-		remove_ideas = stat_war_support_modifier14
-		remove_ideas = stat_war_support_modifier15
-		remove_ideas = stat_war_support_modifier16
-		remove_ideas = stat_war_support_modifier17
-		remove_ideas = stat_war_support_modifier18
-		remove_ideas = stat_war_support_modifier19
-		remove_ideas = stat_war_support_modifier20
-		remove_ideas = stat_war_support_modifier21
-		remove_ideas = stat_war_support_modifier22
-		remove_ideas = stat_war_support_modifier23
-		remove_ideas = stat_war_support_modifier24
-
 		remove_ideas = stat_army_morale_modifier1
 		remove_ideas = stat_army_morale_modifier2
 		remove_ideas = stat_army_morale_modifier3
@@ -424,295 +371,6 @@ country_event = {
 		remove_ideas = stat_supply_consumption_factor22
 		remove_ideas = stat_supply_consumption_factor23
 		remove_ideas = stat_supply_consumption_factor24
-
-		if = {
-			limit = {
-				OR = {
-					check_variable = { mil_war_support_weekly = -0.5 }
-					AND = {
-						check_variable = { mil_war_support_weekly > -0.5 }
-						check_variable = { mil_war_support_weekly < -0.45 }
-					}
-				}
-			}
-			add_ideas = stat_war_support_modifier2
-		}
-		else_if = {
-			limit = {
-				OR = {
-					check_variable = { mil_war_support_weekly = -0.45 }
-					AND = {
-						check_variable = { mil_war_support_weekly > -0.45 }
-						check_variable = { mil_war_support_weekly < -0.4 }
-					}
-				}
-			}
-			add_ideas = stat_war_support_modifier3
-		}
-		else_if = {
-			limit = {
-				OR = {
-					check_variable = { mil_war_support_weekly = -0.4 }
-					AND = {
-						check_variable = { mil_war_support_weekly > -0.4 }
-						check_variable = { mil_war_support_weekly < -0.35 }
-					}
-				}
-			}
-			add_ideas = stat_war_support_modifier4
-		}
-		else_if = {
-			limit = {
-				OR = {
-					check_variable = { mil_war_support_weekly = -0.35 }
-					AND = {
-						check_variable = { mil_war_support_weekly > -0.35 }
-						check_variable = { mil_war_support_weekly < -0.3 }
-					}
-				}
-			}
-			add_ideas = stat_war_support_modifier5
-		}
-		else_if = {
-			limit = {
-				OR = {
-					check_variable = { mil_war_support_weekly = -0.3 }
-					AND = {
-						check_variable = { mil_war_support_weekly > -0.3 }
-						check_variable = { mil_war_support_weekly < -0.25 }
-					}
-				}
-			}
-			add_ideas = stat_war_support_modifier6
-		}
-		else_if = {
-			limit = {
-				OR = {
-					check_variable = { mil_war_support_weekly = -0.25 }
-					AND = {
-						check_variable = { mil_war_support_weekly > -0.25 }
-						check_variable = { mil_war_support_weekly < -0.2 }
-					}
-				}
-			}
-			add_ideas = stat_war_support_modifier7
-		}
-		else_if = {
-			limit = {
-				OR = {
-					check_variable = { mil_war_support_weekly = -0.2 }
-					AND = {
-						check_variable = { mil_war_support_weekly > -0.2 }
-						check_variable = { mil_war_support_weekly < -0.15 }
-					}
-				}
-			}
-			add_ideas = stat_war_support_modifier8
-		}
-		else_if = {
-			limit = {
-				OR = {
-					check_variable = { mil_war_support_weekly = -0.15 }
-					AND = {
-						check_variable = { mil_war_support_weekly > -0.15 }
-						check_variable = { mil_war_support_weekly < -0.1 }
-					}
-				}
-			}
-			add_ideas = stat_war_support_modifier9
-		}
-		else_if = {
-			limit = {
-				OR = {
-					check_variable = { mil_war_support_weekly = -0.1 }
-					AND = {
-						check_variable = { mil_war_support_weekly > -0.1 }
-						check_variable = { mil_war_support_weekly < -0.05 }
-					}
-				}
-			}
-			add_ideas = stat_war_support_modifier10
-		}
-		else_if = {
-			limit = {
-				OR = {
-					check_variable = { mil_war_support_weekly = -0.05 }
-					AND = {
-						check_variable = { mil_war_support_weekly > -0.05 }
-						check_variable = { mil_war_support_weekly < -0.025 }
-					}
-				}
-			}
-			add_ideas = stat_war_support_modifier21
-		}
-		else_if = {
-			limit = {
-				OR = {
-					check_variable = { mil_war_support_weekly = -0.025 }
-					AND = {
-						check_variable = { mil_war_support_weekly > -0.025 }
-						check_variable = { mil_war_support_weekly < -0.0125 }
-					}
-				}
-			}
-			add_ideas = stat_war_support_modifier22
-		}
-		else_if = {
-			limit = {
-				OR = {
-					check_variable = { mil_war_support_weekly = 0.0125 }
-					AND = {
-						check_variable = { mil_war_support_weekly < 0.025 }
-						check_variable = { mil_war_support_weekly > 0.0125 }
-					}
-				}
-			}
-			add_ideas = stat_war_support_modifier23
-		}
-		else_if = {
-			limit = {
-				OR = {
-					check_variable = { mil_war_support_weekly = 0.025 }
-					AND = {
-						check_variable = { mil_war_support_weekly > 0.025 }
-						check_variable = { mil_war_support_weekly < 0.05 }
-					}
-				}
-			}
-			add_ideas = stat_war_support_modifier24
-		}
-		else_if = {
-			limit = {
-				OR = {
-					check_variable = { mil_war_support_weekly = 0.05 }
-					AND = {
-						check_variable = { mil_war_support_weekly > 0.05 }
-						check_variable = { mil_war_support_weekly < 0.1 }
-					}
-				}
-			}
-			add_ideas = stat_war_support_modifier11
-		}
-		else_if = {
-			limit = {
-				OR = {
-					check_variable = { mil_war_support_weekly = 0.1 }
-					AND = {
-						check_variable = { mil_war_support_weekly > 0.1 }
-						check_variable = { mil_war_support_weekly < 0.15 }
-					}
-				}
-			}
-			add_ideas = stat_war_support_modifier12
-		}
-		else_if = {
-			limit = {
-				OR = {
-					check_variable = { mil_war_support_weekly = 0.15 }
-					AND = {
-						check_variable = { mil_war_support_weekly > 0.15 }
-						check_variable = { mil_war_support_weekly < 0.20 }
-					}
-				}
-			}
-			add_ideas = stat_war_support_modifier13
-		}
-		else_if = {
-			limit = {
-				OR = {
-					check_variable = { mil_war_support_weekly = 0.20 }
-					AND = {
-						check_variable = { mil_war_support_weekly > 0.20 }
-						check_variable = { mil_war_support_weekly < 0.25 }
-					}
-				}
-			}
-			add_ideas = stat_war_support_modifier14
-		}
-		else_if = {
-			limit = {
-				OR = {
-					check_variable = { mil_war_support_weekly = 0.25 }
-					AND = {
-						check_variable = { mil_war_support_weekly > 0.25 }
-						check_variable = { mil_war_support_weekly < 0.3 }
-					}
-				}
-			}
-			add_ideas = stat_war_support_modifier15
-		}
-		else_if = {
-			limit = {
-				OR = {
-					check_variable = { mil_war_support_weekly = 0.3 }
-					AND = {
-						check_variable = { mil_war_support_weekly > 0.3 }
-						check_variable = { mil_war_support_weekly < 0.35 }
-					}
-				}
-			}
-			add_ideas = stat_war_support_modifier16
-		}
-		else_if = {
-			limit = {
-				OR = {
-					check_variable = { mil_war_support_weekly = 0.35 }
-					AND = {
-						check_variable = { mil_war_support_weekly > 0.35 }
-						check_variable = { mil_war_support_weekly < 0.4 }
-					}
-				}
-			}
-			add_ideas = stat_war_support_modifier17
-		}
-		else_if = {
-			limit = {
-				OR = {
-					check_variable = { mil_war_support_weekly = 0.4 }
-					AND = {
-						check_variable = { mil_war_support_weekly > 0.4 }
-						check_variable = { mil_war_support_weekly < 0.45 }
-					}
-				}
-			}
-			add_ideas = stat_war_support_modifier18
-		}
-		else_if = {
-			limit = {
-				OR = {
-					check_variable = { mil_war_support_weekly = 0.45 }
-					AND = {
-						check_variable = { mil_war_support_weekly > 0.45 }
-						check_variable = { mil_war_support_weekly < 0.5 }
-					}
-				}
-			}
-			add_ideas = stat_war_support_modifier19
-		}
-		else_if = {
-			limit = {
-				OR = {
-					check_variable = { mil_war_support_weekly = 0.5 }
-					AND = {
-						check_variable = { mil_war_support_weekly > 0.5 }
-						check_variable = { mil_war_support_weekly < 1.0 }
-					}
-				}
-			}
-			add_ideas = stat_war_support_modifier20
-		}
-		else_if = {
-			limit = {
-				OR = {
-					check_variable = { mil_war_support_weekly = -0.5 }
-					AND = {
-						check_variable = { mil_war_support_weekly > -0.5 }
-						check_variable = { mil_war_support_weekly < -1.00 }
-					}
-				}
-			}
-			add_ideas = stat_war_support_modifier1
-		}
 
 		if = {
 			limit = {

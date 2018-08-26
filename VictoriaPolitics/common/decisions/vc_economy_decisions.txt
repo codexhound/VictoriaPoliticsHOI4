@@ -102,7 +102,7 @@ economic_law_decisions = {
 					threat > 0.2
 					has_war = yes
 					AND = {
-						has_war_support > 0.1
+						has_war_support > 0.2
 						OR = {
 							has_government = democratic
 							has_government = reactionary_democracy
@@ -201,7 +201,7 @@ economic_law_decisions = {
 				}
 				OR = {
 					AND = {
-						has_war_support > 0.25
+						has_war_support > 0.3
 						OR = {
 							has_government = democratic
 							has_government = reactionary_democracy
