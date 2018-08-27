@@ -4,16 +4,19 @@ ideologies = {
 		types = {
 			conservatism = {
 			}
-		
+			
 			liberalism = {
 			}
-		
+			
 			socialism = {
+			}
+			
+			centrism_democratic = {
 			}
 		}
 		
-		color = { 0 51 204 }
-		
+		color = { 0 17 255 }
+		can_collaborate = yes
 		rules = {
 			can_declare_war_on_same_ideology = yes
 			can_force_government = yes
@@ -44,6 +47,7 @@ ideologies = {
 			annex_cost_factor = 0.5
 			research_time_factor = -0.05
 			production_speed_buildings_factor = 0.05
+			stability_factor = 0.05
 		}
 		
 		faction_modifiers = {
@@ -58,7 +62,8 @@ ideologies = {
 	
 		
 	liberal_democracy = {
-		color = { 0 204 153 }
+		color = { 0 247 255 }
+		can_collaborate = yes
 		types = {
 			liberal_congress = {
 			}
@@ -92,6 +97,7 @@ ideologies = {
 			take_states_cost_factor = 0.40
 			annex_cost_factor = 0.5
 			research_time_factor = -0.075
+			stability_factor = 0.05
 		}
 		
 		faction_modifiers = {
@@ -102,7 +108,8 @@ ideologies = {
 	}
 			
 	anarcho_liberal_democracy = {
-		color = { 255 102 255 }
+		color = { 0 255 77 }
+		can_collaborate = yes
 		rules = {
 			can_declare_war_on_same_ideology = no
 			can_force_government = yes
@@ -139,6 +146,7 @@ ideologies = {
 			research_time_factor = -0.075
 			local_resources_factor = 0.025
 			production_speed_buildings_factor = -0.025
+			stability_factor = 0.05
 		}
 		
 		faction_modifiers = {
@@ -149,7 +157,7 @@ ideologies = {
 	}
 			
 	reactionary_democracy = {
-		color = { 255 0 0 }
+		color = { 255 188 0 }
 		types = {
 			reactionary_congress = {
 			}
@@ -186,6 +194,7 @@ ideologies = {
 			land_reinforce_rate = 0.05
 			supply_consumption_factor = -0.05
 			research_time_factor = 0.025
+			stability_factor = 0.05
 		}
 		
 		faction_modifiers = {
@@ -196,7 +205,8 @@ ideologies = {
 	}
 		
 	social_democracy = {
-		color = { 255 255 102 }
+		color = { 247 0 255 }
+		can_collaborate = yes
 		types = {
 			social_democrat = {
 			}
@@ -233,6 +243,7 @@ ideologies = {
 			land_reinforce_rate = -0.05
 			supply_consumption_factor = 0.05
 			production_speed_buildings_factor = 0.025
+			stability_factor = 0.05
 		}
 		
 		faction_modifiers = {
@@ -271,7 +282,7 @@ ideologies = {
 			"FACTION_NAME_COMMUNIST_5"
 		}
 		
-		color = { 0 51 0 }
+		color = { 255 0 0 }
 		
 		war_impact_on_world_tension = 0.75		#Commie less threatening
 		faction_impact_on_world_tension = 0.5
@@ -323,7 +334,7 @@ ideologies = {
 			"FACTION_NAME_FASCIST_5"
 		}
 		
-		color = { 150 75 0 }
+		color = { 114 62 3 }
 		
 		war_impact_on_world_tension = 1.0			#evil!
 		faction_impact_on_world_tension = 1.0
@@ -337,9 +348,9 @@ ideologies = {
 		modifiers = {
 			justify_war_goal_when_in_major_war_time = -0.80
 			production_factory_max_efficiency_factor = 0.10
-			army_attack_factor = 0.25
-			army_defense_factor = 0.25
-			experience_gain_army = 0.25
+			army_attack_factor = 0.05	
+			army_defense_factor = 0.05
+			experience_gain_army = 0.1
 		}
 
 		ai_fascist = yes # uses the fascist AI behaviour
@@ -348,7 +359,6 @@ ideologies = {
 	neutrality = {
 		
 		types = {
-		
 			despotism  = {
 			}
 			
@@ -360,6 +370,12 @@ ideologies = {
 			
 			centrism = {
 			}
+			
+			corporatism = {
+			}
+			
+			the_peoples_tutelage = {
+			}
 		}
 
 		dynamic_faction_names = {
@@ -370,7 +386,7 @@ ideologies = {
 			"FACTION_NAME_NONALIGNED_5"
 		}
 		
-		color = { 153 102 51 }
+		color = { 239 255 0 }
 		
 		
 		war_impact_on_world_tension = 0.25		#no major danger
@@ -392,8 +408,8 @@ ideologies = {
 			guarantee_tension = 0.4
 			drift_defence_factor = -0.3	
 			stability_factor = 0.10
-			army_core_attack_factor = 0.25
-			army_core_defence_factor = 0.25
+			army_core_attack_factor = 0.05
+			army_core_defence_factor = 0.05
 		}
 		
 		faction_modifiers = {

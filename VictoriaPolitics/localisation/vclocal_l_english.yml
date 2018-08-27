@@ -22,19 +22,19 @@
  
  ##ideologysubtype
  despotism:0 "Monarchist Majority"
- despotism_desc:0 " "
+ despotism_desc:0 "Monarchism is the advocacy of a monarch or monarchical rule.[1] A monarchist is an individual who supports this form of government, independent of any specific monarch; one who espouses a particular monarch is a royalist."
  
  social_democrat:0 "Social Democrat Majority"
- social_democrat_desc:0 " "
+ social_democrat_desc:0 "Social democracy is a political, social and economic ideology that supports economic and social interventions to promote social justice within the framework of a liberal democratic polity and capitalist economy. The protocols and norms used to accomplish this involve a commitment to representative and participatory democracy; measures for income redistribution and regulation of the economy in the general interest; and welfare state provisions.[1][2][3] Social democracy thus aims to create the conditions for capitalism to lead to greater democratic, egalitarian and solidaristic outcomes.[4] Due to longstanding governance by Social Democratic parties and their influence on socioeconomic policy development in the Nordic countries, in policy circles "social democracy" has become associated with the Nordic model in the latter part of the 20th century."
  
  liberal_congress:0 "Liberal Majority"
- liberal_congress_desc:0 " "
+ liberal_congress_desc:0 "Liberals favor liberty as the most valued social end. The liberal movement of the 19th century was an extremely important one. The liberals of America and Europe opened up these nations to trade, capitalism, and responsible government. Liberals were a diverse bunch, supporting a wide array of ideas and often conflicting with one another. Universal among them was some vague notion of expanding liberty, in a specific area or broadly. Liberals were often the forward-thinkers, the people who opposed the old state-dominated order and sought to unleash human potential by throwing off the chains the bound people down. Liberals were the cornerstones of the abolitionist movement, the Corn Law repeals in England, the end of the Second National Bank in America, and many more projects aimed at reducing government power over peoples' interactions with one another."
  
  anarcho_liberal_congress:0 "Anarchist Majority"
- anarcho_liberal_congress_desc:0 " "
+ anarcho_liberal_congress_desc:0 "Anarcho liberals are the more radical cousin to the liberals, taking the idea of human liberty to its logical extreme. While liberals tended to be reformers, often intellectuals or men of power who sought to correct the irrationalities of the illiberal order, anarcho liberals were something else entirely. Advocating the end of the state as an entity and free and equal existence of all men, anarcho liberals can be expected to unflinchingly support the most liberal of positions."
  
  reactionary_congress:0 "Reactionary Majority"
- reactionary_congress_desc:0 " "
+ reactionary_congress_desc:0 "The more extreme cousin to the conservative party, the reactionaries do not stop at the defense of currently upheld tradition, but demand a return to the old ways. In Europe, reactionaries are most often monarchists that uphold the all-powerful state of the absolute monarchy as ideal. In the Americas their positions vary from nativists to monarchists and more. Often non-Western reactionaries are a reaction against Western influences or power within or around the nation in question, for example the Boxers in China."
  
  #countryspecificdef
  ENG_neutrality_party:0 "BCRP"
@@ -51,6 +51,11 @@
  
  ENG_reactionary_democracy_party:0 "BRDP"
  ENG_reactionary_democracy_long:0 "UK Reactionaries"
+
+ reactionary_democracy_drift:0 "Reactionary Democracy Drift"
+ anarcho_liberal_democracy_drift:0 "Anarcho Liberal Democracy Drift"
+ social_democracy_drift:0 "Social Democracy Drift"
+ liberal_democracy_drift:0 "Liberal Democracy Drift"
  
  #ideas
  job_stats:0 "Economic Class Statistics"

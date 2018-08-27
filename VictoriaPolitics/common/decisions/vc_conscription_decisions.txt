@@ -95,6 +95,7 @@ conscription_decisions = {
 		days_remove = 50
 		cost = 150
 		visible = {
+			NOT = { has_idea = limited_conscription }
 			if = {
 				limit = {
 					original_tag = AST
@@ -126,6 +127,7 @@ conscription_decisions = {
 			}
 		}
 		available = { 
+			NOT = { has_idea = limited_conscription }
 			if = {
 				limit = {
 					original_tag = AST

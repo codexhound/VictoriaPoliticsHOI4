@@ -18,7 +18,7 @@ country_event = {
 	
 		set_temp_variable = { actual_growth_factor = 1 }
 		subtract_from_temp_variable = { actual_growth_factor = ROOT.jingoism }
-		multiply_temp_variable = { actual_growth_factor = 0.1 }
+		multiply_temp_variable = { actual_growth_factor = 0.002 }
 		set_temp_variable = { drift_growth_factor = actual_growth_factor }
 		divide_temp_variable = { drift_growth_factor = 3 }
 		
@@ -63,7 +63,7 @@ country_event = {
 		
 		set_temp_variable = { actual_growth_factor = 1 }
 		subtract_from_temp_variable = { actual_growth_factor = ROOT.promilitary }
-		multiply_temp_variable = { actual_growth_factor = 0.1 }
+		multiply_temp_variable = { actual_growth_factor = 0.002 }
 		set_temp_variable = { drift_growth_factor = actual_growth_factor }
 		divide_temp_variable = { drift_growth_factor = 3 }
 
@@ -108,7 +108,7 @@ country_event = {
 		
 		set_temp_variable = { actual_growth_factor = 1 }
 		subtract_from_temp_variable = { actual_growth_factor = ROOT.antimilitary }
-		multiply_temp_variable = { actual_growth_factor = 0.1 }
+		multiply_temp_variable = { actual_growth_factor = 0.002 }
 		set_temp_variable = { drift_growth_factor = actual_growth_factor }
 		divide_temp_variable = { drift_growth_factor = 3 }
 		
@@ -153,7 +153,7 @@ country_event = {
 		
 		set_temp_variable = { actual_growth_factor = 1 }
 		subtract_from_temp_variable = { actual_growth_factor = ROOT.pacifism }
-		multiply_temp_variable = { actual_growth_factor = 0.1 }
+		multiply_temp_variable = { actual_growth_factor = 0.002 }
 		set_temp_variable = { drift_growth_factor = actual_growth_factor }
 		divide_temp_variable = { drift_growth_factor = 3 }
 		
@@ -196,7 +196,7 @@ country_event = {
 	
 		set_temp_variable = { actual_growth_factor = 1 }
 		subtract_from_temp_variable = { actual_growth_factor = ROOT.freetrade }
-		multiply_temp_variable = { actual_growth_factor = 0.1 }
+		multiply_temp_variable = { actual_growth_factor = 0.002 }
 		
 		add_to_variable = { ROOT.freetrade = actual_growth_factor } 
 		subtract_from_variable = { ROOT.protectionist = actual_growth_factor }
@@ -233,7 +233,7 @@ country_event = {
 		
 		set_temp_variable = { actual_growth_factor = 1 }
 		subtract_from_temp_variable = { actual_growth_factor = ROOT.protectionist }
-		multiply_temp_variable = { actual_growth_factor = 0.1 }
+		multiply_temp_variable = { actual_growth_factor = 0.002 }
 
 		add_to_variable = { ROOT.protectionist = actual_growth_factor } 
 		subtract_from_variable = { ROOT.freetrade = actual_growth_factor }
@@ -272,7 +272,7 @@ country_event = {
 		
 		set_temp_variable = { actual_growth_factor = 1 }
 		subtract_from_temp_variable = { actual_growth_factor = ROOT.plannedeconomy }
-		multiply_temp_variable = { actual_growth_factor = 0.1 }
+		multiply_temp_variable = { actual_growth_factor = 0.002 }
 		set_temp_variable = { drift_growth_factor = actual_growth_factor }
 		divide_temp_variable = { drift_growth_factor = 3 }
 
@@ -317,7 +317,7 @@ country_event = {
 		
 		set_temp_variable = { actual_growth_factor = 1 }
 		subtract_from_temp_variable = { actual_growth_factor = ROOT.statecapitalism }
-		multiply_temp_variable = { actual_growth_factor = 0.1 }
+		multiply_temp_variable = { actual_growth_factor = 0.002 }
 		set_temp_variable = { drift_growth_factor = actual_growth_factor }
 		divide_temp_variable = { drift_growth_factor = 3 }
 		
@@ -362,7 +362,7 @@ country_event = {
 		
 		set_temp_variable = { actual_growth_factor = 1 }
 		subtract_from_temp_variable = { actual_growth_factor = ROOT.plannedeconomy }
-		multiply_temp_variable = { actual_growth_factor = 0.1 }
+		multiply_temp_variable = { actual_growth_factor = 0.002 }
 		set_temp_variable = { drift_growth_factor = actual_growth_factor }
 		divide_temp_variable = { drift_growth_factor = 3 }
 		
@@ -407,7 +407,7 @@ country_event = {
 		
 		set_temp_variable = { actual_growth_factor = 1 }
 		subtract_from_temp_variable = { actual_growth_factor = ROOT.plannedeconomy }
-		multiply_temp_variable = { actual_growth_factor = 0.1 }
+		multiply_temp_variable = { actual_growth_factor = 0.002 }
 		set_temp_variable = { drift_growth_factor = actual_growth_factor }
 		divide_temp_variable = { drift_growth_factor = 3 }
 		 

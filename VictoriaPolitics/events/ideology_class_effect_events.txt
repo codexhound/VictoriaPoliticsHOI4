@@ -22,8 +22,8 @@ country_event = {
 		divide_temp_variable = { drift_growth_factor = 2 }
 		
 		subtract_from_variable = { ROOT.capitalist = actual_growth_factor } 
-		add_to_variable = { ROOT.academia = actual_growth_factor } 
-		add_to_variable = { ROOT.middleclass = actual_growth_factor } 
+		add_to_variable = { ROOT.academia = drift_growth_factor } 
+		add_to_variable = { ROOT.middleclass = drift_growth_factor } 
 		
 		if = {
 			limit = { check_variable = { ROOT.capitalist < 0 } } 
@@ -64,8 +64,8 @@ country_event = {
 		divide_temp_variable = { drift_growth_factor = 2 }
 		
 		add_to_variable = { ROOT.capitalist = actual_growth_factor } 
-		subtract_from_variable = { ROOT.academia = actual_growth_factor } 
-		subtract_from_variable = { ROOT.middleclass = actual_growth_factor } 
+		subtract_from_variable = { ROOT.academia = drift_growth_factor } 
+		subtract_from_variable = { ROOT.middleclass = drift_growth_factor } 
 		
 		if = {
 			limit = { check_variable = { ROOT.capitalist > 1 } } 
@@ -106,8 +106,8 @@ country_event = {
 		divide_temp_variable = { drift_growth_factor = 2 }
 		
 		add_to_variable = { ROOT.middleclass = actual_growth_factor } 
-		subtract_from_variable = { ROOT.academia = actual_growth_factor } 
-		subtract_from_variable = { ROOT.capitalist = actual_growth_factor } 
+		subtract_from_variable = { ROOT.academia = drift_growth_factor } 
+		subtract_from_variable = { ROOT.capitalist = drift_growth_factor } 
 		
 		if = {
 			limit = { check_variable = { ROOT.middleclass > 1 } } 
@@ -151,8 +151,8 @@ country_event = {
 		divide_temp_variable = { drift_growth_factor = 2 }
 		
 		add_to_variable = { ROOT.capitalist = actual_growth_factor } 
-		subtract_from_variable = { ROOT.academia = actual_growth_factor } 
-		subtract_from_variable = { ROOT.middleclass = actual_growth_factor } 
+		subtract_from_variable = { ROOT.academia = drift_growth_factor } 
+		subtract_from_variable = { ROOT.middleclass = drift_growth_factor } 
 		
 		if = {
 			limit = { check_variable = { ROOT.capitalist > 1 } } 

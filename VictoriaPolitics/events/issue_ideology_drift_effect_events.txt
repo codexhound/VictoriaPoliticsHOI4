@@ -12,13 +12,13 @@ country_event = {
 	}
 	immediate = {
 		set_temp_variable = { jingotemp = ROOT.jingoism }
-		multiply_temp_variable = { jingotemp = -0.01 }
+		multiply_temp_variable = { jingotemp = -0.002 }
 		set_temp_variable = { promiltemp = ROOT.promilitary }
-		multiply_temp_variable = { promiltemp = -0.005 }
+		multiply_temp_variable = { promiltemp = -0.001 }
 		set_temp_variable = { antimiltemp = ROOT.antimilitary }
-		multiply_temp_variable = { antimiltemp = 0.005 }
+		multiply_temp_variable = { antimiltemp = 0.001 }
 		set_temp_variable = { pacifisttemp = ROOT.pacifist }
-		multiply_temp_variable = { pacifisttemp = 0.01 }
+		multiply_temp_variable = { pacifisttemp = 0.002 }
 		
 		add_to_temp_variable = { jingotemp = promiltemp }
 		add_to_temp_variable = { jingotemp = antimiltemp }
@@ -26,22 +26,22 @@ country_event = {
 		
 		
 		set_temp_variable = { nointertemp = ROOT.nointerventionism }
-		multiply_temp_variable = { nointertemp = -0.01 }
+		multiply_temp_variable = { nointertemp = -0.002 }
 		set_temp_variable = { intertemp = ROOT.interventionism }
-		multiply_temp_variable = { intertemp = -0.005 }
+		multiply_temp_variable = { intertemp = -0.001 }
 		set_temp_variable = { statecaptemp = ROOT.statecapitalism }
-		multiply_temp_variable = { statecaptemp = 0.005 }
+		multiply_temp_variable = { statecaptemp = 0.001 }
 		set_temp_variable = { planecontemp = ROOT.plannedeconomy }
-		multiply_temp_variable = { planecontemp = 0.01 }
+		multiply_temp_variable = { planecontemp = 0.002 }
 		
 		add_to_temp_variable = { nointertemp = intertemp }
 		add_to_temp_variable = { nointertemp = statecaptemp }
 		add_to_temp_variable = { nointertemp = planecontempp }
 		
 		set_temp_variable = { freetradetemp = ROOT.freetrade }
-		multiply_temp_variable = { freetradetemp = 0.01 }
+		multiply_temp_variable = { freetradetemp = 0.002 }
 		set_temp_variable = { prottemp = ROOT.protectionism }
-		multiply_temp_variable = { prottemp = -0.01 }
+		multiply_temp_variable = { prottemp = -0.002 }
 		
 		add_to_temp_variable = {freetradetemp = prottemp }
 		
@@ -56,7 +56,7 @@ country_event = {
 					has_government = communism
 				}
 			}
-			multiply_temp_variable = {freetradetemp = 0.5 }
+			multiply_temp_variable = {freetradetemp = 0.05 }
 		}
 		
 		set_temp_variable = { actual_growth_factor = 1 }
@@ -91,13 +91,13 @@ country_event = {
 	}
 	immediate = {
 		set_temp_variable = { jingotemp = ROOT.jingoism }
-		multiply_temp_variable = { jingotemp = 0.01 }
+		multiply_temp_variable = { jingotemp = 0.002 }
 		set_temp_variable = { promiltemp = ROOT.promilitary }
-		multiply_temp_variable = { promiltemp = 0.005 }
+		multiply_temp_variable = { promiltemp = 0.001 }
 		set_temp_variable = { antimiltemp = ROOT.antimilitary }
-		multiply_temp_variable = { antimiltemp = -0.005 }
+		multiply_temp_variable = { antimiltemp = -0.001 }
 		set_temp_variable = { pacifisttemp = ROOT.pacifist }
-		multiply_temp_variable = { pacifisttemp = -0.01 }
+		multiply_temp_variable = { pacifisttemp = -0.002 }
 		
 		add_to_temp_variable = { jingotemp = promiltemp }
 		add_to_temp_variable = { jingotemp = antimiltemp }
@@ -105,11 +105,11 @@ country_event = {
 		
 		
 		set_temp_variable = { nointertemp = ROOT.nointerventionism }
-		multiply_temp_variable = { nointertemp = -0.005 }
+		multiply_temp_variable = { nointertemp = -0.001 }
 		set_temp_variable = { intertemp = ROOT.interventionism }
-		multiply_temp_variable = { intertemp = 0.005 }
+		multiply_temp_variable = { intertemp = 0.001 }
 		set_temp_variable = { statecaptemp = ROOT.statecapitalism }
-		multiply_temp_variable = { statecaptemp = 0.01 }
+		multiply_temp_variable = { statecaptemp = 0.002 }
 		set_temp_variable = { planecontemp = ROOT.plannedeconomy }
 		multiply_temp_variable = { planecontemp = 0 }
 		
@@ -118,9 +118,9 @@ country_event = {
 		add_to_temp_variable = { nointertemp = planecontempp }
 		
 		set_temp_variable = { freetradetemp = ROOT.freetrade }
-		multiply_temp_variable = { freetradetemp = -0.01 }
+		multiply_temp_variable = { freetradetemp = -0.002 }
 		set_temp_variable = { prottemp = ROOT.protectionism }
-		multiply_temp_variable = { prottemp = 0.01 }
+		multiply_temp_variable = { prottemp = 0.002 }
 		
 		add_to_temp_variable = {freetradetemp = prottemp }
 		
@@ -135,7 +135,7 @@ country_event = {
 					has_government = communism
 				}
 			}
-			multiply_temp_variable = {freetradetemp = 0.4 }
+			multiply_temp_variable = {freetradetemp = 0.2 }
 		}
 		
 		set_temp_variable = { actual_growth_factor = 1 }
@@ -170,13 +170,13 @@ country_event = {
 	}
 	immediate = {
 		set_temp_variable = { jingotemp = ROOT.jingoism }
-		multiply_temp_variable = { jingotemp = 0.0025 }
+		multiply_temp_variable = { jingotemp = 0.0005 }
 		set_temp_variable = { promiltemp = ROOT.promilitary }
-		multiply_temp_variable = { promiltemp = 0.005 }
+		multiply_temp_variable = { promiltemp = 0.001 }
 		set_temp_variable = { antimiltemp = ROOT.antimilitary }
-		multiply_temp_variable = { antimiltemp = -0.005 }
+		multiply_temp_variable = { antimiltemp = -0.001 }
 		set_temp_variable = { pacifisttemp = ROOT.pacifist }
-		multiply_temp_variable = { pacifisttemp = -0.01 }
+		multiply_temp_variable = { pacifisttemp = -0.002 }
 		
 		add_to_temp_variable = { jingotemp = promiltemp }
 		add_to_temp_variable = { jingotemp = antimiltemp }
@@ -184,22 +184,22 @@ country_event = {
 		
 		
 		set_temp_variable = { nointertemp = ROOT.nointerventionism }
-		multiply_temp_variable = { nointertemp = -0.005 }
+		multiply_temp_variable = { nointertemp = -0.001 }
 		set_temp_variable = { intertemp = ROOT.interventionism }
-		multiply_temp_variable = { intertemp = 0.01 }
+		multiply_temp_variable = { intertemp = 0.002 }
 		set_temp_variable = { statecaptemp = ROOT.statecapitalism }
-		multiply_temp_variable = { statecaptemp = 0.005 }
+		multiply_temp_variable = { statecaptemp = 0.001 }
 		set_temp_variable = { planecontemp = ROOT.plannedeconomy }
-		multiply_temp_variable = { planecontemp = 0.0025 }
+		multiply_temp_variable = { planecontemp = 0.0005 }
 		
 		add_to_temp_variable = { nointertemp = intertemp }
 		add_to_temp_variable = { nointertemp = statecaptemp }
 		add_to_temp_variable = { nointertemp = planecontempp }
 		
 		set_temp_variable = { freetradetemp = ROOT.freetrade }
-		multiply_temp_variable = { freetradetemp = -0.005 }
+		multiply_temp_variable = { freetradetemp = -0.001 }
 		set_temp_variable = { prottemp = ROOT.protectionism }
-		multiply_temp_variable = { prottemp = 0.005 }
+		multiply_temp_variable = { prottemp = 0.001 }
 		
 		add_to_temp_variable = {freetradetemp = prottemp }
 		
@@ -214,7 +214,7 @@ country_event = {
 					has_government = communism
 				}
 			}
-			multiply_temp_variable = {freetradetemp = 0.4 }
+			multiply_temp_variable = {freetradetemp = 0.2 }
 		}
 		
 		set_temp_variable = { actual_growth_factor = 1 }
@@ -248,13 +248,13 @@ country_event = {
 	}
 	immediate = {
 		set_temp_variable = { jingotemp = ROOT.jingoism }
-		multiply_temp_variable = { jingotemp = 0.005 }
+		multiply_temp_variable = { jingotemp = 0.001 }
 		set_temp_variable = { promiltemp = ROOT.promilitary }
-		multiply_temp_variable = { promiltemp = 0.01 }
+		multiply_temp_variable = { promiltemp = 0.002 }
 		set_temp_variable = { antimiltemp = ROOT.antimilitary }
-		multiply_temp_variable = { antimiltemp = -0.005 }
+		multiply_temp_variable = { antimiltemp = -0.001 }
 		set_temp_variable = { pacifisttemp = ROOT.pacifist }
-		multiply_temp_variable = { pacifisttemp = -0.01 }
+		multiply_temp_variable = { pacifisttemp = -0.002 }
 		
 		add_to_temp_variable = { jingotemp = promiltemp }
 		add_to_temp_variable = { jingotemp = antimiltemp }
@@ -262,22 +262,22 @@ country_event = {
 
 		
 		set_temp_variable = { nointertemp = ROOT.nointerventionism }
-		multiply_temp_variable = { nointertemp = 0.01 }
+		multiply_temp_variable = { nointertemp = 0.002 }
 		set_temp_variable = { intertemp = ROOT.interventionism }
-		multiply_temp_variable = { intertemp = 0.005 }
+		multiply_temp_variable = { intertemp = 0.001 }
 		set_temp_variable = { statecaptemp = ROOT.statecapitalism }
-		multiply_temp_variable = { statecaptemp = -0.005 }
+		multiply_temp_variable = { statecaptemp = -0.001 }
 		set_temp_variable = { planecontemp = ROOT.plannedeconomy }
-		multiply_temp_variable = { planecontemp = -0.01 }
+		multiply_temp_variable = { planecontemp = -0.002 }
 		
 		add_to_temp_variable = { nointertemp = intertemp }
 		add_to_temp_variable = { nointertemp = statecaptemp }
 		add_to_temp_variable = { nointertemp = planecontempp }
 		
 		set_temp_variable = { freetradetemp = ROOT.freetrade }
-		multiply_temp_variable = { freetradetemp = 0.005 }
+		multiply_temp_variable = { freetradetemp = 0.001 }
 		set_temp_variable = { prottemp = ROOT.protectionism }
-		multiply_temp_variable = { prottemp = -0.005 }
+		multiply_temp_variable = { prottemp = -0.001 }
 		
 		add_to_temp_variable = {freetradetemp = prottemp }
 		
@@ -292,7 +292,7 @@ country_event = {
 					has_government = communism
 				}
 			}
-			multiply_temp_variable = {freetradetemp = 0.4 }
+			multiply_temp_variable = {freetradetemp = 0.1 }
 		}
 		
 		set_temp_variable = { actual_growth_factor = 1 }
@@ -327,35 +327,35 @@ country_event = {
 	}
 	immediate = {
 		set_temp_variable = { jingotemp = ROOT.jingoism }
-		multiply_temp_variable = { jingotemp = 0.005 }
+		multiply_temp_variable = { jingotemp = 0.001 }
 		set_temp_variable = { promiltemp = ROOT.promilitary }
-		multiply_temp_variable = { promiltemp = 0.01 }
+		multiply_temp_variable = { promiltemp = 0.002 }
 		set_temp_variable = { antimiltemp = ROOT.antimilitary }
-		multiply_temp_variable = { antimiltemp = -0.005 }
+		multiply_temp_variable = { antimiltemp = -0.001 }
 		set_temp_variable = { pacifisttemp = ROOT.pacifist }
-		multiply_temp_variable = { pacifisttemp = -0.01 }
+		multiply_temp_variable = { pacifisttemp = -0.002 }
 		
 		add_to_temp_variable = { jingotemp = promiltemp }
 		add_to_temp_variable = { jingotemp = antimiltemp }
 		add_to_temp_variable = { jingotemp = pacifisttemp }
 		
 		set_temp_variable = { nointertemp = ROOT.nointerventionism }
-		multiply_temp_variable = { nointertemp = 0.01 }
+		multiply_temp_variable = { nointertemp = 0.002 }
 		set_temp_variable = { intertemp = ROOT.interventionism }
-		multiply_temp_variable = { intertemp = 0.005 }
+		multiply_temp_variable = { intertemp = 0.001 }
 		set_temp_variable = { statecaptemp = ROOT.statecapitalism }
-		multiply_temp_variable = { statecaptemp = -0.005 }
+		multiply_temp_variable = { statecaptemp = -0.001 }
 		set_temp_variable = { planecontemp = ROOT.plannedeconomy }
-		multiply_temp_variable = { planecontemp = -0.01 }
+		multiply_temp_variable = { planecontemp = -0.002 }
 		
 		add_to_temp_variable = { nointertemp = intertemp }
 		add_to_temp_variable = { nointertemp = statecaptemp }
 		add_to_temp_variable = { nointertemp = planecontempp }
 		
 		set_temp_variable = { freetradetemp = ROOT.freetrade }
-		multiply_temp_variable = { freetradetemp = 0.011 }
+		multiply_temp_variable = { freetradetemp = 0.0025 }
 		set_temp_variable = { prottemp = ROOT.protectionism }
-		multiply_temp_variable = { prottemp = -0.011 }
+		multiply_temp_variable = { prottemp = -0.0025 }
 		
 		add_to_temp_variable = {freetradetemp = prottemp }
 		
@@ -370,7 +370,7 @@ country_event = {
 					has_government = communism
 				}
 			}
-			multiply_temp_variable = {freetradetemp = 0.4 }
+			multiply_temp_variable = {freetradetemp = 0.1 }
 		}
 		
 		set_temp_variable = { actual_growth_factor = 1 }
@@ -405,13 +405,13 @@ country_event = {
 	}
 	immediate = {
 		set_temp_variable = { jingotemp = ROOT.jingoism }
-		multiply_temp_variable = { jingotemp = 0.005 }
+		multiply_temp_variable = { jingotemp = 0.001 }
 		set_temp_variable = { promiltemp = ROOT.promilitary }
-		multiply_temp_variable = { promiltemp = 0.01 }
+		multiply_temp_variable = { promiltemp = 0.002 }
 		set_temp_variable = { antimiltemp = ROOT.antimilitary }
-		multiply_temp_variable = { antimiltemp = -0.005 }
+		multiply_temp_variable = { antimiltemp = -0.001 }
 		set_temp_variable = { pacifisttemp = ROOT.pacifist }
-		multiply_temp_variable = { pacifisttemp = -0.01 }
+		multiply_temp_variable = { pacifisttemp = -0.002 }
 		
 		add_to_temp_variable = { jingotemp = promiltemp }
 		add_to_temp_variable = { jingotemp = antimiltemp }
@@ -419,22 +419,22 @@ country_event = {
 		
 		
 		set_temp_variable = { nointertemp = ROOT.nointerventionism }
-		multiply_temp_variable = { nointertemp = -0.01 }
+		multiply_temp_variable = { nointertemp = -0.002 }
 		set_temp_variable = { intertemp = ROOT.interventionism }
-		multiply_temp_variable = { intertemp = -0.005 }
+		multiply_temp_variable = { intertemp = -0.001 }
 		set_temp_variable = { statecaptemp = ROOT.statecapitalism }
-		multiply_temp_variable = { statecaptemp = 0.005 }
+		multiply_temp_variable = { statecaptemp = 0.001 }
 		set_temp_variable = { planecontemp = ROOT.plannedeconomy }
-		multiply_temp_variable = { planecontemp = 0.01 }
+		multiply_temp_variable = { planecontemp = 0.002 }
 		
 		add_to_temp_variable = { nointertemp = intertemp }
 		add_to_temp_variable = { nointertemp = statecaptemp }
 		add_to_temp_variable = { nointertemp = planecontempp }
 		
 		set_temp_variable = { freetradetemp = ROOT.freetrade }
-		multiply_temp_variable = { freetradetemp = -0.01 }
+		multiply_temp_variable = { freetradetemp = -0.002 }
 		set_temp_variable = { prottemp = ROOT.protectionism }
-		multiply_temp_variable = { prottemp = 0.01 }
+		multiply_temp_variable = { prottemp = 0.002 }
 		
 		add_to_temp_variable = {freetradetemp = prottemp }
 		
@@ -451,7 +451,7 @@ country_event = {
 					}
 				}
 			}
-			multiply_temp_variable = {freetradetemp = 0.4 }
+			multiply_temp_variable = {freetradetemp = 0.2 }
 		}
 		
 		set_temp_variable = { actual_growth_factor = 1 }
@@ -486,13 +486,13 @@ country_event = {
 	}
 	immediate = {
 		set_temp_variable = { jingotemp = ROOT.jingoism }
-		multiply_temp_variable = { jingotemp = 0.01 }
+		multiply_temp_variable = { jingotemp = 0.002 }
 		set_temp_variable = { promiltemp = ROOT.promilitary }
-		multiply_temp_variable = { promiltemp = 0.005 }
+		multiply_temp_variable = { promiltemp = 0.001 }
 		set_temp_variable = { antimiltemp = ROOT.antimilitary }
-		multiply_temp_variable = { antimiltemp = -0.005 }
+		multiply_temp_variable = { antimiltemp = -0.001 }
 		set_temp_variable = { pacifisttemp = ROOT.pacifist }
-		multiply_temp_variable = { pacifisttemp = -0.01 }
+		multiply_temp_variable = { pacifisttemp = -0.002 }
 		
 		add_to_temp_variable = { jingotemp = promiltemp }
 		add_to_temp_variable = { jingotemp = antimiltemp }
@@ -500,22 +500,22 @@ country_event = {
 		
 		
 		set_temp_variable = { nointertemp = ROOT.nointerventionism }
-		multiply_temp_variable = { nointertemp = -0.01 }
+		multiply_temp_variable = { nointertemp = -0.002 }
 		set_temp_variable = { intertemp = ROOT.interventionism }
-		multiply_temp_variable = { intertemp = -0.005 }
+		multiply_temp_variable = { intertemp = -0.001 }
 		set_temp_variable = { statecaptemp = ROOT.statecapitalism }
-		multiply_temp_variable = { statecaptemp = 0.005 }
+		multiply_temp_variable = { statecaptemp = 0.002 }
 		set_temp_variable = { planecontemp = ROOT.plannedeconomy }
-		multiply_temp_variable = { planecontemp = 0.01 }
+		multiply_temp_variable = { planecontemp = 0.002 }
 		
 		add_to_temp_variable = { nointertemp = intertemp }
 		add_to_temp_variable = { nointertemp = statecaptemp }
 		add_to_temp_variable = { nointertemp = planecontempp }
 		
 		set_temp_variable = { freetradetemp = ROOT.freetrade }
-		multiply_temp_variable = { freetradetemp = -0.01 }
+		multiply_temp_variable = { freetradetemp = -0.002 }
 		set_temp_variable = { prottemp = ROOT.protectionism }
-		multiply_temp_variable = { prottemp = 0.01 }
+		multiply_temp_variable = { prottemp = 0.002 }
 		
 		add_to_temp_variable = {freetradetemp = prottemp }
 		
@@ -532,7 +532,7 @@ country_event = {
 					}
 				}
 			}
-			multiply_temp_variable = {freetradetemp = 0.4 }
+			multiply_temp_variable = {freetradetemp = 0.2 }
 		}
 		
 		set_temp_variable = { actual_growth_factor = 1 }
@@ -567,13 +567,13 @@ country_event = {
 	}
 	immediate = {
 		set_temp_variable = { jingotemp = ROOT.jingoism }
-		multiply_temp_variable = { jingotemp = 0.005 }
+		multiply_temp_variable = { jingotemp = 0.001 }
 		set_temp_variable = { promiltemp = ROOT.promilitary }
-		multiply_temp_variable = { promiltemp = 0.01 }
+		multiply_temp_variable = { promiltemp = 0.002 }
 		set_temp_variable = { antimiltemp = ROOT.antimilitary }
-		multiply_temp_variable = { antimiltemp = -0.005 }
+		multiply_temp_variable = { antimiltemp = -0.001 }
 		set_temp_variable = { pacifisttemp = ROOT.pacifist }
-		multiply_temp_variable = { pacifisttemp = -0.01 }
+		multiply_temp_variable = { pacifisttemp = -0.002 }
 		
 		add_to_temp_variable = { jingotemp = promiltemp }
 		add_to_temp_variable = { jingotemp = antimiltemp }
@@ -583,11 +583,11 @@ country_event = {
 		set_temp_variable = { nointertemp = ROOT.nointerventionism }
 		multiply_temp_variable = { nointertemp = 0 }
 		set_temp_variable = { intertemp = ROOT.interventionism }
-		multiply_temp_variable = { intertemp = 0.005 }
+		multiply_temp_variable = { intertemp = 0.001 }
 		set_temp_variable = { statecaptemp = ROOT.statecapitalism }
-		multiply_temp_variable = { statecaptemp = 0.01 }
+		multiply_temp_variable = { statecaptemp = 0.002 }
 		set_temp_variable = { planecontemp = ROOT.plannedeconomy }
-		multiply_temp_variable = { planecontemp = 0.005 }
+		multiply_temp_variable = { planecontemp = 0.001 }
 		
 		add_to_temp_variable = { nointertemp = intertemp }
 		add_to_temp_variable = { nointertemp = statecaptemp }
@@ -596,7 +596,7 @@ country_event = {
 		set_temp_variable = { freetradetemp = ROOT.freetrade }
 		multiply_temp_variable = { freetradetemp = 0.0 }
 		set_temp_variable = { prottemp = ROOT.protectionism }
-		multiply_temp_variable = { prottemp = -0.005 }
+		multiply_temp_variable = { prottemp = -0.001 }
 		
 		add_to_temp_variable = {freetradetemp = prottemp }
 		
@@ -613,7 +613,20 @@ country_event = {
 					}
 				}
 			}
-			multiply_temp_variable = {freetradetemp = 0.6 }
+			multiply_temp_variable = {freetradetemp = 0.2 }
+		}
+		else_if = {
+			limit = {
+				NOT = {
+					OR = {
+						has_government = fascism
+						has_government = neutrality
+						has_government = communism
+					}
+				}
+				tag = USA
+			}
+			multiply_temp_variable = {freetradetemp = 0.025 }
 		}
 		
 		set_temp_variable = { actual_growth_factor = 1 }
