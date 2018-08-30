@@ -1,7 +1,7 @@
 trade_law_referendums = {
 	free_trade_decision_referendum = {
-		days_re_enable = 50
-		days_remove = 50
+		days_re_enable = 90
+		days_remove = 90
 		cost = 25
 		allowed = {
 			
@@ -36,8 +36,8 @@ trade_law_referendums = {
 	}
 
 	export_focus_decision_referendum = {
-		days_re_enable = 50
-		days_remove = 50
+		days_re_enable = 90
+		days_remove = 90
 		visible = {
 			NOT = { has_idea = export_focus }
 			if = {
@@ -101,8 +101,8 @@ trade_law_referendums = {
 	}
 
 	limited_exports_decision_referendum = {
-		days_re_enable = 50
-		days_remove = 50
+		days_re_enable = 90
+		days_remove = 90
 		visible = {
 			NOT = { has_idea = limited_exports }
 			if = {
@@ -191,8 +191,8 @@ trade_law_referendums = {
 
 	closed_economy_decision_referendum = {
 		fire_only_once = no
-		days_re_enable = 50
-		days_remove = 50
+		days_re_enable = 90
+		days_remove = 90
 		
 		cost = 25
 		

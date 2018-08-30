@@ -5,6 +5,7 @@ politics_decisions1 =
 			always = yes
 		}
 		available = {
+			NOT = { check_variable = { presidential_system = 1 } }
 			OR = {
 				has_government = democratic
 				has_government = liberal_democracy
@@ -14,6 +15,7 @@ politics_decisions1 =
 			}
 		}
 		visible = {
+			NOT = { check_variable = { presidential_system = 1 } }
 			OR = {
 				has_government = democratic
 				has_government = liberal_democracy

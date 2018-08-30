@@ -1,8 +1,8 @@
 conscription_referendums = {
 	disarm_decision_referendum = {
 		fire_only_once = no
-		days_re_enable = 50
-		days_remove = 50
+		days_re_enable = 90
+		days_remove = 90
 		cost = 0
 		visible = {
 			NOT = { has_idea = disarmed_nation }
@@ -46,8 +46,8 @@ conscription_referendums = {
 
 	volunteer_decision_referendum = {
 		fire_only_once = no
-		days_re_enable = 50
-		days_remove = 50
+		days_re_enable = 90
+		days_remove = 90
 		cost = 0
 		visible = {
 			if = {
@@ -116,8 +116,8 @@ conscription_referendums = {
 
 	limitedcons_decision_referendum = {
 		fire_only_once = no
-		days_re_enable = 50
-		days_remove = 50
+		days_re_enable = 90
+		days_remove = 90
 		cost = 0
 		visible = {
 			NOT = { has_idea = limited_conscription }
@@ -271,8 +271,8 @@ conscription_referendums = {
 
 	extensivecons_decision_referendum = {
 		fire_only_once = no
-		days_re_enable = 50
-		days_remove = 50
+		days_re_enable = 90
+		days_remove = 90
 		cost = 0
 		visible = {
 			NOT = { has_idea = extensive_conscription }
@@ -447,8 +447,8 @@ conscription_referendums = {
 
 	requireservice_decision_referendum = {
 		fire_only_once = no
-		days_re_enable = 50
-		days_remove = 50
+		days_re_enable = 90
+		days_remove = 90
 		cost = 0
 		visible = {
 			NOT = { has_idea = service_by_requirement }
@@ -635,8 +635,8 @@ conscription_referendums = {
 
 	alladults_decision_referendum = {
 		fire_only_once = no
-		days_re_enable = 50
-		days_remove = 50
+		days_re_enable = 90
+		days_remove = 90
 		cost = 0
 		visible = {
 			NOT = { has_idea = all_adults_serve }
@@ -821,8 +821,8 @@ conscription_referendums = {
 
 	scrapingbarrel_decision_referendum = {
 		fire_only_once = no
-		days_re_enable = 50
-		days_remove = 50
+		days_re_enable = 90
+		days_remove = 90
 		cost = 0
 		visible = {
 			NOT = { has_idea = scraping_the_barrel }

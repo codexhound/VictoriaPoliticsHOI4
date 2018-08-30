@@ -1,7 +1,7 @@
 trade_law_decisions = {
 	free_trade_decision = {
-		days_re_enable = 50
-		days_remove = 50
+		days_re_enable = 90
+		days_remove = 90
 		cost = 150
 		visible = {
 			NOT = { has_idea = free_trade }
@@ -33,8 +33,8 @@ trade_law_decisions = {
 	}
 	
 	export_focus_decision = {
-		days_re_enable = 50
-		days_remove = 50
+		days_re_enable = 90
+		days_remove = 90
 		visible = {
 			NOT = { has_idea = export_focus }
 			OR = 
@@ -95,8 +95,8 @@ trade_law_decisions = {
 		}
 	}
 	auth_export_focus_decision = {
-		days_re_enable = 50
-		days_remove = 50
+		days_re_enable = 90
+		days_remove = 90
 		visible = {
 			NOT = { has_idea = export_focus }
 			has_government = neutrality
@@ -149,8 +149,8 @@ trade_law_decisions = {
 	}
 	
 	limited_exports_decision = {
-		days_re_enable = 50
-		days_remove = 50
+		days_re_enable = 90
+		days_remove = 90
 		visible = {
 			OR = 
 			{
@@ -226,8 +226,8 @@ trade_law_decisions = {
 		}
 	}
 	auth_limited_exports_decision = {
-		days_re_enable = 50
-		days_remove = 50
+		days_re_enable = 90
+		days_remove = 90
 		visible = {
 			OR = 
 			{
@@ -297,8 +297,8 @@ trade_law_decisions = {
 	
 	closed_economy_decision = {
 		fire_only_once = no
-		days_re_enable = 50
-		days_remove = 50
+		days_re_enable = 90
+		days_remove = 90
 		cost = 50
 		allowed = {
 			
@@ -369,8 +369,8 @@ trade_law_decisions = {
 	}
 	auth_closed_economy_decision = {
 		fire_only_once = no
-		days_re_enable = 50
-		days_remove = 50
+		days_re_enable = 90
+		days_remove = 90
 		cost = 150
 		
 		allowed = {

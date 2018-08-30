@@ -2,8 +2,8 @@ conscription_decisions = {
 	
 	disarm_decision = {
 		fire_only_once = no
-		days_re_enable = 50
-		days_remove = 50
+		days_re_enable = 90
+		days_remove = 90
 		cost = 150
 		visible = {
 			NOT = { has_idea = disarmed_nation }
@@ -41,8 +41,8 @@ conscription_decisions = {
 	
 	volunteer_decision = {
 		fire_only_once = no
-		days_re_enable = 50
-		days_remove = 50
+		days_re_enable = 90
+		days_remove = 90
 		cost = 150
 		visible = {
 			if = {
@@ -91,8 +91,8 @@ conscription_decisions = {
 	
 	limitedcons_decision = {
 		fire_only_once = no
-		days_re_enable = 50
-		days_remove = 50
+		days_re_enable = 90
+		days_remove = 90
 		cost = 150
 		visible = {
 			NOT = { has_idea = limited_conscription }
@@ -187,8 +187,8 @@ conscription_decisions = {
 	
 	extensivecons_decision = {
 		fire_only_once = no
-		days_re_enable = 50
-		days_remove = 50
+		days_re_enable = 90
+		days_remove = 90
 		cost = 150
 		visible = {
 			NOT = { has_idea = extensive_conscription }
@@ -303,8 +303,8 @@ conscription_decisions = {
 	
 	requireservice_decision = {
 		fire_only_once = no
-		days_re_enable = 50
-		days_remove = 50
+		days_re_enable = 90
+		days_remove = 90
 		cost = 150
 		visible = {
 			NOT = { has_idea = service_by_requirement }
@@ -435,8 +435,8 @@ conscription_decisions = {
 	
 	alladults_decision = {
 		fire_only_once = no
-		days_re_enable = 50
-		days_remove = 50
+		days_re_enable = 90
+		days_remove = 90
 		cost = 150
 		visible = {
 			NOT = { has_idea = all_adults_serve }
@@ -564,8 +564,8 @@ conscription_decisions = {
 	
 	scrapingbarrel_decision = {
 		fire_only_once = no
-		days_re_enable = 50
-		days_remove = 50
+		days_re_enable = 90
+		days_remove = 90
 		cost = 150
 		visible = {
 			NOT = { has_idea = scraping_the_barrel }

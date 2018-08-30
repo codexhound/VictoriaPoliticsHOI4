@@ -3,8 +3,8 @@ economic_law_decisions = {
 	civilian_economy_decision = 
 	{
 		fire_only_once = no
-		days_re_enable = 50
-		days_remove = 50
+		days_re_enable = 90
+		days_remove = 90
 		cost = 150
 		available = {
 			check_variable = { ROOT.changed_economy_law = 0 }
@@ -61,8 +61,8 @@ economic_law_decisions = {
 	
 	limited_mobilisation_decision = {
 		fire_only_once = no
-		days_re_enable = 50
-		days_remove = 50
+		days_re_enable = 90
+		days_remove = 90
 		cost = 150
 		visible = {
 			NOT = { has_idea = low_economic_mobilisation }
@@ -154,8 +154,8 @@ economic_law_decisions = {
 	
 	partial_mobilisation_decision = {
 		fire_only_once = no
-		days_re_enable = 50
-		days_remove = 50
+		days_re_enable = 90
+		days_remove = 90
 		cost = 150
 		visible = {
 			NOT = { has_idea = partial_economic_mobilisation }
@@ -259,8 +259,8 @@ economic_law_decisions = {
 	}
 	war_economy_decision = {
 		fire_only_once = no
-		days_re_enable = 50
-		days_remove = 50
+		days_re_enable = 90
+		days_remove = 90
 		cost = 150
 		visible = {
 			NOT = { has_idea = war_economy }
@@ -354,8 +354,8 @@ economic_law_decisions = {
 	
 	total_mobil_decision = {
 		fire_only_once = no
-		days_re_enable = 50
-		days_remove = 50
+		days_re_enable = 90
+		days_remove = 90
 		cost = 150
 		visible = {
 			NOT = { has_idea = tot_economic_mobilisation }
