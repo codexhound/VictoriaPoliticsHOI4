@@ -239,13 +239,13 @@ add_ideas = issue_ideology_drift_effects
 
 set_politics = {
 	parties = {
-		anarcho_liberal_democracy = { popularity = 10 } 
-		liberal_democracy = { popularity = 20 } 
-		reactionary_democracy = { popularity = 10 }
-		social_democracy = { popularity = 5} 
-		democratic = { popularity = 50 }
-		fascism = { popularity = 2 }
-		communism = { popularity = 3 }
+		anarcho_liberal_democracy = { popularity = 0 } 
+		liberal_democracy = { popularity = 10.4 } 
+		reactionary_democracy = { popularity = 1.8 }
+		social_democracy = { popularity = 40} 
+		democratic = { popularity = 47.8 }
+		fascism = { popularity = 0 }
+		communism = { popularity = 0 }
 	}
 	
 	ruling_party = democratic

@@ -92,26 +92,26 @@ set_technology = {
 
 set_variable = { middleclass = 0.80 } set_variable = { academia = 0.10 } set_variable = { capitalist = 0.10 } set_variable = { freetrade = 0.40 } set_variable = { protectionism = 0.60 } set_variable = { nointerventionism = 0.10 } set_variable = { interventionism = 0.60 } set_variable = { statecapitalism = 0.20 } set_variable = { plannedeconomy = 0.10 } set_variable = { jingoism = 0.20 } set_variable = { promilitary = 0.40 } set_variable = { antimilitary = 0.10 }set_variable = { pacifism = 0.30 } add_ideas = job_stats add_ideas = trade_pop add_ideas = economic_pop add_ideas = war_pop add_ideas = issue_ideology_drift_effects set_politics = { 
 
-	parties = {  anarcho_liberal_democracy = { popularity = 0 } liberal_democracy = { popularity = 0 } reactionary_democracy = { popularity = 0 } social_democracy = { popularity = 0 } 
+	parties = {  anarcho_liberal_democracy = { popularity = 0 } liberal_democracy = { popularity = 17.6 } reactionary_democracy = { popularity = 12.9 } social_democracy = { popularity = 45.9 } 
 		democratic = { 
-			popularity = 75
+			popularity = 14.4
 		}
 
 		neutrality = {
-			popularity  = 14
+			popularity  = 1.5
 		}
 
 		communism = {
-			popularity = 8
+			popularity = 3.3
 		}
 
 		fascism = {
-			popularity = 3
+			popularity = 4.4
 		}
 		
 	}
 	
-	ruling_party = democratic
+	ruling_party = social_democracy
 	last_election = "1932.9.18"
 	election_frequency = 48
 	elections_allowed = yes
@@ -157,7 +157,7 @@ create_country_leader = {
 	desc = "POLITICS_PER_ALBIN_HANSSON_DESC"
 	picture = "Portrait_Sweden_Per_Albin_Hansson.dds"
 	expire = "1965.1.1"
-	ideology = socialism
+	ideology = social_democrat
 	traits = {
 		#
 	}

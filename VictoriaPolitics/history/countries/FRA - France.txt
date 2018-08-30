@@ -142,21 +142,21 @@ set_convoys = 300
 
 set_variable = { middleclass = 0.80 } set_variable = { academia = 0.10 } set_variable = { capitalist = 0.10 } set_variable = { freetrade = 0.40 } set_variable = { protectionism = 0.60 } set_variable = { nointerventionism = 0.10 } set_variable = { interventionism = 0.60 } set_variable = { statecapitalism = 0.20 } set_variable = { plannedeconomy = 0.10 } set_variable = { jingoism = 0.20 } set_variable = { promilitary = 0.40 } set_variable = { antimilitary = 0.10 }set_variable = { pacifism = 0.30 } add_ideas = job_stats add_ideas = trade_pop add_ideas = economic_pop add_ideas = war_pop add_ideas = issue_ideology_drift_effects set_politics = { 
 
-	parties = {  anarcho_liberal_democracy = { popularity = 0 } liberal_democracy = { popularity = 0 } reactionary_democracy = { popularity = 0 } social_democracy = { popularity = 0 } 
+	parties = {  anarcho_liberal_democracy = { popularity = 3.67 } liberal_democracy = { popularity = 0 } reactionary_democracy = { popularity = 12 } social_democracy = { popularity = 45.89 } 
 		democratic = { 
-			popularity = 69
+			popularity = 26.45
 		}
 
 		fascism = {
-			popularity = 1
+			popularity = 3.67
 		}
 		
 		communism = {
-			popularity = 30
+			popularity = 8.32
 		}
 	}
 	
-	ruling_party = democratic
+	ruling_party = social_democracy
 	last_election = "1932.5.1"
 	election_frequency = 48
 	elections_allowed = yes
@@ -173,6 +173,17 @@ add_ideas = {
 
 #Order matters here Daladier will start as leaders because added last
 create_country_leader = {
+	name = "Édouard Herriot"
+	desc = ""
+	picture = ""
+	expire = "1965.1.1"
+	ideology = social_democrat
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
 	name = "Charles de Gaulle"
 	desc = "POLITICS_CHARLES_DE_GAULLE_DESC"
 	picture = "Portrait_France_Charles_De_Gaulle.dds"
@@ -188,7 +199,7 @@ create_country_leader = {
 	desc = "POLITICS_ÉDOUARD_DALADIER_DESC"
 	picture = "Portrait_France_Edouard_Daladier.dds"
 	expire = "1965.1.1"
-	ideology = socialism
+	ideology = liberal_democracy
 	traits = {
 		stout_defender
 	}

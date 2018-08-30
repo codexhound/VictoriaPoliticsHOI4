@@ -10,7 +10,8 @@ ideologies = {
 			
 			socialism = {
 			}
-			
+			democratic_anarcho_liberal_leader = {
+			}
 			centrism_democratic = {
 			}
 		}
@@ -67,6 +68,10 @@ ideologies = {
 		types = {
 			liberal_congress = {
 			}
+			liberal_centrist_leader = {}
+			liberal_socialist_leader = {}
+			liberal_reactionary_leader = {}
+			liberal_libertarian_leader = {}
 		}
 		rules = {
 			can_declare_war_on_same_ideology = no
@@ -123,6 +128,10 @@ ideologies = {
 		types = {
 			anarcho_liberal_congress = {
 			}
+			anarcho_liberal_leader = {}
+			anarcho_centrist_leader = {}
+			anarcho_socialist_leader = {}
+			anarcho_reactionary_leader = {}
 		}
 		
 		dynamic_faction_names = {
@@ -161,6 +170,11 @@ ideologies = {
 		types = {
 			reactionary_congress = {
 			}
+			reactionary_anarcho_leader= {
+			}
+			reactionary_liberal_leader = {}
+			reactionary_centrist_leader = {}
+			reactionary_socialist_leader = {}
 		}
 		rules = {
 					can_declare_war_on_same_ideology = yes
@@ -210,6 +224,12 @@ ideologies = {
 		types = {
 			social_democrat = {
 			}
+			social_anarcho_leader = {
+			}
+			social_liberal_leader = {
+			}
+			social_reactionary_leader = {}
+			social_centrist_leader = {}
 		}
 		rules = {
 					can_declare_war_on_same_ideology = no

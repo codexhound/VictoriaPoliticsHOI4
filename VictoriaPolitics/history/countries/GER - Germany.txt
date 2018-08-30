@@ -214,17 +214,17 @@ create_import = {
 
 set_variable = { middleclass = 0.80 } set_variable = { academia = 0.10 } set_variable = { capitalist = 0.10 } set_variable = { freetrade = 0.40 } set_variable = { protectionism = 0.60 } set_variable = { nointerventionism = 0.10 } set_variable = { interventionism = 0.60 } set_variable = { statecapitalism = 0.20 } set_variable = { plannedeconomy = 0.10 } set_variable = { jingoism = 0.20 } set_variable = { promilitary = 0.40 } set_variable = { antimilitary = 0.10 }set_variable = { pacifism = 0.30 } add_ideas = job_stats add_ideas = trade_pop add_ideas = economic_pop add_ideas = war_pop add_ideas = issue_ideology_drift_effects set_politics = { 
 
-	parties = {  anarcho_liberal_democracy = { popularity = 0 } liberal_democracy = { popularity = 0 } reactionary_democracy = { popularity = 0 } social_democracy = { popularity = 0 } 
+	parties = {  anarcho_liberal_democracy = { popularity = 0 } liberal_democracy = { popularity = 3.57 } reactionary_democracy = { popularity = 7.97 } social_democracy = { popularity = 18.25 } 
 		democratic = { 
-			popularity = 20
+			popularity = 13.98100
 		}
 
 		fascism = {
-			popularity = 60
+			popularity = 43.91
 		}
 		
 		communism = {
-			popularity = 20
+			popularity = 12.32
 			banned = yes #default is no
 		}
 	}
@@ -284,18 +284,18 @@ create_country_leader = {
 	}
 }
 
-#create_country_leader = {
-#	name = "Otto Wels"
-#	desc = "POLITICS_OTTO_WELS_DESC"
-#	picture = "Portrait_Germany_Adolf_Hitler.dds"
-#	expire = "1939.1.16"
-#	ideology = socialism
-#	traits = {
-#		exiled
-#		union_man
-#	}
-#}
-#
+create_country_leader = {
+	name = "Otto Wels"
+	desc = "POLITICS_OTTO_WELS_DESC"
+	picture = "Portrait_Germany_Adolf_Hitler.dds"
+	expire = "1939.1.16"
+	ideology = social_democracy
+	traits = {
+		exiled
+		union_man
+	}
+}
+
 #create_country_leader = {
 #	name = "Ernst Thälmann"
 #	desc = "POLITICS_ERNST_THALMANN_DESC"

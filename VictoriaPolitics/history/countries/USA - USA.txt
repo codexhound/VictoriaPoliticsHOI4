@@ -170,9 +170,9 @@ set_convoys = 400
 
 set_variable = { middleclass = 0.80 } set_variable = { academia = 0.10 } set_variable = { capitalist = 0.10 } set_variable = { freetrade = 0.40 } set_variable = { protectionism = 0.60 } set_variable = { nointerventionism = 0.10 } set_variable = { interventionism = 0.60 } set_variable = { statecapitalism = 0.20 } set_variable = { plannedeconomy = 0.10 } set_variable = { jingoism = 0.20 } set_variable = { promilitary = 0.40 } set_variable = { antimilitary = 0.10 }set_variable = { pacifism = 0.30 } add_ideas = job_stats add_ideas = trade_pop add_ideas = economic_pop add_ideas = war_pop add_ideas = issue_ideology_drift_effects set_politics = { 
 
-	parties = {  anarcho_liberal_democracy = { popularity = 0 } liberal_democracy = { popularity = 0 } reactionary_democracy = { popularity = 0 } social_democracy = { popularity = 0 } 
+	parties = {  anarcho_liberal_democracy = { popularity = 0 } liberal_democracy = { popularity = 74 } reactionary_democracy = { popularity = 0.7 } social_democracy = { popularity = 1.6 } 
 		democratic = { 
-			popularity = 99
+			popularity = 23.7
 		}
 
 		fascism = {
@@ -185,7 +185,7 @@ set_variable = { middleclass = 0.80 } set_variable = { academia = 0.10 } set_var
 		}
 	}
 	
-	ruling_party = democratic
+	ruling_party = liberal_democracy
 	last_election = "1932.11.8"
 	election_frequency = 48
 	elections_allowed = yes
@@ -237,7 +237,7 @@ create_country_leader = {
 	desc = "POLITICS_FRANKLIN_DELANO_ROOSEVELT_DESC"
 	picture = "Portrait_USA_Franklin_Roosevelt.dds"
 	expire = "1947.1.1"
-	ideology = liberalism
+	ideology = liberal_congress
 	traits = {
 		dislikes_germany
 	}
