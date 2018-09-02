@@ -1,21 +1,3 @@
-economic_law_referendums = {
-	icon = generic_research	
-}
-economic_law_decisions = {
-	icon = generic_research	
-}
-trade_law_referendums = {
-	icon = generic_research
-}
-trade_law_decisions = {
-	icon = generic_research
-}
-conscription_referendums = {
-	icon = generic_research
-}
-conscription_decisions = {
-	icon = generic_research
-}
 idealogy_propaganda_decisions = {
 	icon = generic_research
 }
