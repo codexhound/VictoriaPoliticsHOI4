@@ -1,4 +1,4 @@
-name="Victoria Politics! (EOANB Version)"
+name="Victoria Politics! (End of a New Beginning Version)"
 path="mod/VictoriaPolitics_EOANB"
 dependencies={
 	"End of a New Beginning"
