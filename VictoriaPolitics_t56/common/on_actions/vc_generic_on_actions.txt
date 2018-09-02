@@ -143,7 +143,16 @@ on_actions = {
 
 	on_government_change = {
 		effect = {			
-
+			if = {
+				limit = {
+					NOT = {
+						has_government = fascism
+						has_government = communism
+						has_government = neutrality
+					}
+				}
+				country_event = {id = vc_elections.0 days = 730 random = 10}
+			}
 		}
 	}
 
@@ -188,7 +197,21 @@ on_actions = {
 	#Not run on a specific country.
 	on_startup = {
 		effect = {
-			country_event = {id = vc_updates.0}
+			every_country = { 
+				country_event = {id = vc_updates.0 } 
+			}
+			every_country = { 
+				if = {
+					limit = {
+						NOT = {
+							has_government = fascism
+							has_government = communism
+							has_government = neutrality
+						}
+					}
+					country_event = { id = vc_elections.0 days = 730 random = 10} }
+				}
+			}
 		}
 	}
 	
