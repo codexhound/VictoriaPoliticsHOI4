@@ -16,15 +16,12 @@ country_event = {
 		if = { 
 			limit = {
 				NOT = { has_war = yes }
-				NOT = {
-					OR = {
-						has_government = vanguard_communism
-						has_government = autocracy
-						has_government = chauvinist_populism
-						has_government = anarchism
-						has_government = fundamentalism
-						has_government = anarchism
-					}
+				OR = {
+					has_government = centrism
+					has_government = traditional_conservatism
+					has_government = collectivist_socialism
+					has_government = social_egalitarianism
+					has_government = radical_democracy
 				}
 			}
 			if = {
@@ -96,16 +93,12 @@ country_event = {
 		else_if = {
 			limit = {
 				has_war = yes
-				NOT = {
-					OR = {
-						has_government = collectivist_socialism
-						has_government = vanguard_communism
-						has_government = autocracy
-						has_government = chauvinist_populism
-						has_government = anarchism
-						has_government = fundamentalism
-						has_government = anarchism
-					}
+				OR = {
+					has_government = centrism
+					has_government = traditional_conservatism
+					has_government = collectivist_socialism
+					has_government = social_egalitarianism
+					has_government = radical_democracy
 				}
 			}
 			country_event = {id = vc_elections.0 days = 20 random = 10}
