@@ -1,0 +1,243 @@
+﻿1857.1.1 = {
+  capital = 956
+
+  oob = "AUS_1857" 
+
+  set_convoys = 50
+  
+  set_research_slots = 4
+
+  add_ideas = { 
+          #POLITICS
+    hos_is_leader
+    victorian_era
+	law_victorian_army
+    industrializing
+	has_heir
+    absolute_monarchy
+
+    civilian_economy
+    limited_exports
+    three_percent
+    normal_taxes
+	cl_restricted
+	fourteen_hour_work_day
+
+    stagnation_growth
+    border_control
+    limited_equality
+    volunteer_only
+    absolutism
+
+    constitution_adopted
+    no_elections
+
+    open_schools
+    state_religion
+	religion_catholic
+    #NATIONAL SPIRITS
+    
+  GER_general_idea_ger_confed
+  AUS_hungarian_revolution
+  AUS_economy_1_1857
+  }
+  
+      #Colective guarantee of the 7 great power
+  give_guarantee = ROM
+  give_guarantee = MOL
+
+  puppet = LVN
+
+  set_variable = { middleclass = 0.80 } set_variable = { academia = 0.10 } set_variable = { capitalist = 0.10 } set_variable = { freetrade = 0.40 } set_variable = { protectionism = 0.60 } set_variable = { nointerventionism = 0.10 } set_variable = { interventionism = 0.60 } set_variable = { statecapitalism = 0.20 } set_variable = { plannedeconomy = 0.10 } set_variable = { jingoism = 0.20 } set_variable = { promilitary = 0.40 } set_variable = { antimilitary = 0.10 }set_variable = { pacifism = 0.30 } add_ideas = job_stats add_ideas = trade_pop add_ideas = economic_pop add_ideas = war_pop add_ideas = issue_ideology_drift_effects set_politics = {
+    parties = {
+      anarchism = {
+        popularity = 0
+      }
+      vanguard_communism = {
+        popularity = 0
+      }
+      collectivist_socialism = {
+        popularity = 0
+      }
+      social_egalitarianism = {
+        popularity = 2
+      }
+      centrism = {
+        popularity = 4.4
+      }
+      traditional_conservatism = {
+        popularity = 8.6
+      }
+      radical_democracy = {
+        popularity = 0
+      }
+      chauvinist_populism = {
+        popularity = 0
+      }
+      autocracy = {
+        popularity = 85
+      }
+      fundamentalism = {
+        popularity = 0
+      }
+    }
+
+	  ruling_party = autocracy
+  }
+
+  set_technology = {
+	infantry_weapons = 1
+	vic_army_cloth = 1
+	tech_naval_1812_frigate = 1
+	gw_artillery = 1
+	iron_railways = 1
+	steam_engine = 1
+	manufactories = 1
+	hot_blast_furnaces = 1
+	food_preserving_icebox = 1
+	start_build_tech = 1
+	early_artificial_fertilizer = 1
+	electrical_engineering = 1
+	hand_revolvers = 1
+	socket_bayonet = 1
+	civil_army_cloth = 1
+	basic_cavalry = 1
+	horse_transport = 1
+	mounted_infantry = 1
+	tech_support = 1
+	early_howitzer = 1
+	tech_naval_1830_frigate = 1
+	mongolfiere = 1
+	ornithopter = 1
+	screw_propeller = 1
+  }
+
+  create_country_leader = {
+	name = "Franz Joseph I"
+	desc = "POLITICS_KURT_SCHUSCHNIGG_DESC"
+	picture = "Portrait_AUS_Franz_Joseph_I.dds"
+	ideology = despotism
+	traits = {
+		#
+	}
+}
+
+	create_corps_commander = {
+  name = "Albrecht von Österreich-Teschen"
+  picture = "Portrait_AUS_Albrecht_von_Osterreich_Teschen.dds"
+  traits = { }
+  skill = 3
+  attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+  name = "Eduard Clam-Gallas"
+  picture = "Portrait_AUS_Eduard_Clam_Gallas.dds"
+  traits = { }
+  skill = 3
+  attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+  name = "Leopold Gondrecourt"
+  picture = "Portrait_AUS_Leopold_Gondrecourt.dds"
+  traits = { }
+  skill = 3
+  attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+  name = "Leopold Ludwig of Austria"
+  picture = "Portrait_AUS_Leopold_Ludwig_of_Austria.dds"
+  traits = { }
+  skill = 3
+  attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+  name = "Ludwig von Benedek"
+  picture = "Portrait_AUS_Ludwig_von_Benedek.dds"
+  traits = { }
+  skill = 3
+  attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+  name = "Ludwig von Gablenz"
+  picture = "Portrait_AUS_Ludwig_von_Gablenz.dds"
+  traits = { }
+  skill = 3
+  attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+  name = "Wilhelm von Ramming"
+  picture = "Portrait_AUS_Wilhelm_Ramming.dds"
+  traits = { }
+  skill = 3
+  attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_navy_leader = {
+  name = "Bernhard von Wüllerstorf-Urbair"
+  picture = "Portrait_AUS_Bernhard_von_Wullerstorf_Urbair.dds"
+  traits = { }
+  skill = 3
+}
+
+create_navy_leader = {
+  name = "Friedrich von Pöck"
+  picture = "Portrait_AUS_Friedrich_von_Pock.dds"
+  traits = { }
+  skill = 3
+}
+
+create_navy_leader = {
+  name = "Leopold Ludwig of Austria"
+  picture = "Portrait_AUS_Leopold_Ludwig_of_Austria.dds"
+  traits = { }
+  skill = 3
+}
+
+create_navy_leader = {
+  name = "Ludwig von Fautz"
+  picture = "Portrait_AUS_Ludwig_von_Fautz.dds"
+  traits = { }
+  skill = 3
+}
+
+create_navy_leader = {
+  name = "Maximilian Daublebsky von Sterneck"
+  picture = "Portrait_AUS_Maximilian_Daublebsky_von_Sterneck.dds"
+  traits = { }
+  skill = 3
+}
+
+create_navy_leader = {
+  name = "Wilhelm von Tegetthoff"
+  picture = "Portrait_AUS_Wilhelm_von_Tegetthoff.dds"
+  traits = { }
+  skill = 3
+}
+}

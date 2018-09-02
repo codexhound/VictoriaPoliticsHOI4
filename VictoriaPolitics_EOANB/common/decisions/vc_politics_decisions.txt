@@ -1,0 +1,41 @@
+politics_decisions1 = 
+{
+	force_election = {
+		allowed = {
+			always = yes
+		}
+		available = {
+			NOT = { check_variable = { presidential_system = 1 } }
+			OR = {
+				has_government = traditional_conservatism
+				has_government = centrism
+				has_government = social_egalitarianism
+				has_government = collectivist_socialism
+				has_government = radical_democracy
+			}
+		}
+		visible = {
+			NOT = { check_variable = { presidential_system = 1 } }
+			OR = {
+				has_government = traditional_conservatism
+				has_government = centrism
+				has_government = social_egalitarianism
+				has_government = collectivist_socialism
+				has_government = radical_democracy
+			}
+		}
+
+		cost = 50
+		fire_only_once = no
+		days_re_enable = 90
+		days_remove = 90
+		
+		complete_effect = {
+			country_event = { id = vc_elections.1 }
+		}
+
+		ai_will_do = {
+			factor = 0.2
+		}
+	}
+}

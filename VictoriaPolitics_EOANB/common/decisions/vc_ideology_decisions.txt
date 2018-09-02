@@ -1,0 +1,329 @@
+idealogy_propaganda_decisions = {
+	facsist_propaganda = 
+	{
+		allowed = {
+			always = yes
+		}
+		available = {
+			check_variable = { ROOT.ideology_prop = 0 }
+		}
+		complete_effect = {
+			set_variable = { ROOT.ideology_prop = 1 }
+		}
+		remove_effect = {
+			set_variable = { ROOT.ideology_prop = 0 }
+		}
+
+		cost = 120
+		fire_only_once = no
+		days_re_enable = 165
+		days_remove = 165
+
+		modifier = {
+			chauvinist_populism_drift = 0.10
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				has_government = chauvinist_populism
+			}
+		}
+	}
+
+	fundamentalist_propaganda = 
+	{
+		allowed = {
+			always = yes
+		}
+		available = {
+			check_variable = { ROOT.ideology_prop = 0 }
+		}
+		complete_effect = {
+			set_variable = { ROOT.ideology_prop = 1 }
+		}
+		remove_effect = {
+			set_variable = { ROOT.ideology_prop = 0 }
+		}
+
+		cost = 120
+		fire_only_once = no
+		days_re_enable = 165
+		days_remove = 165
+
+		modifier = {
+			fundamentalism_drift = 0.10
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				has_government = fundamentalism
+			}
+		}
+	}
+	
+	communist_propaganda = {
+
+		allowed = {
+			always = yes
+		}
+		available = {
+			check_variable = { ROOT.ideology_prop = 0 }
+		}
+		complete_effect = {
+			set_variable = { ROOT.ideology_prop = 1 }
+		}
+		remove_effect = {
+			set_variable = { ROOT.ideology_prop = 0 }
+		}
+	
+		cost = 120
+    	fire_only_once = no
+    	days_re_enable = 165
+    	days_remove = 165
+	
+		modifier = {
+    	    vanguard_communism = 0.10
+    	}
+	
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				has_government = vanguard_communism
+			}
+		}
+	}
+	
+	liberal_propaganda = {
+
+		allowed = {
+			always = yes
+		}
+		available = {
+			check_variable = { ROOT.ideology_prop = 0 }
+		}
+		complete_effect = {
+			set_variable = { ROOT.ideology_prop = 1 }
+		}
+		remove_effect = {
+			set_variable = { ROOT.ideology_prop = 0 }
+		}
+	
+		cost = 120
+    	fire_only_once = no
+    	days_re_enable = 165
+    	days_remove = 165
+	
+		modifier = {
+    	    centrism_drift = 0.10
+    	}
+	
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				has_government = centrism
+			}
+		}
+	}
+	
+	conservative_propaganda = {
+		allowed = {
+			always = yes
+		}
+		available = {
+			check_variable = { ROOT.ideology_prop = 0 }
+		}
+		complete_effect = {
+			set_variable = { ROOT.ideology_prop = 1 }
+		}
+		remove_effect = {
+			set_variable = { ROOT.ideology_prop = 0 }
+		}
+	
+		cost = 120
+    	fire_only_once = no
+    	days_re_enable = 165
+    	days_remove = 165
+	
+		modifier = {
+    	    traditional_conservatism_drift = 0.10
+    	}
+	
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				has_government = traditional_conservatism
+			}
+		}
+	}
+	
+	reactionary_propaganda = {
+
+		allowed = {
+			always = yes
+		}
+		available = {
+			check_variable = { ROOT.ideology_prop = 0 }
+		}
+		complete_effect = {
+			set_variable = { ROOT.ideology_prop = 1 }
+		}
+		remove_effect = {
+			set_variable = { ROOT.ideology_prop = 0 }
+		}
+	
+		cost = 120
+    	fire_only_once = no
+    	days_re_enable = 165
+    	days_remove = 165
+	
+		modifier = {
+    	    radical_democracy_drift = 0.10
+    	}
+	
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				has_government = radical_democracy
+			}
+		}
+	}
+	
+	anarcho_propaganda = {
+		allowed = {
+			always = yes
+		}
+		available = {
+			check_variable = { ROOT.ideology_prop = 0 }
+		}
+		complete_effect = {
+			set_variable = { ROOT.ideology_prop = 1 }
+		}
+		remove_effect = {
+			set_variable = { ROOT.ideology_prop = 0 }
+		}
+	
+		cost = 120
+    	fire_only_once = no
+    	days_re_enable = 165
+    	days_remove = 165
+	
+		modifier = {
+    	    anarchism_drift = 0.10
+    	}
+	
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				has_government = anarchism
+			}
+		}
+	}
+	
+	social_democracy_propaganda = {
+
+		allowed = {
+			always = yes
+		}
+		available = {
+			check_variable = { ROOT.ideology_prop = 0 }
+		}
+		complete_effect = {
+			set_variable = { ROOT.ideology_prop = 1 }
+		}
+		remove_effect = {
+			set_variable = { ROOT.ideology_prop = 0 }
+		}
+	
+		cost = 120
+   		fire_only_once = no
+   		days_re_enable = 165
+   		days_remove = 165
+		modifier = {
+   		     social_egalitarianism_drift = 0.10
+   		 }
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				has_government = social_egalitarianism
+			}
+		}
+	}
+
+	syndicalist_propaganda = {
+
+		allowed = {
+			always = yes
+		}
+		available = {
+			check_variable = { ROOT.ideology_prop = 0 }
+		}
+		complete_effect = {
+			set_variable = { ROOT.ideology_prop = 1 }
+		}
+		remove_effect = {
+			set_variable = { ROOT.ideology_prop = 0 }
+		}
+	
+		cost = 120
+   		fire_only_once = no
+   		days_re_enable = 165
+   		days_remove = 165
+		modifier = {
+   		     collectivist_socialism_drift = 0.10
+   		 }
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				has_government = collectivist_socialism
+			}
+		}
+	}
+	
+	neutrality_propaganda = {
+
+		allowed = {
+			always = yes
+		}
+		available = {
+				check_variable = { ROOT.ideology_prop = 0 }
+			}
+		complete_effect = {
+			set_variable = { ROOT.ideology_prop = 1 }
+		}
+		remove_effect = {
+				set_variable = { ROOT.ideology_prop = 0 }
+			}
+	
+		cost = 120
+    	fire_only_once = no
+    	days_re_enable = 165
+    	days_remove = 165
+	
+		modifier = {
+    	    autocracy_drift = 0.10
+    	}
+	
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				has_government = autocracy
+			}
+		}
+	}
+}
+
+

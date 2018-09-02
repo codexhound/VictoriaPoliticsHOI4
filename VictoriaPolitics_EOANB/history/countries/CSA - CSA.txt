@@ -1,0 +1,96 @@
+﻿1857.1.1 = {
+  capital = 367
+
+  oob = "CSA_1857"
+
+  set_convoys = 25
+  
+  set_research_slots = 3
+
+  add_ideas = { 
+    #POLITICS 
+		  
+    hos_is_leader
+    victorian_era
+	law_victorian_army
+    agrarian
+    non_monarchical_system
+    presidential_republic
+
+    civilian_economy
+    export_focus
+    two_percent
+    normal_taxes
+	cl_legal
+
+    stagnation_growth
+    border_control
+	  limited_conscription
+    usa_slavery_law
+    universal_male_suffrage
+
+    constitution_adopted
+    free_elections
+
+    privileged_education
+    state_religion
+	religion_protestant
+         #NATIONAL SPIRITS
+	
+  }
+
+  set_variable = { middleclass = 0.80 } set_variable = { academia = 0.10 } set_variable = { capitalist = 0.10 } set_variable = { freetrade = 0.40 } set_variable = { protectionism = 0.60 } set_variable = { nointerventionism = 0.10 } set_variable = { interventionism = 0.60 } set_variable = { statecapitalism = 0.20 } set_variable = { plannedeconomy = 0.10 } set_variable = { jingoism = 0.20 } set_variable = { promilitary = 0.40 } set_variable = { antimilitary = 0.10 }set_variable = { pacifism = 0.30 } add_ideas = job_stats add_ideas = trade_pop add_ideas = economic_pop add_ideas = war_pop add_ideas = issue_ideology_drift_effects set_politics = {
+    parties = {
+      anarchism = {
+        popularity = 0
+      }
+      vanguard_communism = {
+        popularity = 0
+      }
+      collectivist_socialism = {
+        popularity = 0
+      }
+      social_egalitarianism = {
+        popularity = 0
+      }
+      centrism = {
+        popularity = 30
+      }
+      traditional_conservatism = {
+        popularity = 70
+      }
+      radical_democracy = {
+        popularity = 0
+      }
+      chauvinist_populism = {
+        popularity = 0
+      }
+      autocracy = {
+        popularity = 0
+      }
+      fundamentalism = {
+        popularity = 0
+      }
+    }
+
+	  ruling_party = traditional_conservatism
+  }
+  
+  set_technology = {
+	start_build_tech = 1
+	}
+
+  # POLITICAL LEADERS
+
+  create_country_leader = {
+	name = "Jefferson Davis"
+	desc = "POLITICS_WILLIAM_DUDLEY_PELLEY_DESC"
+	picture = "Portrait_CSA_Jefferson_Davis.dds"
+	expire = "1965.1.1"
+	ideology = federal
+	traits = {
+
+	}
+}
+
+}

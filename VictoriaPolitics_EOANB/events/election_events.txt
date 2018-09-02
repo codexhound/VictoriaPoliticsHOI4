@@ -1,0 +1,209 @@
+add_namespace = vc_elections
+
+country_event = {
+	id = vc_elections.0 # The unique id. nuke_dropped is the namespace, which can be used for better organization.
+        title = vc_elections.0.t # The localisable text that appears as a header
+        desc = vc_elections.0.d # The localisable main text body that appears
+	picture = GFX_report_event_election_vote # Image displayed alongside the text.
+	
+	option = { # This is an example of an option that has no function
+		name = vc_elections.0.a # The localisable text that appears on the button.
+	}
+
+	is_triggered_only = yes
+	
+	immediate = {
+		if = { 
+			limit = {
+				NOT = { has_war = yes }
+				NOT = {
+					OR = {
+						has_government = vanguard_communism
+						has_government = autocracy
+						has_government = chauvinist_populism
+						has_government = anarchism
+						has_government = fundamentalism
+						has_government = anarchism
+					}
+				}
+			}
+			if = {
+				limit = {
+					check_variable = { party_popularity@centrism > party_popularity@collectivist_socialism }
+					check_variable = { party_popularity@centrism > party_popularity@traditional_conservatism}
+					check_variable = { party_popularity@centrism > party_popularity@social_egalitarianism }
+					check_variable = { party_popularity@centrism > party_popularity@radical_democracy }
+				}
+				set_politics = {
+					ruling_party = centrism
+					elections_allowed = yes
+				}
+				add_ideas = export_focus
+			}
+			else_if = {
+				limit = {
+					check_variable = { party_popularity@traditional_conservatism > party_popularity@collectivist_socialism }
+					check_variable = { party_popularity@traditional_conservatism > party_popularity@centrism }
+					check_variable = { party_popularity@traditional_conservatism > party_popularity@social_egalitarianism }
+					check_variable = { party_popularity@traditional_conservatism > party_popularity@radical_democracy }
+				}
+				set_politics = {
+					ruling_party = traditional_conservatism
+					elections_allowed = yes
+				}
+				add_ideas = free_trade
+			}
+			else_if = {
+				limit = {
+					check_variable = { party_popularity@collectivist_socialism > party_popularity@traditional_conservatism }
+					check_variable = { party_popularity@collectivist_socialism > party_popularity@centrism }
+					check_variable = { party_popularity@collectivist_socialism > party_popularity@social_egalitarianism }
+					check_variable = { party_popularity@collectivist_socialism > party_popularity@radical_democracy }
+				}
+				set_politics = {
+					ruling_party = collectivist_socialism
+					elections_allowed = yes
+				}
+				add_ideas = free_trade
+			}
+			else_if = {
+				limit = {
+					check_variable = { party_popularity@social_egalitarianism > party_popularity@collectivist_socialism }
+					check_variable = { party_popularity@social_egalitarianism > party_popularity@centrism }
+					check_variable = { party_popularity@social_egalitarianism > party_popularity@traditional_conservatism }
+					check_variable = { party_popularity@social_egalitarianism > party_popularity@radical_democracy }
+				}
+				set_politics = {
+					ruling_party = social_egalitarianism
+					elections_allowed = yes
+				}
+				add_ideas = export_focus
+			}
+			else_if = {
+				limit = {
+					check_variable = { party_popularity@radical_democracy > party_popularity@collectivist_socialism }
+					check_variable = { party_popularity@radical_democracy > party_popularity@centrism }
+					check_variable = { party_popularity@radical_democracy > party_popularity@social_egalitarianism }
+					check_variable = { party_popularity@radical_democracy > party_popularity@traditional_conservatism }
+				}
+				set_politics = {
+					ruling_party = radical_democracy
+					elections_allowed = yes
+				}
+				add_ideas = free_trade
+			}
+		}
+		else_if = {
+			limit = {
+				has_war = yes
+				NOT = {
+					OR = {
+						has_government = collectivist_socialism
+						has_government = vanguard_communism
+						has_government = autocracy
+						has_government = chauvinist_populism
+						has_government = anarchism
+						has_government = fundamentalism
+						has_government = anarchism
+					}
+				}
+			}
+			country_event = {id = vc_elections.0 days = 20 random = 10}
+		}
+	}
+}
+
+country_event = {
+	id = vc_elections.1 # The unique id. nuke_dropped is the namespace, which can be used for better organization.
+        title = vc_elections.1.t # The localisable text that appears as a header
+        desc = vc_elections.1.d # The localisable main text body that appears
+	picture = GFX_report_event_election_vote # Image displayed alongside the text.
+	
+	option = { # This is an example of an option that has no function
+		name = vc_elections.0.a # The localisable text that appears on the button.
+	}
+	is_triggered_only = yes
+	
+	immediate = {
+		if = {
+			limit = {
+					check_variable = { party_popularity@centrism > party_popularity@collectivist_socialism }
+					check_variable = { party_popularity@centrism > party_popularity@traditional_conservatism}
+					check_variable = { party_popularity@centrism > party_popularity@social_egalitarianism }
+					check_variable = { party_popularity@centrism > party_popularity@radical_democracy }
+				}
+				set_politics = {
+					ruling_party = centrism
+					elections_allowed = yes
+				}
+			if = {
+				limit = { NOT = { has_war = yes } }
+				add_ideas = export_focus
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = { party_popularity@traditional_conservatism > party_popularity@collectivist_socialism }
+				check_variable = { party_popularity@traditional_conservatism > party_popularity@centrism }
+				check_variable = { party_popularity@traditional_conservatism > party_popularity@social_egalitarianism }
+				check_variable = { party_popularity@traditional_conservatism > party_popularity@radical_democracy }
+			}
+			set_politics = {
+				ruling_party = traditional_conservatism
+				elections_allowed = yes
+			}
+			if = {
+				limit = { NOT = { has_war = yes } }
+				add_ideas = free_trade
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = { party_popularity@collectivist_socialism > party_popularity@traditional_conservatism }
+				check_variable = { party_popularity@collectivist_socialism > party_popularity@centrism }
+				check_variable = { party_popularity@collectivist_socialism > party_popularity@social_egalitarianism }
+				check_variable = { party_popularity@collectivist_socialism > party_popularity@radical_democracy }
+			}
+			set_politics = {
+				ruling_party = collectivist_socialism
+				elections_allowed = yes
+			}
+			if = {
+				limit = { NOT = { has_war = yes } }
+				add_ideas = free_trade
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = { party_popularity@social_egalitarianism > party_popularity@collectivist_socialism }
+				check_variable = { party_popularity@social_egalitarianism > party_popularity@centrism }
+				check_variable = { party_popularity@social_egalitarianism > party_popularity@traditional_conservatism }
+				check_variable = { party_popularity@social_egalitarianism > party_popularity@radical_democracy }
+			}
+			set_politics = {
+				ruling_party = social_egalitarianism
+				elections_allowed = yes
+			}
+			if = {
+				limit = { NOT = { has_war = yes } }
+				add_ideas = export_focus
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = { party_popularity@radical_democracy > party_popularity@collectivist_socialism }
+				check_variable = { party_popularity@radical_democracy > party_popularity@centrism }
+				check_variable = { party_popularity@radical_democracy > party_popularity@social_egalitarianism }
+				check_variable = { party_popularity@radical_democracy > party_popularity@traditional_conservatism }
+			}
+			set_politics = {
+				ruling_party = radical_democracy
+				elections_allowed = yes
+			}
+			if = {
+				limit = { NOT = { has_war = yes } }
+				add_ideas = free_trade
+			}
+		}
+	}
+}

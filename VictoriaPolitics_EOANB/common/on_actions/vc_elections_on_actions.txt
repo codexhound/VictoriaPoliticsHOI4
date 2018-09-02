@@ -1,0 +1,39 @@
+on_government_change = {
+	effect = {			
+		if = {
+			limit = {
+				NOT = {
+					OR = {
+						has_government = vanguard_communism
+						has_government = autocracy
+						has_government = chauvinist_populism
+						has_government = anarchism
+						has_government = fundamentalism
+						has_government = anarchism
+					}
+				}
+			}
+			country_event = {id = vc_elections.0 days = 730 random = 10}
+		}
+	}
+}
+
+on_startup = {
+	effect = {
+		if = {
+			limit = {
+				NOT = {
+					OR = {
+						has_government = vanguard_communism
+						has_government = autocracy
+						has_government = chauvinist_populism
+						has_government = anarchism
+						has_government = fundamentalism
+						has_government = anarchism
+					}
+				}
+			}
+			country_event = {id = vc_elections.0 days = 730 random = 10}
+		}
+	}
+}

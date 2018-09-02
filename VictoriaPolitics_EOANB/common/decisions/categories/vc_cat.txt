@@ -1,0 +1,18 @@
+idealogy_propaganda_decisions = {
+	icon = generic_research
+}
+military_issues_propaganda_decisions = {
+	icon = generic_research
+}
+economy_issues_propaganda_decisions = {
+	icon = generic_research
+}
+trade_issues_propaganda_decisions = {
+	icon = generic_research
+}
+class_encouragement = {
+	icon = generic_research
+}
+politics_decisions1 = {
+	icon = generic_research
+}
