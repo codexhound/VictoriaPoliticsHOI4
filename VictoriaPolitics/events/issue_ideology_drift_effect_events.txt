@@ -443,13 +443,9 @@ country_event = {
 
 		if = {
 			limit = {
-				NOT = {
-					OR = {
-						has_government = fascism
-						has_government = neutrality
-						has_government = communism
-					}
-				}
+				NOT = { has_government = fascism }
+				NOT = { has_government = neutrality }
+				NOT = { has_government = communism }
 			}
 			multiply_temp_variable = {freetradetemp = 0.2 }
 		}
@@ -524,13 +520,9 @@ country_event = {
 
 		if = {
 			limit = {
-				NOT = {
-					OR = {
-						has_government = fascism
-						has_government = neutrality
-						has_government = communism
-					}
-				}
+				NOT = { has_government = fascism }
+				NOT = { has_government = neutrality }
+				NOT = { has_government = communism }
 			}
 			multiply_temp_variable = {freetradetemp = 0.2 }
 		}
@@ -605,29 +597,22 @@ country_event = {
 
 		if = {
 			limit = {
-				NOT = {
-					OR = {
-						has_government = fascism
-						has_government = neutrality
-						has_government = communism
-					}
-				}
-			}
-			multiply_temp_variable = {freetradetemp = 0.2 }
-		}
-		else_if = {
-			limit = {
-				NOT = {
-					OR = {
-						has_government = fascism
-						has_government = neutrality
-						has_government = communism
-					}
-				}
+				NOT = { has_government = fascism }
+				NOT = { has_government = neutrality }
+				NOT = { has_government = communism }
 				tag = USA
 			}
 			multiply_temp_variable = {freetradetemp = 0.025 }
 		}
+		else_if = {
+			limit = {
+				NOT = { has_government = fascism }
+				NOT = { has_government = neutrality }
+				NOT = { has_government = communism }
+			}
+			multiply_temp_variable = {freetradetemp = 0.2 }
+		}
+		
 		
 		set_temp_variable = { actual_growth_factor = 1 }
 		subtract_from_temp_variable = { actual_growth_factor = party_popularity@neutrality }
