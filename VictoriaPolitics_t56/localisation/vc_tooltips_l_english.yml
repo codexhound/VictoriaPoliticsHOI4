@@ -5,8 +5,8 @@
  antimilitarypropaganda_effect:0 "0.1 Anti Military Popularity Weekly"
  pacifistpropaganda_effect:0 "0.1 Pacifist Popularity Weekly"
  
- protectionistpropaganda_effect:0 "0.1 Jingoism Weekly"
- freetradepropaganda_effect:0 "0.1 Jingoism Weekly"
+ protectionistpropaganda_effect:0 "0.1 Protectionist Popularity Weekly"
+ freetradepropaganda_effect:0 "0.1 Free Trade Popularity Weekly"
  
  pepropaganda_effect:0 "0.1 Planned Economy Popularity Weekly"
  interventionpropaganda_effect:0 "0.1 Interventionism Popularity Weekly"
@@ -15,5 +15,5 @@
  
  #classdecisions
  encouragemiddle_effect:0 "0.1 Middle Class Weekly"
- encouragecapitalist_effect_effect:0 "0.1 Capitalists Weekly"
- encourageacademia_effect_effect:0 "0.1 Academia Weekly"
+ encouragecapitalist_effect:0 "0.1 Capitalists Weekly"
+ encourageacademia_effect:0 "0.1 Academia Weekly"
