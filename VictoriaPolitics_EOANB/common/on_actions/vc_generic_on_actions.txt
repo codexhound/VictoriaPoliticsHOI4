@@ -145,10 +145,12 @@ on_actions = {
 		effect = {			
 			if = {
 				limit = {
-					NOT = {
-						has_government = fascism
-						has_government = communism
-						has_government = neutrality
+					OR = {
+						has_government = centrism
+						has_government = traditional_conservatism
+						has_government = collectivist_socialism
+						has_government = social_egalitarianism
+						has_government = radical_democracy
 					}
 				}
 				country_event = {id = vc_elections.0 days = 730 random = 10}
@@ -203,10 +205,12 @@ on_actions = {
 			every_country = { 
 				if = {
 					limit = {
-						NOT = {
-							has_government = fascism
-							has_government = communism
-							has_government = neutrality
+						OR = {
+							has_government = centrism
+							has_government = traditional_conservatism
+							has_government = collectivist_socialism
+							has_government = social_egalitarianism
+							has_government = radical_democracy
 						}
 					}
 					country_event = { id = vc_elections.0 days = 730 random = 10} }
