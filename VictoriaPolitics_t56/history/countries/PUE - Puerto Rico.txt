@@ -1,0 +1,46 @@
+﻿capital = 686
+
+oob = "PUE_1936"
+
+
+set_country_flag = monroe_doctrine
+set_war_support = 0.2
+set_stability = 0.50 
+set_research_slots = 2
+
+# Starting tech
+set_technology = {
+
+	# Extended Technologies
+	etax_doctrine = 1
+	camo = 1
+	
+	infantry_weapons = 1
+	gw_artillery = 1
+	early_fighter = 1
+}
+
+set_variable = { middleclass = 0.80 } set_variable = { academia = 0.10 } set_variable = { capitalist = 0.10 } set_variable = { freetrade = 0.40 } set_variable = { protectionism = 0.60 } set_variable = { nointerventionism = 0.10 } set_variable = { interventionism = 0.60 } set_variable = { statecapitalism = 0.20 } set_variable = { plannedeconomy = 0.10 } set_variable = { jingoism = 0.20 } set_variable = { promilitary = 0.40 } set_variable = { antimilitary = 0.10 }set_variable = { pacifism = 0.30 } add_ideas = job_stats add_ideas = trade_pop add_ideas = economic_pop add_ideas = war_pop add_ideas = issue_ideology_drift_effects set_politics = { 
+
+	parties = {  anarcho_liberal_democracy = { popularity = 0 } liberal_democracy = { popularity = 0 } reactionary_democracy = { popularity = 0 } social_democracy = { popularity = 0 } 
+		democratic = { 
+			popularity = 40
+		}
+
+#		fascism = {
+#		
+#		}
+		
+		communism = {
+			popularity = 25
+		}
+		neutrality = {
+			popularity = 35
+		}
+	}
+
+	ruling_party = democratic
+	last_election = "1933.2.16"
+	election_frequency = 36
+	elections_allowed = yes
+}

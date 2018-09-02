@@ -1,0 +1,180 @@
+﻿capital = 611
+
+oob = "MEN_1936"
+
+set_war_support = 0.1
+set_stability = 0.5
+set_research_slots = 2
+
+set_technology = {
+
+	# Extended Technologies
+	etax_doctrine = 1
+	camo = 1
+	
+	infantry_weapons = 1
+	
+}
+
+CHI = {
+	puppet = MEN
+}
+
+set_cosmetic_tag = MongalCouncilCtag
+set_party_name = { ideology = neutrality long_name = MEN_mongal_council_long name = MEN_mongal_council }
+
+create_corps_commander = {
+	name = "Wang Ying"
+	portrait_path = "gfx/leaders/Asia/Portrait_Asia_Generic_land_3.dds"
+	traits = { cavalry_officer }
+	skill = 2
+    attack_skill = 2
+    defense_skill = 1
+    planning_skill = 2
+    logistics_skill = 1
+}
+
+1939.1.1 = {
+	load_focus_tree = generic_focus	
+	retire_country_leader = yes
+	CHI = {
+		end_puppet = MEN
+	}
+	JAP = {
+		puppet = MEN
+	}
+	retire_country_leader = yes
+	drop_cosmetic_tag = yes
+	set_cosmetic_tag = MAGmen
+	set_party_name = { ideology = fascism long_name = MAFmen_fascism name = MAFmen_fascism }
+	add_to_war = {
+		targeted_alliance = JAP
+		enemy = CHI
+	}
+
+	add_political_power = 1198
+
+	create_country_leader = {
+		name = "Prince Demchugdongrub"
+		desc = "POLITICS_DEMCHUGDONGRUB_DESC"
+		picture = "GFX_portrait_men_demchugdongrub"
+		expire = "1965.1.1"
+		ideology = rexism
+		traits = {
+			spirit_of_genghis
+		}
+	}
+
+	set_variable = { middleclass = 0.80 } set_variable = { academia = 0.10 } set_variable = { capitalist = 0.10 } set_variable = { freetrade = 0.40 } set_variable = { protectionism = 0.60 } set_variable = { nointerventionism = 0.10 } set_variable = { interventionism = 0.60 } set_variable = { statecapitalism = 0.20 } set_variable = { plannedeconomy = 0.10 } set_variable = { jingoism = 0.20 } set_variable = { promilitary = 0.40 } set_variable = { antimilitary = 0.10 }set_variable = { pacifism = 0.30 } add_ideas = job_stats add_ideas = trade_pop add_ideas = economic_pop add_ideas = war_pop add_ideas = issue_ideology_drift_effects set_politics = { 
+
+		parties = {  anarcho_liberal_democracy = { popularity = 0 } liberal_democracy = { popularity = 0 } reactionary_democracy = { popularity = 0 } social_democracy = { popularity = 0 } 
+			democratic = { 
+				popularity = 0
+				banned = yes
+			}
+
+			fascism = {
+				popularity = 95
+			}
+			
+			communism = {
+				popularity = 0
+				banned = yes
+			}
+
+			neutrality = {
+				popularity = 5
+			}
+		}
+		
+		ruling_party = fascism
+		last_election = "1936.1.1"
+		election_frequency = 48
+		elections_allowed = no
+	}
+	
+	#generic focuses
+	complete_national_focus = army_effort
+	complete_national_focus = equipment_effort
+	complete_national_focus = motorization_effort
+	complete_national_focus = aviation_effort
+	complete_national_focus = naval_effort
+	complete_national_focus = flexible_navy
+	complete_national_focus = industrial_effort
+	complete_national_focus = construction_effort
+	complete_national_focus = production_effort
+	
+	oob = "MEN_1939"
+	
+	set_technology = {
+
+		# Extended Technologies
+		etax_doctrine = 1
+		camo = 1
+		
+		#doctrines
+		grand_battle_plan = 1
+		trench_warfare = 1
+		fleet_in_being = 1
+		battlefleet_concentration = 1
+
+		#electronics
+		electronic_mechanical_engineering = 1
+		radio = 1
+		radio_detection = 1
+		mechanical_computing = 1
+
+		#industry
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		advanced_machine_tools = 1
+		synth_oil_experiments = 1
+		oil_processing = 1
+		construction1 = 1
+		construction2 = 1
+		dispersed_industry = 1
+		dispersed_industry2 = 1
+	}
+}
+
+set_variable = { middleclass = 0.80 } set_variable = { academia = 0.10 } set_variable = { capitalist = 0.10 } set_variable = { freetrade = 0.40 } set_variable = { protectionism = 0.60 } set_variable = { nointerventionism = 0.10 } set_variable = { interventionism = 0.60 } set_variable = { statecapitalism = 0.20 } set_variable = { plannedeconomy = 0.10 } set_variable = { jingoism = 0.20 } set_variable = { promilitary = 0.40 } set_variable = { antimilitary = 0.10 }set_variable = { pacifism = 0.30 } add_ideas = job_stats add_ideas = trade_pop add_ideas = economic_pop add_ideas = war_pop add_ideas = issue_ideology_drift_effects set_politics = { 
+
+	parties = {  anarcho_liberal_democracy = { popularity = 0 } liberal_democracy = { popularity = 0 } reactionary_democracy = { popularity = 0 } social_democracy = { popularity = 0 } 
+		democratic = { 
+			popularity = 0
+			banned = yes
+		}
+
+		fascism = {
+			popularity = 35
+		}
+		
+		communism = {
+			popularity = 0
+			banned = yes
+		}
+
+		neutrality = {
+			popularity = 65
+		}
+	}
+	
+	ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+create_country_leader = {
+	name = "Prince Demchugdongrub"
+	desc = "POLITICS_DEMCHUGDONGRUB_DESC"
+	picture = "GFX_portrait_men_demchugdongrub"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		spirit_of_genghis
+	}
+}
+
+1939.1.1 = {
+}

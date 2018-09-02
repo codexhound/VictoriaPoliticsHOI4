@@ -1,0 +1,132 @@
+﻿capital = 540
+
+oob = "ANG_1936"
+
+# Starting tech
+set_technology = {
+
+	# Extended Technologies
+	etax_doctrine = 1
+	camo = 1
+		
+	infantry_weapons = 1
+	tech_mountaineers = 1
+}
+
+set_war_support = 0.1
+set_convoys = 5
+set_stability = 0.40 
+set_research_slots = 3
+
+1939.1.1 = {
+	#generic focuses
+	complete_national_focus = army_effort
+	complete_national_focus = equipment_effort
+	complete_national_focus = motorization_effort
+	complete_national_focus = aviation_effort
+	complete_national_focus = naval_effort
+	complete_national_focus = flexible_navy
+	complete_national_focus = industrial_effort
+	complete_national_focus = construction_effort
+	complete_national_focus = production_effort
+	
+	set_technology = {
+	
+		# Extended Technologies
+		etax_doctrine = 1
+		camo = 1
+
+		#doctrines
+		grand_battle_plan = 1
+		trench_warfare = 1
+
+		#electronics
+		electronic_mechanical_engineering = 1
+		radio = 1
+		radio_detection = 1
+		mechanical_computing = 1
+
+		#industry
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		advanced_machine_tools = 1
+		synth_oil_experiments = 1
+		oil_processing = 1
+		construction1 = 1
+		construction2 = 1
+		dispersed_industry = 1
+		dispersed_industry2 = 1
+	}
+}
+set_variable = { middleclass = 0.80 } set_variable = { academia = 0.10 } set_variable = { capitalist = 0.10 } set_variable = { freetrade = 0.40 } set_variable = { protectionism = 0.60 } set_variable = { nointerventionism = 0.10 } set_variable = { interventionism = 0.60 } set_variable = { statecapitalism = 0.20 } set_variable = { plannedeconomy = 0.10 } set_variable = { jingoism = 0.20 } set_variable = { promilitary = 0.40 } set_variable = { antimilitary = 0.10 }set_variable = { pacifism = 0.30 } add_ideas = job_stats add_ideas = trade_pop add_ideas = economic_pop add_ideas = war_pop add_ideas = issue_ideology_drift_effects set_politics = { 
+
+	parties = {  anarcho_liberal_democracy = { popularity = 0 } liberal_democracy = { popularity = 0 } reactionary_democracy = { popularity = 0 } social_democracy = { popularity = 0 } 
+		democratic = { 
+			popularity = 0
+		}
+
+		fascism = {
+			popularity = 0
+		}
+		
+		communism = {
+			popularity = 0
+			#banned = no #default is no
+		}
+		
+		neutrality = { 
+			popularity = 100
+		}
+	}
+	
+	ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+create_country_leader = {
+	
+	name = "Jonas Lote"
+	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = centrism
+	traits = {
+		#
+	}
+}
+
+
+}
+
+
+#Now a colony of Italy  However, if independent it would have
+1939.1.1 = {
+	set_variable = { middleclass = 0.80 } set_variable = { academia = 0.10 } set_variable = { capitalist = 0.10 } set_variable = { freetrade = 0.40 } set_variable = { protectionism = 0.60 } set_variable = { nointerventionism = 0.10 } set_variable = { interventionism = 0.60 } set_variable = { statecapitalism = 0.20 } set_variable = { plannedeconomy = 0.10 } set_variable = { jingoism = 0.20 } set_variable = { promilitary = 0.40 } set_variable = { antimilitary = 0.10 }set_variable = { pacifism = 0.30 } add_ideas = job_stats add_ideas = trade_pop add_ideas = economic_pop add_ideas = war_pop add_ideas = issue_ideology_drift_effects set_politics = { 
+
+		parties = {  anarcho_liberal_democracy = { popularity = 0 } liberal_democracy = { popularity = 0 } reactionary_democracy = { popularity = 0 } social_democracy = { popularity = 0 } 
+		democratic = { 
+			popularity = 0
+		}
+
+		fascism = {
+			popularity = 0
+		}
+		
+		communism = {
+			popularity = 0
+			#banned = no #default is no
+		}
+		
+		neutrality = { 
+			popularity = 100
+		}
+	}
+		
+		ruling_party = neutrality
+		last_election = "1936.1.1"
+		election_frequency = 48
+		elections_allowed = no
+	}
+}
+

@@ -1,0 +1,266 @@
+﻿capital = 271
+
+oob = "ETH_1936"
+
+set_war_support = 0.5
+set_stability = 0.70 
+set_research_slots = 3
+
+# Starting tech
+set_technology = {
+
+	# Extended Technologies
+	etax_doctrine = 1
+	camo = 1
+	
+	infantry_weapons = 1
+	tech_mountaineers = 1
+	trench_warfare = 1
+}
+
+add_ideas = {
+		#laws
+		war_economy
+		limited_conscription
+		second_italo_ethiopian_war #research penalty
+}
+
+1939.1.1 = {
+	#generic focuses
+	complete_national_focus = army_effort
+	complete_national_focus = equipment_effort
+	complete_national_focus = motorization_effort
+	complete_national_focus = aviation_effort
+	complete_national_focus = naval_effort
+	complete_national_focus = flexible_navy
+	complete_national_focus = industrial_effort
+	complete_national_focus = construction_effort
+	complete_national_focus = production_effort
+	
+	set_technology = {
+
+		# Extended Technologies
+		etax_doctrine = 1
+		camo = 1
+
+		#doctrines
+		grand_battle_plan = 1
+		trench_warfare = 1
+
+		#electronics
+		electronic_mechanical_engineering = 1
+		radio = 1
+		radio_detection = 1
+		mechanical_computing = 1
+
+		#industry
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		advanced_machine_tools = 1
+		synth_oil_experiments = 1
+		oil_processing = 1
+		construction1 = 1
+		construction2 = 1
+		dispersed_industry = 1
+		dispersed_industry2 = 1
+	}
+}
+set_variable = { middleclass = 0.80 } set_variable = { academia = 0.10 } set_variable = { capitalist = 0.10 } set_variable = { freetrade = 0.40 } set_variable = { protectionism = 0.60 } set_variable = { nointerventionism = 0.10 } set_variable = { interventionism = 0.60 } set_variable = { statecapitalism = 0.20 } set_variable = { plannedeconomy = 0.10 } set_variable = { jingoism = 0.20 } set_variable = { promilitary = 0.40 } set_variable = { antimilitary = 0.10 }set_variable = { pacifism = 0.30 } add_ideas = job_stats add_ideas = trade_pop add_ideas = economic_pop add_ideas = war_pop add_ideas = issue_ideology_drift_effects set_politics = { 
+
+	parties = {  anarcho_liberal_democracy = { popularity = 0 } liberal_democracy = { popularity = 0 } reactionary_democracy = { popularity = 0 } social_democracy = { popularity = 0 } 
+		democratic = { 
+			popularity = 0
+		}
+
+		fascism = {
+			popularity = 0
+		}
+		
+		communism = {
+			popularity = 0
+			#banned = no #default is no
+		}
+		
+		neutrality = { 
+			popularity = 100
+		}
+	}
+	
+	ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+create_country_leader = {
+	name = "Haile Selassie"
+	desc = "POLITICS_HAILE_SELASSIE_DESC"
+	picture = "Portrait_Ethiopia_Haile_Selassie.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Fitawrari Yeebio Woldai"
+	desc = "POLITICS_YEEBIO_WOLDAI_DESC"
+	picture = "Portrait_Ethiopia_Haile_Selassie.dds"
+	expire = "1965.1.1"
+	ideology = socialism
+	traits = {
+		ETH_solomonic_dynasty
+	}
+}
+
+
+#Now a colony of Italy  However, if independent it would have
+1939.1.1 = {
+	set_variable = { middleclass = 0.80 } set_variable = { academia = 0.10 } set_variable = { capitalist = 0.10 } set_variable = { freetrade = 0.40 } set_variable = { protectionism = 0.60 } set_variable = { nointerventionism = 0.10 } set_variable = { interventionism = 0.60 } set_variable = { statecapitalism = 0.20 } set_variable = { plannedeconomy = 0.10 } set_variable = { jingoism = 0.20 } set_variable = { promilitary = 0.40 } set_variable = { antimilitary = 0.10 }set_variable = { pacifism = 0.30 } add_ideas = job_stats add_ideas = trade_pop add_ideas = economic_pop add_ideas = war_pop add_ideas = issue_ideology_drift_effects set_politics = { 
+
+		parties = {  anarcho_liberal_democracy = { popularity = 0 } liberal_democracy = { popularity = 0 } reactionary_democracy = { popularity = 0 } social_democracy = { popularity = 0 } 
+		democratic = { 
+			popularity = 0
+		}
+
+		fascism = {
+			popularity = 0
+		}
+		
+		communism = {
+			popularity = 0
+			#banned = no #default is no
+		}
+		
+		neutrality = { 
+			popularity = 100
+		}
+	}
+		
+		ruling_party = neutrality
+		last_election = "1936.1.1"
+		election_frequency = 48
+		elections_allowed = no
+	}
+}
+if = {
+	limit = {
+		has_dlc = "Waking the Tiger"
+	}
+	create_field_marshal = {
+		name = "Kassa Haile Darge"
+		portrait_path = "gfx/leaders/Africa/portrait_africa_generic_land_5.dds"
+		traits = {old_guard decided_planner bad_staffer}
+		skill = 2
+		attack_skill = 1
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 2
+	}
+	else = {
+		create_field_marshal = {
+			name = "Kassa Haile Darge"
+			portrait_path = "gfx/leaders/Africa/portrait_africa_generic_land_3.dds"
+			traits = {old_guard decided_planner bad_staffer}
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+}
+if = {
+	limit = {
+		has_dlc = "Waking the Tiger"
+	}
+	create_corps_commander = {
+		name = "Seyoum Mengesha"
+		portrait_path = "gfx/leaders/Africa/portrait_africa_generic_land_6.dds"
+		traits = {old_guard desert_fox bad_staffer}
+		skill = 2
+		attack_skill = 1
+		defense_skill = 1
+		planning_skill = 3
+		logistics_skill = 2
+	}
+	create_corps_commander = {
+		name = "Mulugeta Yeggazu"
+		portrait_path = "gfx/leaders/Africa/portrait_africa_generic_land_7.dds"
+		traits = {old_guard trait_mountaineer bad_staffer}
+		skill = 2
+		attack_skill = 2
+		defense_skill = 1
+		planning_skill = 3
+		logistics_skill = 1
+	}
+	create_corps_commander = {
+		name = "Afawarq Walda Samayat"
+		portrait_path = "gfx/leaders/Africa/portrait_africa_generic_land_3.dds"
+		traits = {old_guard trickster bad_staffer}
+		skill = 2
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 1
+	}	
+	else = {
+		create_corps_commander = {
+			name = "Seyoum Mengesha"
+			portrait_path = "gfx/leaders/Africa/Portrait_Africa_Generic_land_3.dds"
+			traits = {old_guard desert_fox bad_staffer}
+			skill = 2
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 3
+			logistics_skill = 2
+		}
+		create_corps_commander = {
+			name = "Mulugeta Yeggazu"
+			portrait_path = "gfx/leaders/Africa/Portrait_Africa_Generic_land_2.dds"
+			traits = {old_guard  trait_mountaineer bad_staffer}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 1
+		}
+		create_corps_commander = {
+			name = "Afawarq Walda Samayat"
+			portrait_path = "gfx/leaders/Africa/Portrait_Africa_Generic_land_1.dds"
+			traits = {old_guard  trickster bad_staffer}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+		}		
+	}
+}
+
+
+
+
+create_corps_commander = {
+	name = "Kassa Haile Darge"
+	portrait_path = "gfx/leaders/Africa/Portrait_Africa_Generic_land_2.dds"
+	traits = {old_guard bad_staffer}
+	skill = 1
+    attack_skill = 1
+    defense_skill = 1
+    planning_skill = 1
+    logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Imru Haile Selassie"
+	portrait_path = "gfx/leaders/Africa/Portrait_Africa_Generic_land_3.dds"
+	traits = {old_guard bad_staffer }
+	skill = 1
+    attack_skill = 1
+    defense_skill = 1
+    planning_skill = 1
+    logistics_skill = 1
+}
+

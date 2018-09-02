@@ -1,0 +1,69 @@
+﻿capital = 44
+
+OOB = "ALB_1936"
+
+set_technology = {
+
+	# Extended Technologies
+	etax_doctrine = 1
+	camo = 1
+	
+	infantry_weapons = 1
+	tech_support = 1
+	tech_recon = 1
+}
+
+set_variable = { middleclass = 0.80 } set_variable = { academia = 0.10 } set_variable = { capitalist = 0.10 } set_variable = { freetrade = 0.40 } set_variable = { protectionism = 0.60 } set_variable = { nointerventionism = 0.10 } set_variable = { interventionism = 0.60 } set_variable = { statecapitalism = 0.20 } set_variable = { plannedeconomy = 0.10 } set_variable = { jingoism = 0.20 } set_variable = { promilitary = 0.40 } set_variable = { antimilitary = 0.10 }set_variable = { pacifism = 0.30 } add_ideas = job_stats add_ideas = trade_pop add_ideas = economic_pop add_ideas = war_pop add_ideas = issue_ideology_drift_effects set_politics = { 
+
+	parties = {  anarcho_liberal_democracy = { popularity = 0 } liberal_democracy = { popularity = 0 } reactionary_democracy = { popularity = 0 } social_democracy = { popularity = 0 } 
+		democratic = { 
+			popularity = 0
+		}
+
+		fascism = {
+			popularity = 0
+		}
+		
+		communism = {
+			popularity = 0
+		}
+		
+		neutrality = { 
+			popularity = 100
+		}
+	}
+	
+	ruling_party = neutrality
+	last_election = "1933.3.5"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_war_support = 0.2
+set_stability = 0.40 
+set_research_slots = 3
+set_convoys = 5
+
+#Victor Emmanuel III of Italy after 39
+create_country_leader = {
+	name = "King Zog"
+	desc = "POLITICS_KING_ZOG_DESC"
+	picture = "Portrait_Albania_King_Zog.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		#
+	}
+}
+
+create_field_marshal = {
+	name = "Xhemal Aranitasi"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+	traits = { }
+	skill = 2
+	attack_skill = 1
+    defense_skill = 3
+    planning_skill = 2
+    logistics_skill = 1
+}
+
