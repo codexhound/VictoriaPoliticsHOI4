@@ -9,89 +9,99 @@ country_event = {
 	option = { # This is an example of an option that has no function
 		name = vc_elections.0.a # The localisable text that appears on the button.
 	}
+
+	is_triggered_only = yes
 	
 	immediate = {
-		if = {
+		if = { 
 			limit = {
-				check_variable = { party_popularity@democratic > party_popularity@liberal_democracy }
-				check_variable = { party_popularity@democratic > party_popularity@anarcho_liberal_democracy }
-				check_variable = { party_popularity@democratic > party_popularity@reactionary_democracy }
-				check_variable = { party_popularity@democratic > party_popularity@social_democracy }
+				NOT = { has_war = yes }
+				NOT = {
+					OR = {
+						has_government = fascism
+						has_government = communism
+						has_government = neutrality
+					}
+				}
 			}
-			set_politics = {
-				ruling_party = democratic
-				elections_allowed = yes
+			if = {
+				limit = {
+					check_variable = { party_popularity@democratic > party_popularity@liberal_democracy }
+					check_variable = { party_popularity@democratic > party_popularity@anarcho_liberal_democracy }
+					check_variable = { party_popularity@democratic > party_popularity@reactionary_democracy }
+					check_variable = { party_popularity@democratic > party_popularity@social_democracy }
+				}
+				set_politics = {
+					ruling_party = democratic
+					elections_allowed = yes
+				}
+				add_ideas = export_focus
 			}
-			add_ideas = export_focus
+			else_if = {
+				limit = {
+					check_variable = { party_popularity@liberal_democracy > party_popularity@democratic}
+					check_variable = { party_popularity@liberal_democracy > party_popularity@anarcho_liberal_democracy }
+					check_variable = { party_popularity@liberal_democracy > party_popularity@reactionary_democracy }
+					check_variable = { party_popularity@liberal_democracy > party_popularity@social_democracy }
+				}
+				set_politics = {
+					ruling_party = liberal_democracy
+					elections_allowed = yes
+				}
+				add_ideas = free_trade
+			}
+			else_if = {
+				limit = {
+					check_variable = { party_popularity@anarcho_liberal_democracy > party_popularity@liberal_democracy}
+					check_variable = { party_popularity@anarcho_liberal_democracy > party_popularity@democratic }
+					check_variable = { party_popularity@anarcho_liberal_democracy > party_popularity@reactionary_democracy }
+					check_variable = { party_popularity@anarcho_liberal_democracy > party_popularity@social_democracy }
+				}
+				set_politics = {
+					ruling_party = anarcho_liberal_democracy
+					elections_allowed = yes
+				}
+				add_ideas = free_trade
+			}
+			else_if = {
+				limit = {
+					check_variable = { party_popularity@reactionary_democracy > party_popularity@democratic}
+					check_variable = { party_popularity@reactionary_democracy > party_popularity@anarcho_liberal_democracy }
+					check_variable = { party_popularity@reactionary_democracy > party_popularity@liberal_democracy }
+					check_variable = { party_popularity@reactionary_democracy > party_popularity@social_democracy }
+				}
+				set_politics = {
+					ruling_party = reactionary_democracy
+					elections_allowed = yes
+				}
+				add_ideas = export_focus
+			}
+			else_if = {
+				limit = {
+					check_variable = { party_popularity@social_democracy > party_popularity@democratic}
+					check_variable = { party_popularity@social_democracy > party_popularity@anarcho_liberal_democracy }
+					check_variable = { party_popularity@social_democracy > party_popularity@reactionary_democracy }
+					check_variable = { party_popularity@social_democracy > party_popularity@liberal_democracy }
+				}
+				set_politics = {
+					ruling_party = social_democracy
+					elections_allowed = yes
+				}
+				add_ideas = free_trade
+			}
 		}
 		else_if = {
 			limit = {
-				check_variable = { party_popularity@liberal_democracy > party_popularity@democratic}
-				check_variable = { party_popularity@liberal_democracy > party_popularity@anarcho_liberal_democracy }
-				check_variable = { party_popularity@liberal_democracy > party_popularity@reactionary_democracy }
-				check_variable = { party_popularity@liberal_democracy > party_popularity@social_democracy }
+				has_war = yes
+				NOT = {
+					OR = {
+						has_government = fascism
+						has_government = communism
+						has_government = neutrality
+					}
+				}
 			}
-			set_politics = {
-				ruling_party = liberal_democracy
-				elections_allowed = yes
-			}
-			add_ideas = free_trade
-		}
-		else_if = {
-			limit = {
-				check_variable = { party_popularity@anarcho_liberal_democracy > party_popularity@liberal_democracy}
-				check_variable = { party_popularity@anarcho_liberal_democracy > party_popularity@democratic }
-				check_variable = { party_popularity@anarcho_liberal_democracy > party_popularity@reactionary_democracy }
-				check_variable = { party_popularity@anarcho_liberal_democracy > party_popularity@social_democracy }
-			}
-			set_politics = {
-				ruling_party = anarcho_liberal_democracy
-				elections_allowed = yes
-			}
-			add_ideas = free_trade
-		}
-		else_if = {
-			limit = {
-				check_variable = { party_popularity@reactionary_democracy > party_popularity@democratic}
-				check_variable = { party_popularity@reactionary_democracy > party_popularity@anarcho_liberal_democracy }
-				check_variable = { party_popularity@reactionary_democracy > party_popularity@liberal_democracy }
-				check_variable = { party_popularity@reactionary_democracy > party_popularity@social_democracy }
-			}
-			set_politics = {
-				ruling_party = reactionary_democracy
-				elections_allowed = yes
-			}
-			add_ideas = export_focus
-		}
-		else_if = {
-			limit = {
-				check_variable = { party_popularity@social_democracy > party_popularity@democratic}
-				check_variable = { party_popularity@social_democracy > party_popularity@anarcho_liberal_democracy }
-				check_variable = { party_popularity@social_democracy > party_popularity@reactionary_democracy }
-				check_variable = { party_popularity@social_democracy > party_popularity@liberal_democracy }
-			}
-			set_politics = {
-				ruling_party = social_democracy
-				elections_allowed = yes
-			}
-			add_ideas = free_trade
-		}
-	}
-	
-	mean_time_to_happen = {
-		days = 600
-	}
-	
-	trigger = {
-		AND = {
-			NOT = { has_war = yes }
-			OR = {
-				has_government = democratic
-				has_government = liberal_democracy
-				has_government = anarcho_liberal_democracy
-				has_government = reactionary_democracy
-				has_government = social_democracy
-			}
+			country_event = {id = vc_elections.0 days = 20 random = 10}
 		}
 	}
 }
