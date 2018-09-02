@@ -7,18 +7,12 @@ military_issues_propaganda_decisions = {
 		available = {
 			check_variable = { ROOT.mil_prop = 0 }
 			NOT = {
-				OR = {
-					has_government = social_democracy
-					has_government = anarcho_liberal_democracy
-				}
+				has_government = social_egalitarianism
 			}
 		}
 		visible = {
 			NOT = {
-				OR = {
-					has_government = social_democracy
-					has_government = anarcho_liberal_democracy
-				}
+				has_government = social_egalitarianism
 			}
 		}
 	
@@ -28,6 +22,7 @@ military_issues_propaganda_decisions = {
     	days_remove = 165
 		
 		complete_effect = {
+			custom_effect_tooltip = jingoistpropaganda_effect
 			set_variable = { ROOT.jingoistpropaganda = 1 }
 			set_variable = { ROOT.mil_prop = 1 }
 		}
@@ -39,43 +34,16 @@ military_issues_propaganda_decisions = {
 	
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				factor = 0
-				has_government = social_democracy
-			}
-			modifier = {
-				factor = 0.9
-				OR = 
-				{
-					has_government = neutrality
-					has_government = fascism
-					has_government = communism
-				}
-				
-			}
-			modifier = {
-				factor = .5
-				OR = {
-					has_government = anarcho_liberal_democracy
-					has_government = democratic
-					has_government = liberal_democracy
-					has_government = reactionary_democracy
-				}
-			}
 		}
 	}
 	
 	promilitary_propaganda = {
-
-		allowed = {
-			always = yes
-		}
 		available = {
 			check_variable = { ROOT.mil_prop = 0 }
-			NOT = { has_government = social_democracy }
+			NOT = { has_government = social_egalitarianism }
 		}
 		visible = {
-			NOT = { has_government = social_democracy }
+			NOT = { has_government = social_egalitarianism }
 		}
 	
 		cost = 120
@@ -84,6 +52,7 @@ military_issues_propaganda_decisions = {
     	days_remove = 165
 		
 		complete_effect = {
+			custom_effect_tooltip = promilitarypropaganda_effect
 			set_variable = { ROOT.promilitarypropaganda = 1 }
 			set_variable = { ROOT.mil_prop = 1 }
 		}
@@ -95,51 +64,26 @@ military_issues_propaganda_decisions = {
 	
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				factor = 0.1
-				has_government = social_democracy
-			}
-			modifier = {
-				factor = 0.7
-				OR = 
-				{
-					has_government = neutrality
-					has_government = fascism
-					has_government = communism
-				}
-				
-			}
-			modifier = {
-				factor = .5
-				OR = {
-					has_government = anarcho_liberal_democracy
-					has_government = democratic
-					has_government = liberal_democracy
-					has_government = reactionary_democracy
-				}
-			}
 		}
 	}
 
 	antimilitary_propaganda = {
-
-		allowed = {
-			always = yes
-		}
 		available = {
 			check_variable = { ROOT.mil_prop = 0 }
 			NOT = {
 				OR = {
-					has_government = fascism
-					has_government = communism
+					has_government = chauvinist_populism
+					has_government = fundamentalism
+					has_government = vanguard_communism
 				}
 			}
 		}
 		visible = {
 			NOT = {
 				OR = {
-					has_government = fascism
-					has_government = communism
+					has_government = chauvinist_populism
+					has_government = fundamentalism
+					has_government = vanguard_communism
 				}
 			}
 		}
@@ -152,6 +96,7 @@ military_issues_propaganda_decisions = {
 		complete_effect = {
 			set_variable = { ROOT.antimilitarypropaganda = 1 }
 			set_variable = { ROOT.mil_prop = 1 }
+			custom_effect_tooltip = antimilitarypropaganda_effect
 		}
 			
 		remove_effect = {
@@ -161,53 +106,28 @@ military_issues_propaganda_decisions = {
 	
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				factor = 0.6
-				has_government = social_democracy
-			}
-			modifier = {
-				factor = 0.1
-				OR = 
-				{
-					has_government = neutrality
-					has_government = fascism
-					has_government = communism
-				}
-				
-			}
-			modifier = {
-				factor = .25
-				OR = {
-					has_government = anarcho_liberal_democracy
-					has_government = democratic
-					has_government = liberal_democracy
-					has_government = reactionary_democracy
-				}
-			}
 		}
 	}
 
 	pacifist_propaganda = {
-
-		allowed = {
-			always = yes
-		}
 		available = {
 			check_variable = { ROOT.mil_prop = 0 }
 			NOT = {
 				OR = {
-					has_government = fascism
-					has_government = reactionary_democracy
-					has_government = communism
+					has_government = chauvinist_populism
+					has_government = fundamentalism
+					has_government = vanguard_communism
+					has_government = radical_democracy
 				}
 			}
 		}
 		visible = {
 			NOT = {
 				OR = {
-					has_government = fascism
-					has_government = reactionary_democracy
-					has_government = communism
+					has_government = chauvinist_populism
+					has_government = fundamentalism
+					has_government = vanguard_communism
+					has_government = radical_democracy
 				}
 			}
 		}
@@ -220,6 +140,7 @@ military_issues_propaganda_decisions = {
 		complete_effect = {
 			set_variable = { ROOT.pacifistpropaganda = 1 }
 			set_variable = { ROOT.mil_prop = 1 }
+			custom_effect_tooltip = pacifistpropaganda_effect
 		}
 			
 		remove_effect = {
@@ -229,45 +150,18 @@ military_issues_propaganda_decisions = {
 	
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				factor = 0.8
-				has_government = social_democracy
-			}
-			modifier = {
-				factor = 0.1
-				OR = 
-				{
-					has_government = neutrality
-					has_government = fascism
-					has_government = communism
-				}
-				
-			}
-			modifier = {
-				factor = .25
-				OR = {
-					has_government = anarcho_liberal_democracy
-					has_government = democratic
-					has_government = liberal_democracy
-					has_government = reactionary_democracy
-				}
-			}
 		}
 	}
 }
 
 trade_issues_propaganda_decisions = {
 	protectionist_propaganda = {
-
-		allowed = {
-			always = yes
-		}
 		available = {
 			check_variable = { ROOT.trade_prop = 0 }
-			NOT = { has_government = social_democracy }
+			NOT = { has_government = social_egalitarianism }
 		}
 		visible = {
-			NOT = { has_government = social_democracy }
+			NOT = { has_government = social_egalitarianism }
 		}
 	
 		cost = 120
@@ -278,6 +172,7 @@ trade_issues_propaganda_decisions = {
 		complete_effect = {
 			set_variable = { ROOT.protectionistpropaganda = 1 }
 			set_variable = { ROOT.trade_prop = 0 }
+			custom_effect_tooltip = protectionistpropaganda_effect
 		}
 			
 		remove_effect = {
@@ -287,57 +182,28 @@ trade_issues_propaganda_decisions = {
 	
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				factor = 0.1
-				has_government = social_democracy
-			}
-			modifier = {
-				factor = 0.8
-				OR = 
-				{
-					has_government = neutrality
-					has_government = fascism
-					has_government = communism
-				}
-				
-			}
-			modifier = {
-				factor = .2
-				OR = {
-					has_government = anarcho_liberal_democracy
-					has_government = liberal_democracy
-				}
-				
-			}
-			modifier = {
-				factor = .5
-				OR = {
-					has_government = democratic
-					has_government = reactionary_democracy
-				}
-			}
 		}
 	}
 
 	freetrade_propaganda = {
-
-		allowed = {
-			always = yes
-		}
 		available = {
 			check_variable = { ROOT.trade_prop = 0 }
 			NOT = {
 				OR = {
-					has_government = fascism
-					has_government = communism
+					has_government = chauvinist_populism
+					has_government = fundamentalism
+					has_government = vanguard_communism
+					has_government = radical_democracy
 				}
 			}
 		}
 		visible = {
 			NOT = {
 				OR = {
-					has_government = fascism
-					has_government = communism
+					has_government = chauvinist_populism
+					has_government = fundamentalism
+					has_government = vanguard_communism
+					has_government = radical_democracy
 				}
 			}
 		}
@@ -348,6 +214,7 @@ trade_issues_propaganda_decisions = {
     	days_remove = 165
 		
 		complete_effect = {
+			custom_effect_tooltip = freetradepropaganda_effect
 			set_variable = { ROOT.freetradepropaganda = 1 }
 			set_variable = { ROOT.trade_prop = 1 }
 		}
@@ -359,51 +226,18 @@ trade_issues_propaganda_decisions = {
 	
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				factor = 0.8
-				has_government = social_democracy
-			}
-			modifier = {
-				factor = 0.1
-				OR = 
-				{
-					has_government = neutrality
-					has_government = fascism
-					has_government = communism
-				}
-				
-			}
-			modifier = {
-				factor = .7
-				OR = {
-					has_government = anarcho_liberal_democracy
-					has_government = liberal_democracy
-				}
-			}
-			modifier = {
-				factor = .3
-				OR = {
-					has_government = democratic
-					has_government = reactionary_democracy
-				}
-			}
 		}
 	}
 }
 
 economy_issues_propaganda_decisions = {
-
 	pe_propaganda = {
-
-		allowed = {
-			always = yes
-		}
 		available = {
 			check_variable = { ROOT.econ_prop = 0 }
-			NOT = { has_government = anarcho_liberal_democracy }
+			NOT = { has_government = anarchist }
 		}
 		visible = {
-			NOT = { has_government = anarcho_liberal_democracy }
+			NOT = { has_government = anarchist }
 		}
 	
 		cost = 120
@@ -412,6 +246,7 @@ economy_issues_propaganda_decisions = {
     	days_remove = 165
 		
 		complete_effect = {
+			custom_effect_tooltip = pepropaganda_effect
 			set_variable = {  ROOT.pepropaganda = 1 }
 			set_variable = { ROOT.econ_prop = 1 }
 		}
@@ -423,42 +258,10 @@ economy_issues_propaganda_decisions = {
 	
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				factor = 0.8
-				has_government = social_democracy
-			}
-			modifier = {
-				factor = 0.8
-				OR = 
-				{
-					has_government = neutrality
-					has_government = fascism
-					has_government = communism
-				}
-				
-			}
-			modifier = {
-				factor = .1
-				OR = {
-					has_government = anarcho_liberal_democracy
-					has_government = liberal_democracy
-				}
-			}
-			modifier = {
-				factor = .5
-				OR = {
-					has_government = democratic
-					has_government = reactionary_democracy
-				}
-			}
 		}
 	}
 
 	intervention_propaganda = {
-
-		allowed = {
-			always = yes
-		}
 		available = {
 			check_variable = { ROOT.econ_prop = 0 }
 		}
@@ -469,6 +272,7 @@ economy_issues_propaganda_decisions = {
     	days_remove = 165
 		
 		complete_effect = {
+			custom_effect_tooltip = interventionpropaganda_effect
 			set_variable = { ROOT.interventionpropaganda = 1 }
 			set_variable = { ROOT.econ_prop = 1 }
 		}
@@ -480,42 +284,10 @@ economy_issues_propaganda_decisions = {
 	
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				factor = 0.6
-				has_government = social_democracy
-			}
-			modifier = {
-				factor = 0.6
-				OR = 
-				{
-					has_government = neutrality
-					has_government = fascism
-					has_government = communism
-				}
-				
-			}
-			modifier = {
-				factor = .2
-				OR = {
-					has_government = anarcho_liberal_democracy
-					has_government = liberal_democracy
-				}
-			}
-			modifier = {
-				factor = .5
-				OR = {
-					has_government = democratic
-					has_government = reactionary_democracy
-				}
-			}
 		}
 	}
 
 	sc_propaganda = {
-
-		allowed = {
-			always = yes
-		}
 		available = {
 			check_variable = { ROOT.econ_prop = 0 }
 		}
@@ -526,6 +298,7 @@ economy_issues_propaganda_decisions = {
     	days_remove = 165
 		
 		complete_effect = {
+			custom_effect_tooltip = scpropaganda_effect
 			set_variable = { ROOT.scpropaganda = 1 }
 			set_variable = { ROOT.econ_prop = 1 }
 		}
@@ -537,34 +310,6 @@ economy_issues_propaganda_decisions = {
 	
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				factor = 0.7
-				has_government = social_democracy
-			}
-			modifier = {
-				factor = 0.7
-				OR = 
-				{
-					has_government = neutrality
-					has_government = fascism
-					has_government = communism
-				}
-				
-			}
-			modifier = {
-				factor = .1
-				OR = {
-					has_government = anarcho_liberal_democracy
-					has_government = liberal_democracy
-				}
-			}
-			modifier = {
-				factor = .4
-				OR = {
-					has_government = democratic
-					has_government = reactionary_democracy
-				}
-			}
 		}
 	}
 
@@ -577,16 +322,18 @@ economy_issues_propaganda_decisions = {
 			check_variable = { ROOT.econ_prop = 0 }
 			NOT = {
 				OR = {
-					has_government = fascism
-					has_government = communism
+					has_government = chauvinist_populism
+					has_government = fundamentalism
+					has_government = vanguard_communism
 				}
 			}
 		}
 		visible = {
 			NOT = {
 				OR = {
-					has_government = fascism
-					has_government = communism
+					has_government = chauvinist_populism
+					has_government = fundamentalism
+					has_government = vanguard_communism
 				}
 			}
 		}
@@ -597,6 +344,7 @@ economy_issues_propaganda_decisions = {
     	days_remove = 165
 		
 		complete_effect = {
+			custom_effect_tooltip = nipropaganda_effect
 			set_variable = { ROOT.nipropaganda = 1 }
 			set_variable = { ROOT.econ_prop = 1 }
 		}
@@ -608,34 +356,6 @@ economy_issues_propaganda_decisions = {
 	
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				factor = 0.2
-				has_government = social_democracy
-			}
-			modifier = {
-				factor = 0.1
-				OR = 
-				{
-					has_government = neutrality
-					has_government = fascism
-					has_government = communism
-				}
-				
-			}
-			modifier = {
-				factor = .9
-				OR = {
-					has_government = anarcho_liberal_democracy
-					has_government = liberal_democracy
-				}
-			}
-			modifier = {
-				factor = .5
-				OR = {
-					has_government = democratic
-					has_government = reactionary_democracy
-				}
-			}
 		}
 	}
 }
