@@ -3,11 +3,9 @@ on_government_change = {
 		if = {
 			limit = {
 				NOT = {
-					OR = {
-						has_government = fascism
-						has_government = communism
-						has_government = neutrality
-					}
+					has_government = fascism
+					has_government = communism
+					has_government = neutrality
 				}
 			}
 			country_event = {id = vc_elections.0 days = 730 random = 10}
@@ -20,11 +18,9 @@ on_startup = {
 		if = {
 			limit = {
 				NOT = {
-					OR = {
-						has_government = fascism
-						has_government = communism
-						has_government = neutrality
-					}
+					has_government = fascism
+					has_government = communism
+					has_government = neutrality
 				}
 			}
 			country_event = {id = vc_elections.0 days = 730 random = 10}

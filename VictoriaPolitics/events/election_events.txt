@@ -17,11 +17,9 @@ country_event = {
 			limit = {
 				NOT = { has_war = yes }
 				NOT = {
-					OR = {
-						has_government = fascism
-						has_government = communism
-						has_government = neutrality
-					}
+					has_government = fascism
+					has_government = communism
+					has_government = neutrality
 				}
 			}
 			if = {
@@ -94,11 +92,9 @@ country_event = {
 			limit = {
 				has_war = yes
 				NOT = {
-					OR = {
-						has_government = fascism
-						has_government = communism
-						has_government = neutrality
-					}
+					has_government = fascism
+					has_government = communism
+					has_government = neutrality
 				}
 			}
 			country_event = {id = vc_elections.0 days = 20 random = 10}
