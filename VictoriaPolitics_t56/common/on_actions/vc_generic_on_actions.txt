@@ -188,7 +188,7 @@ on_actions = {
 	#Not run on a specific country.
 	on_startup = {
 		effect = {
-			
+			country_event = {id = vc_updates.0}
 		}
 	}
 	
