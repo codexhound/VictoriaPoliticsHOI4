@@ -28,6 +28,7 @@ military_issues_propaganda_decisions = {
     	days_remove = 165
 		
 		complete_effect = {
+			custom_effect_tooltip = jingoistpropaganda_effect
 			set_variable = { ROOT.jingoistpropaganda = 1 }
 			set_variable = { ROOT.mil_prop = 1 }
 		}
@@ -84,6 +85,7 @@ military_issues_propaganda_decisions = {
     	days_remove = 165
 		
 		complete_effect = {
+			custom_effect_tooltip = promilitarypropaganda_effect
 			set_variable = { ROOT.promilitarypropaganda = 1 }
 			set_variable = { ROOT.mil_prop = 1 }
 		}
@@ -152,6 +154,7 @@ military_issues_propaganda_decisions = {
 		complete_effect = {
 			set_variable = { ROOT.antimilitarypropaganda = 1 }
 			set_variable = { ROOT.mil_prop = 1 }
+			custom_effect_tooltip = antimilitarypropaganda_effect
 		}
 			
 		remove_effect = {
@@ -220,6 +223,7 @@ military_issues_propaganda_decisions = {
 		complete_effect = {
 			set_variable = { ROOT.pacifistpropaganda = 1 }
 			set_variable = { ROOT.mil_prop = 1 }
+			custom_effect_tooltip = pacifistpropaganda_effect
 		}
 			
 		remove_effect = {
@@ -278,6 +282,7 @@ trade_issues_propaganda_decisions = {
 		complete_effect = {
 			set_variable = { ROOT.protectionistpropaganda = 1 }
 			set_variable = { ROOT.trade_prop = 0 }
+			custom_effect_tooltip = protectionistpropaganda_effect
 		}
 			
 		remove_effect = {
@@ -348,6 +353,7 @@ trade_issues_propaganda_decisions = {
     	days_remove = 165
 		
 		complete_effect = {
+			custom_effect_tooltip = freetradepropaganda_effect
 			set_variable = { ROOT.freetradepropaganda = 1 }
 			set_variable = { ROOT.trade_prop = 1 }
 		}
@@ -412,6 +418,7 @@ economy_issues_propaganda_decisions = {
     	days_remove = 165
 		
 		complete_effect = {
+			custom_effect_tooltip = pepropaganda_effect
 			set_variable = {  ROOT.pepropaganda = 1 }
 			set_variable = { ROOT.econ_prop = 1 }
 		}
@@ -469,6 +476,7 @@ economy_issues_propaganda_decisions = {
     	days_remove = 165
 		
 		complete_effect = {
+			custom_effect_tooltip = interventionpropaganda_effect
 			set_variable = { ROOT.interventionpropaganda = 1 }
 			set_variable = { ROOT.econ_prop = 1 }
 		}
@@ -526,6 +534,7 @@ economy_issues_propaganda_decisions = {
     	days_remove = 165
 		
 		complete_effect = {
+			custom_effect_tooltip = scpropaganda_effect
 			set_variable = { ROOT.scpropaganda = 1 }
 			set_variable = { ROOT.econ_prop = 1 }
 		}
@@ -597,6 +606,7 @@ economy_issues_propaganda_decisions = {
     	days_remove = 165
 		
 		complete_effect = {
+			custom_effect_tooltip = nipropaganda_effect
 			set_variable = { ROOT.nipropaganda = 1 }
 			set_variable = { ROOT.econ_prop = 1 }
 		}
