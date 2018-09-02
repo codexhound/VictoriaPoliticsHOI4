@@ -548,6 +548,8 @@
  syndicalist_propaganda_desc:0 ""
  neutrality_propaganda:0 "Autocracy Propaganda"
  neutrality_propaganda_desc:0 ""
+ fundamentalist_propaganda:0 "Fundamentalist Propaganda"
+ fundamentalist_propaganda_desc:0 ""
 
  military_issues_propaganda_decisions:0 "Military Issue Propaganda Decisions"
  military_issues_propaganda_decisions_desc:0 "Spread the correct popular viewpoint on military policy using your political influence."
