@@ -14,6 +14,7 @@ class_encouragement = {
 		days_remove = 165
 	
 		complete_effect = {
+			custom_effect_tooltip = encouragemiddle_effect
 			set_variable = { ROOT.encouragemiddle = 1 }
 			set_variable = { ROOT.classprop = 1 }
 		}
@@ -43,6 +44,7 @@ class_encouragement = {
 		days_remove = 165
 	
 		complete_effect = {
+			custom_effect_tooltip = encouragecapitalist_effect
 			set_variable = { ROOT.encouragecapitalist = 1 }
 			set_variable = { ROOT.classprop = 1 }
 		}
@@ -71,6 +73,7 @@ class_encouragement = {
 		days_remove = 165
 	
 		complete_effect = {
+			custom_effect_tooltip = encourageacademia_effect
 			set_variable = { ROOT.encourageacademia = 1 }
 			set_variable = { ROOT.classprop = 1 }
 		}
