@@ -234,10 +234,10 @@ economy_issues_propaganda_decisions = {
 	pe_propaganda = {
 		available = {
 			check_variable = { ROOT.econ_prop = 0 }
-			NOT = { has_government = anarchist }
+			NOT = { has_government = anarchism }
 		}
 		visible = {
-			NOT = { has_government = anarchist }
+			NOT = { has_government = anarchism }
 		}
 	
 		cost = 120
